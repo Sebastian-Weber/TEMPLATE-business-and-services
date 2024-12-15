@@ -1,19 +1,82 @@
-import React from 'react'
+const cdImages = {
+  placeholderImage: '/src/assets/images/Placeholder600x400.png'
+
+};
+
+const cdColors = {
+  primaryColor: '#98BB48',
+  secondaryColor: '#FFF1B7',
+  primaryAccentColor: '',
+  secondaryAccentColor: '',
+  primaryBackgroundColorDark: '#165287',
+  primaryBackgroundColorDefault: '#1D6DB4',
+  primaryBackgroundColorLight: '#ACC6DD',
+  secondaryBackgroundColorDark: '#165287',
+  secondaryBackgroundColorDefaukt: '#165287',
+  secondaryBackgroundColorLight: '#165287',
+  tertiaryBackgroundColorDark: '#165287',
+  tertiaryBackgroundColorDefault: '#165287',
+  tertiaryBackgroundColorLight: '#165287',
+  quaternaryBackgroundColorDark: '#165287',
+  quaternaryBackgroundColorDefault: '#165287',
+  quaternaryBackgroundColorLight: '#165287',
+  primaryFontColor: '#191A1E',
+  secondaryFontColor: '#817E72',
+  tertiaryFontColor: '#D6D5CB'
+};
 
 function Section_Gallery() {
   return (
     <>
-      <div className='min-h-screen min-w-full bg-orange-200'>Gallery
-        <div className='grid grid-cols-3 gap-4'>
-            <div className='bg-red-400'>1</div>
-            <div className='bg-blue-400'>2</div>
-            <div className='bg-green-400'>3</div>
-            <div className='bg-yellow-400'>4</div>
-            <div className='bg-pink-400'>5</div>
-            <div className='bg-purple-400'>6</div>
-            <div className='bg-red-400'>7</div>
-            <div className='bg-blue-400'>8</div>
-            <div className='bg-green-400'>9</div>
+      <div className='min-h-screen mt-10 px-2 2xl:px-20' style={{ backgroundColor:cdColors.secondaryColor }}>
+        <div className=" bg-orange-400">
+
+          <div className="flex flex-row">
+
+            {/* Dummy Card 1 */}
+            <div className="m-4">
+            <img className='h-full w-auto' src={cdImages.placeholderImage} alt="Placeholder"></img>
+            </div>
+
+            {/* Dummy Card 2 */}
+            <div className="m-4">
+            <img className='h-full w-auto' src={cdImages.placeholderImage} alt="Placeholder"></img>
+            </div>
+
+            {/* Dummy Card 3 */}
+            <div className="m-4">
+            <img className='h-full w-auto' src={cdImages.placeholderImage} alt="Placeholder"></img>
+            </div>
+
+          </div>
+
+          <div className="flex flex-row">
+
+            {/* Dummy Card 4 */}
+            <div className="m-4">
+            <img className='h-full w-auto' src={cdImages.placeholderImage} alt="Placeholder"></img>
+            </div>
+
+            {/* Dummy Card 5 */}
+            <div className="m-4">
+            <img className='h-full w-auto' src={cdImages.placeholderImage} alt="Placeholder"></img>
+            </div>
+
+          </div>
+
+          <div className="flex flex-row"> 
+
+            {/* Dummy Card 6 */}
+            <div className="m-4">
+            <img className='h-full w-auto' src={cdImages.placeholderImage} alt="Placeholder"></img>
+            </div>
+
+            {/* Dummy Card 7 */}
+            <div className="m-4">
+            <img className='h-full w-auto' src={cdImages.placeholderImage} alt="Placeholder"></img>
+            </div>
+
+          </div>
         </div>
       </div>
     </>
