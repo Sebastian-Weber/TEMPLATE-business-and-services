@@ -1,6 +1,6 @@
 
 const cdImages = {
-  heroImage: '/src/assets/images/Placeholder600x400.png'
+  heroImage: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png'
 
 };
 
@@ -46,7 +46,7 @@ function SectionTextAndImage() {
             </div>
           </div>  
           
-          <div className="flex flex-col h-fit w-auto justify-around items-center md:h-fit md:w-7/12  bg-blue-400">
+          <div className="flex flex-col h-fit w-auto justify-around items-center md:h-fit md:w-7/12 bg-blue-400">
             <img className='h-fit' src={cdImages.heroImage} alt="Placeholder"></img>
           </div>
           

@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <div className='bg-pink-200'>
+    <div className=''>
       <WrapperGlobal></WrapperGlobal>
     </div>
     </>

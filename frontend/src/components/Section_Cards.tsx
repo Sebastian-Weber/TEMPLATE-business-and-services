@@ -40,8 +40,9 @@ const cdColors = {
 
 function SectionCards() {
   return (
+
   <>
-    <div className='min-h-screen mt-10 px-2 2xl:px-20' style={{ backgroundColor:cdColors.secondaryColor }}>
+    <div className='min-h-screen mt-10 px-2 md:p-20 2xl:px-20' style={{ backgroundColor:cdColors.secondaryColor }}>
 
     {/* first row */}
     <div className="flex flex-col justify-around items-center md:px-2 md:flex-row bg-orange-400">

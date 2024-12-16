@@ -1,6 +1,7 @@
 
 const cdImages = {
-  heroImage: '/src/assets/images/Placeholder600x400.png'
+  heroImage: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
+  heroLogotype: '/src/assets/images/Peters_Logotype.png',
 
 };
 
@@ -42,22 +43,23 @@ console.log(cdImages.heroImage);
 function SectionHero({ secondaryColor = cdColors.secondaryColor }: SectionHeroProps) {
   return (
     <>
-      <div className='min-h-screen mt-10 px-2 2xl:px-20' style={{ backgroundColor: secondaryColor }}>
+      <div className='min-h-full mt-10 ' style={{ backgroundColor: secondaryColor }}>
 
-          <div className="flex flex-col h-screen justify-around items-center md:flex-row bg-orange-400">
-            
-            <div className="flex flex-col h-1/2 w-full justify-around items-center md:items-center md:w-5/12 md:h-full bg-red-400">
-              <div className="flex flex-col w-fit h-fit justify-center md:w-5/12">
-                <h1 style={{ color: cdColors.tertiaryFontColor }}>{cdCopy.heroHeading1}</h1>
-                <p>{cdCopy.heroParagraph1}</p>
-              </div>
-            </div>  
-            
-            <div className="flex flex-col h-fit w-auto justify-around items-center md:h-fit md:w-7/12  bg-blue-400">
-              <img className='h-fit' src={cdImages.heroImage} alt="Placeholder"></img>
+      <div className="flex flex-col h-screen justify-around items-center md:flex-row">
+          
+          <div className="flex flex-col h-1/2 w-full justify-around items-center md:w-9/12 md:items-center md:h-full bg-orange-400">
+            <div className="flex flex-col h-auto justify-center bg-red-400">
+              <img className=' ' src={cdImages.heroLogotype} alt="Placeholder"></img>
+              <h1 style={{ color: cdColors.tertiaryFontColor }}>{cdCopy.heroHeading1}</h1>
+              {/* <p>{cdCopy.heroParagraph1}</p> */}
             </div>
-            
+          </div>  
+          
+          <div className="flex flex-col h-fill w-auto justify-around items-center md:w-auto md:h-full bg-blue-400">
+            <img className='object-cover md:w-full md:h-full' src={cdImages.heroImage} alt="Placeholder"></img>
           </div>
+          
+        </div>
           
       </div>
     </>
