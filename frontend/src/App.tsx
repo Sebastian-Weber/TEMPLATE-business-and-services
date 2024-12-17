@@ -1,7 +1,7 @@
 
 import './App.css'
-import WrapperGlobal from './components/Wrapper_Global'
-import Home from './pages/Home'
+
+import { Outlet } from 'react-router-dom';
 
 
 
@@ -10,9 +10,10 @@ function App() {
 
   return (
     <>
-    <div className="">
-      {/* <WrapperGlobal></WrapperGlobal> */}
-      <Home></Home>
+      <div className="w-full max-w-screen-2xl mx-auto">
+      {/* <Header /> */}
+      <Outlet />
+      {/* <Footer /> */}
     </div>
     </>
   )

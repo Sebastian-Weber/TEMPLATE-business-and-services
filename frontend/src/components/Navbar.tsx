@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Firmenlogo from '/src/assets/Firmenlogo.svg'
 
@@ -48,8 +49,10 @@ const Navbar = () => {
         <div className="md:hidden flex flex-row justify-between items-center w-full py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
           
           {/* Firmenlogo */}
-          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
-          
+          <Link to="/" >
+            <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          </Link>
+
           {/* Hamburger icon */}
           {/* <button onClick={() => { setIsOpen(!isOpen); setOverlayVisible(!isOverlayVisible); }}>
             <div className={`${genericHamburgerLine} ${isOpen 
@@ -72,7 +75,9 @@ const Navbar = () => {
       <div className="hidden  md:flex flex-row justify-between items-center absolute w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
 
         {/* Firmenlogo */}
-        <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+        <Link to="/" >
+          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+        </Link>   
 
         <div className="flex flex-row justify-end items-center ">
           {/* <button className="" style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }}>Kontakt</button> */}

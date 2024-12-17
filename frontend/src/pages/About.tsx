@@ -7,9 +7,11 @@ import SectionHero from "../components/Section_Hero"
 function About() {
   return (
     <>
-      <Header></Header>
-      <SectionHero></SectionHero>
-      <Footer></Footer>
+      <div className="">
+        <Header></Header>
+        <SectionHero></SectionHero>
+        <Footer></Footer>
+      </div>
     </>
   )
 }

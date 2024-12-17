@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Expander_sm from '../dropdowns/Expander_sm';
+import { Link } from 'react-router-dom';
 
 const cdColors = {
     primaryColor: '#98BB48',
@@ -52,7 +53,13 @@ const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease
         <div className={`absolute left-0 top-24 w-full items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
         <div className="flex flex-col justify-normal h-screen items-start" style={{ backgroundColor: cdColors.primaryColor }}>
             <ul className="py-6 px-6 w-full mt-12">
-            <li className="cursor-pointer" onClick={() => setOverlayVisible(!isOverlayVisible)} style={{ color:cdColors.secondaryColor}}>Overlay menu item1</li>
+            <li>
+                <Link className="" to="/about">
+                <div className="cursor-pointer" onClick={() => setOverlayVisible(!isOverlayVisible)} style={{ color:cdColors.secondaryColor}}>
+                Über uns
+                </div>
+                </Link>               
+            </li>
             <li className="cursor-pointer" style={{ color:cdColors.secondaryColor}}>Overlay menu item2
                 <Expander_sm caption="Expander" />
             </li>
