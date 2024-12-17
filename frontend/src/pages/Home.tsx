@@ -1,16 +1,22 @@
 
-import GlobalWrapper from "../components/Wrapper_Global"
+import Footer from "../components/Footer"
 import Header from "../components/Header"
-
-// import SectionDivider from "../components/Section_Divider"
+import SectionCards from "../components/Section_Cards"
+import Section_Gallery from "../components/Section_Gallery"
+import SectionHero from "../components/Section_Hero"
+import SectionTextAndImage from "../components/Section_Text_and_Image"
 
 
 function Home() {
   return (
     <>
-    <div className="global-wrapper">
-        <Header></Header>
-        <GlobalWrapper></GlobalWrapper>
+    <div className="w-full max-w-screen-2xl mx-auto px-4">
+      <Header></Header>
+      <SectionHero></SectionHero>
+      <SectionTextAndImage></SectionTextAndImage>
+      <SectionCards></SectionCards>
+      <Section_Gallery></Section_Gallery>
+      <Footer></Footer>
     </div>
     </>
   )
