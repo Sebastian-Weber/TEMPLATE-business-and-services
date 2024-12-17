@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 
 import Firmenlogo from '/src/assets/Firmenlogo.svg'
 
-import Expander from './dropdowns/Expander_sm';
+import ToggleHamburger from './buttons/toggle_hamburger';
+import Button_primary from './buttons/button_primary';
 
 const cdColors = {
   primaryColor: '#98BB48',
@@ -29,8 +29,8 @@ const cdColors = {
 
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isOverlayVisible, setOverlayVisible] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [isOverlayVisible, setOverlayVisible] = useState(false);
   const [isMenuItem1ExpanderVisible, setMenuItem1ExpanderVisible] = useState(false);
 
   
@@ -39,19 +39,19 @@ const Navbar = () => {
     setMenuItem1ExpanderVisible(!isMenuItem1ExpanderVisible);
   };
 
-  const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300'
+  // const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300'
 
 
   return (
     <>
         {/* small */}
-        <div className="flex flex-row justify-between items-center w-full py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
+        <div className="md:hidden flex flex-row justify-between items-center w-full py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
           
           {/* Firmenlogo */}
-          <img onClick={() => setOverlayVisible(!setOverlayVisible)} className="w-18" src={Firmenlogo} alt="Firmenlogo"></img>
+          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
           
           {/* Hamburger icon */}
-          <button onClick={() => { setIsOpen(!isOpen); setOverlayVisible(!isOverlayVisible); }}>
+          {/* <button onClick={() => { setIsOpen(!isOpen); setOverlayVisible(!isOverlayVisible); }}>
             <div className={`${genericHamburgerLine} ${isOpen 
               ? "rotate-45 translate-y-1 group-hover:opacity-100"
               : "opacity-100 group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryColor }}/>
@@ -61,31 +61,27 @@ const Navbar = () => {
               <div className={`${genericHamburgerLine} ${ isOpen
                 ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
                 : "opacity-100 group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryColor }}/>
-          </button>
+          </button> */}
 
-          {/* Small overlay menu */}
-          <div className={`absolute left-0 top-28 w-full items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
-            <div className="flex flex-col justify-normal h-screen items-start" style={{ backgroundColor: cdColors.primaryColor }}>
-              <ul className="py-6 px-6 w-full mt-12">
-
-              <li className="cursor-pointer" onClick={() => setOverlayVisible(!isOverlayVisible)}>Overlay menu item1</li>
-
-                <li>
-                  <Expander></Expander>
-                </li>
-                <li>
-                  <Expander></Expander>
-                </li>
-                
-                <li className="cursor-pointer" onClick={() => setOverlayVisible(!isOverlayVisible)}>Overlay menu item2</li>
-                <li className="cursor-pointer" onClick={() => setOverlayVisible(!isOverlayVisible)}>Overlay menu item3</li>
-              </ul>
-            </div>
-          </div>
-
+          <ToggleHamburger></ToggleHamburger>
 
 
         </div>
+
+      {/* Medium */}
+      <div className="hidden  md:flex flex-row justify-between items-center absolute w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
+
+        {/* Firmenlogo */}
+        <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+
+        <div className="flex flex-row justify-end items-center ">
+          {/* <button className="" style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }}>Kontakt</button> */}
+          <div>
+            <Button_primary caption='Kontakt'  ></Button_primary>
+          </div>
+          <ToggleHamburger></ToggleHamburger>
+        </div>
+      </div>
     </>
   );
 };

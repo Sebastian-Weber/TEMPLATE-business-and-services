@@ -1,6 +1,6 @@
 
 const cdImages = {
-  heroImage: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png'
+  imageAndTextImage: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png'
 
 };
 
@@ -41,13 +41,13 @@ function SectionTextAndImage() {
           
           <div className="flex flex-col h-1/2 w-full justify-around items-center md:items-center md:w-5/12 md:h-full bg-red-400">
             <div className="flex flex-col w-fit h-fit justify-center md:w-5/12">
-              <h1 style={{ color: cdColors.tertiaryFontColor }}>{cdCopy.textAndImageHeading1}</h1>
+              <h2 style={{ color: cdColors.tertiaryFontColor }}>{cdCopy.textAndImageHeading1}</h2>
               <p>{cdCopy.textAndImageParagraph1}</p>
             </div>
           </div>  
           
           <div className="flex flex-col h-fit w-auto justify-around items-center md:h-fit md:w-7/12 bg-blue-400">
-            <img className='h-fit' src={cdImages.heroImage} alt="Placeholder"></img>
+            <img className='h-fit' src={cdImages.imageAndTextImage} alt="Placeholder"></img>
           </div>
           
         </div>

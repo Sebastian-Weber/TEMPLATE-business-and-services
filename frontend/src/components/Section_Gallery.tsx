@@ -1,6 +1,5 @@
 const cdImages = {
   placeholderImage: '/src/assets/images/Placeholder600x400.png'
-
 };
 
 const cdColors = {
@@ -25,7 +24,9 @@ const cdColors = {
   tertiaryFontColor: '#D6D5CB'
 };
 
-function Section_Gallery() {
+
+
+function Section_Gallery(){
   return (
     <>
       <div className='min-h-screen mt-10 px-2 2xl:px-20' style={{ backgroundColor:cdColors.secondaryColor }}>
@@ -82,5 +83,4 @@ function Section_Gallery() {
     </>
   )
 }
-
 export default Section_Gallery

@@ -1,12 +1,12 @@
 
 const cdImages = {
   heroImage: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
-  heroLogotype: '/src/assets/images/Peters_Logotype.png',
+  heroLogotype: '/src/assets/images/Peters_Logo.svg',
 
 };
 
 const cdCopy = {
-  heroHeading1: 'Heading 1: Lorem Ipsum',
+  heroHeading1: 'Smart-Home-Lösungen und Energietechnik in der Region Köln.',
   heroParagraph1: 'Paragraph 1: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
 };
 
@@ -47,10 +47,12 @@ function SectionHero({ secondaryColor = cdColors.secondaryColor }: SectionHeroPr
 
       <div className="flex flex-col h-screen justify-around items-center md:flex-row">
           
-          <div className="flex flex-col h-1/2 w-full justify-around items-center md:w-9/12 md:items-center md:h-full bg-orange-400">
-            <div className="flex flex-col h-auto justify-center bg-red-400">
+          <div className="flex flex-col mt-24 p-4 w-full justify-center items-center md:w-9/12 md:items-center md:h-full">
+            <div className="flex flex-col h-auto justify-center">
               <img className=' ' src={cdImages.heroLogotype} alt="Placeholder"></img>
-              <h1 style={{ color: cdColors.tertiaryFontColor }}>{cdCopy.heroHeading1}</h1>
+            </div>
+            <div className="flex flex-col p-6 w-auto h-auto justify-center">
+              <h1 style={{ color: cdColors.secondaryFontColor }}>{cdCopy.heroHeading1}</h1>
               {/* <p>{cdCopy.heroParagraph1}</p> */}
             </div>
           </div>  
