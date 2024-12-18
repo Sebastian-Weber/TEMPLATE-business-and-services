@@ -32,7 +32,13 @@ const cdColors = {
   tertiaryFontColor: '#D6D5CB'
 };
 
-function SectionTextAndImage() {
+interface SectionTextAndImageProps {
+  text: string;
+  image: string;
+  heading2: string;
+}
+
+function SectionTextAndImage({ text, image, heading2 }: SectionTextAndImageProps) {
   return (
     <>
       <div className='min-h-screen mt-10 px-2 2xl:px-20' style={{ backgroundColor:cdColors.secondaryColor }}>
@@ -41,13 +47,13 @@ function SectionTextAndImage() {
           
           <div className="flex flex-col h-1/2 w-full justify-around items-center md:items-center md:w-5/12 md:h-full bg-red-400">
             <div className="flex flex-col w-fit h-fit justify-center md:w-5/12">
-              <h2 style={{ color: cdColors.tertiaryFontColor }}>{cdCopy.textAndImageHeading1}</h2>
-              <p>{cdCopy.textAndImageParagraph1}</p>
+              <h2 style={{ color: cdColors.tertiaryFontColor }}>{heading2}</h2>
+              <p>{text}</p>
             </div>
           </div>  
           
           <div className="flex flex-col h-fit w-auto justify-around items-center md:h-fit md:w-7/12 bg-blue-400">
-            <img className='h-fit' src={cdImages.imageAndTextImage} alt="Placeholder"></img>
+            <img className='h-fit' src={image} alt="Placeholder"></img>
           </div>
           
         </div>
