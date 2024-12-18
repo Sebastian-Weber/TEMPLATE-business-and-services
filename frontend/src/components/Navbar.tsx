@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Firmenlogo from '/src/assets/Firmenlogo.svg'
+import Phone from '/src/assets/Phone.svg'
 
 import ToggleHamburger from './buttons/toggle_hamburger';
 import Button_primary from './buttons/button_primary';
+import Navbar_xl_dropdown_template from './dropdowns/navbar_xl_dropdown_template';
 
 const cdColors = {
   primaryColor: '#98BB48',
@@ -46,7 +48,7 @@ const Navbar = () => {
   return (
     <>
         {/* small */}
-        <div className="md:hidden flex flex-row justify-between items-center w-full py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
+        <div className="fixed md:hidden flex flex-row justify-between items-center w-full py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
           
           {/* Firmenlogo */}
           <Link to="/" >
@@ -65,14 +67,15 @@ const Navbar = () => {
                 ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
                 : "opacity-100 group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryColor }}/>
           </button> */}
-
-          <ToggleHamburger></ToggleHamburger>
-
+        
+            <div className="">
+              <ToggleHamburger></ToggleHamburger>
+            </div>
 
         </div>
 
       {/* Medium */}
-      <div className="hidden  md:flex flex-row justify-between items-center absolute w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
+      <div className="fixed hidden md:flex flex-row justify-between items-center w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
 
         {/* Firmenlogo */}
         <Link to="/" >
@@ -84,7 +87,98 @@ const Navbar = () => {
           <div>
             <Button_primary caption='Kontakt'  ></Button_primary>
           </div>
-          <ToggleHamburger></ToggleHamburger>
+
+          <div className="flex flex-row items-center justify-end">
+            <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
+              <img className="" src={Phone}></img>
+              <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
+            </div>
+
+            <div className="md:hidden">
+              <ToggleHamburger></ToggleHamburger>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* large */}
+      <div className="fixed hidden lg:flex flex-row justify-between items-center w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
+
+        {/* Firmenlogo */}
+        <Link to="/" >
+          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+        </Link>   
+
+        <div className="flex flex-row justify-end items-center ">
+          {/* <button className="" style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }}>Kontakt</button> */}
+          <div>
+            <Button_primary caption='Kontakt'></Button_primary>
+          </div>
+
+          <div className="flex flex-row items-center justify-end">
+            <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
+              <img className="" src={Phone}></img>
+              <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
+            </div>
+
+            <div className="">
+              <ToggleHamburger></ToggleHamburger>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* XL */}
+      <div className="fixed hidden xl:flex flex-row justify-between items-center w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
+      <div className="flex flex-row justify-start items-center">
+
+        {/* Firmenlogo */}
+        <Link to="/" >
+          <img className="w-18 -mt-10" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+        </Link>
+
+        <div className="flex flex-row justify-start items-center mx-4">
+
+        {/* Ueber uns  */}
+        <Link className="" to="/about">
+          <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
+            Über uns
+          </div>
+        </Link>
+
+        <Navbar_xl_dropdown_template name='Leistungen' caption='Placeholder'></Navbar_xl_dropdown_template>
+        <Navbar_xl_dropdown_template name='Energielösungen' caption='Placeholder'></Navbar_xl_dropdown_template>
+
+
+        <Link className="flex flex-row items-start" to="/about">
+          <div className="font-fredoka text-xl font-medium menu-hover" style={{ color: cdColors.secondaryColor }}>
+            Jobs
+          </div>
+        </Link>
+
+        </div>
+
+        </div>        
+
+        <div className="flex flex-row justify-end items-center ">
+          {/* <button className="" style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }}>Kontakt</button> */}
+          <div>
+            <Button_primary caption='Kontakt'  ></Button_primary>
+          </div>
+
+          <div className="flex flex-row items-center justify-end">
+            <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
+              <img className="" src={Phone}></img>
+              <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
+            </div>
+
+            <div className="md:hidden">
+              <ToggleHamburger></ToggleHamburger>
+            </div>
+          </div>
+
         </div>
       </div>
     </>
