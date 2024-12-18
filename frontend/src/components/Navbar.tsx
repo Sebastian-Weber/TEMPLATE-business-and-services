@@ -8,6 +8,17 @@ import ToggleHamburger from './buttons/toggle_hamburger';
 import Button_primary from './buttons/button_primary';
 import Navbar_xl_dropdown_template from './dropdowns/navbar_xl_dropdown_template';
 
+const cdImages = {
+  image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
+  image2: '/src/assets/images/mohamed-marey-M9mRKGW9L30-unsplash.jpg',
+  image3: '/src/assets/images/james-sandbrook-h0-lwHj7heI-unsplash.jpg',
+  image4: '/src/assets/images/mika-baumeister-dp9AxaKHdVg-unsplash.png',
+  image5: '/src/assets/images/steve-johnson-hokONTrHIAQ-unsplash.jpg',
+  image6: '/src/assets/images/david-dvoracek-2kWxMl5IWTA-unsplash.jpg',
+  image7: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png',
+
+};
+
 const cdColors = {
   primaryColor: '#98BB48',
   secondaryColor: '#FFF1B7',
@@ -148,9 +159,8 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Navbar_xl_dropdown_template name='Leistungen' caption='Placeholder'></Navbar_xl_dropdown_template>
-        <Navbar_xl_dropdown_template name='Energielösungen' caption='Placeholder'></Navbar_xl_dropdown_template>
-
+        <Navbar_xl_dropdown_template DropdownCaption='Leistungen' DropdownItem1Heading='Test_Item_1' DropdownItem1Image={cdImages.image1} DropdownItem1Subheading='Test_Item_1_Subheading' DropdownItem1Url='Elektro-Dienstleistungen-Privatkunden' caption='Placeholder'></Navbar_xl_dropdown_template>
+        <Navbar_xl_dropdown_template DropdownCaption='Energielösungen' DropdownItem1heading='Geschäftskunden_Test_Item_1' DropdownItem1url='Test_Item_1' caption='Placeholder'></Navbar_xl_dropdown_template>
 
         <Link className="flex flex-row items-start" to="/about">
           <div className="font-fredoka text-xl font-medium menu-hover" style={{ color: cdColors.secondaryColor }}>

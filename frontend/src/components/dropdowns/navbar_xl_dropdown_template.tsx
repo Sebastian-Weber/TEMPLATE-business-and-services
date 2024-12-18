@@ -33,6 +33,7 @@ const Navbar_XL_dropdown_items = [
     item_1_image: Placeholder,
     item_1_heading: '1 Placeholder',
     item_1_subheading: '1 Placeholder',
+    item_1_url: '/valid-path-1',
     },
     // Item 2
     {
@@ -64,12 +65,17 @@ const Navbar_XL_dropdown_items = [
 
 
 interface NavbarXlDropdownTemplateProps {
-    name: string;
-  
+    DropdownCaption: string;
     caption: string;
+
+    DropdownItem1Image: string;
+    DropdownItem1Heading: string;
+    DropdownItem1Subheading: string;
+    DropdownItem1Url: string;
+
 }
 
-function Navbar_xl_dropdown_template({ name }: NavbarXlDropdownTemplateProps)  {
+function Navbar_xl_dropdown_template({ DropdownCaption, DropdownItem1Heading, DropdownItem1Subheading, DropdownItem1Image, DropdownItem1Url }: NavbarXlDropdownTemplateProps)  {
   return (
     <>
 
@@ -79,7 +85,7 @@ function Navbar_xl_dropdown_template({ name }: NavbarXlDropdownTemplateProps)  {
         <div className="relative flex flex-row items-center justify-between my-2">
             <Link to="/">
                 <div className="text-xl font-medium menu-hover my-2 py-2" style={{ color: cdColors.secondaryColor }} >
-                    {name}
+                    {DropdownCaption}
                 </div>
             </Link>
             <div className="px-2">
@@ -96,28 +102,22 @@ function Navbar_xl_dropdown_template({ name }: NavbarXlDropdownTemplateProps)  {
 
                 {/* Menu item 1 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
-                    <Link to="/valid-path-1">
-                    {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                        <img key={index} className="w-64 h-auto" src={Dropdownitem.item_1_image}></img>
-                    ))}
+                    <Link to="#">
+                        <img className="w-64 h-auto" src={DropdownItem1Image}></img>
                     </Link>
                     <br></br>
-                    <Link to="#">
-                        <div className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <div key={index} className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                                {Dropdownitem.item_1_heading}
+                    <Link to={`/${DropdownItem1Url}`}>
+                        <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                            <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                                {DropdownItem1Heading}
                             </div>
-                            ))}
                         </div>
                     </Link>
                     <Link to="#">
-                        <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <div key={index} className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                                {Dropdownitem.item_1_subheading}
+                        <div className="mt-1 block border-gray-100 font-semibold  hover:opacity-50">
+                            <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
+                                {DropdownItem1Subheading}
                             </div>
-                            ))}
                         </div>
                     </Link>
                 </div>  
@@ -152,7 +152,7 @@ function Navbar_xl_dropdown_template({ name }: NavbarXlDropdownTemplateProps)  {
 
                 {/* Menu item 3 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
-                <Link to="/">
+                    <Link to="/">
                         {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
                             <img key={index} className="w-64 h-auto" src={Dropdownitem.item_3_image}></img>
                         ))}

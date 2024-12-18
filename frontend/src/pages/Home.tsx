@@ -2,6 +2,7 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import SectionCards from "../components/Section_Cards"
+import SectionDivider from "../components/Section_Divider"
 import Section_Gallery from "../components/Section_Gallery"
 import SectionHero from "../components/Section_Hero"
 import SectionTextAndImage from "../components/Section_Text_and_Image"
@@ -44,6 +45,7 @@ function Home() {
         image6={cdImages.image6}
         image7={cdImages.image7}
        ></Section_Gallery>
+       <SectionDivider></SectionDivider>
       <Footer></Footer>
     </div>
     </>
