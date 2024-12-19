@@ -5,6 +5,7 @@ import SectionHero from "../components/Section_Hero"
 import SectionTextAndImage from "../components/Section_Text_and_Image"
 
 const cdImages = {
+  logo: '/src/assets/images/Peters_Logo.svg',
   image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
   image2: '/src/assets/images/mohamed-marey-M9mRKGW9L30-unsplash.jpg',
   image3: '/src/assets/images/james-sandbrook-h0-lwHj7heI-unsplash.jpg',
@@ -18,17 +19,42 @@ const cdImages = {
 };
 
 const cdCopy = {
-  heading: 'Heading 1: About us ...',
-  paragraph: 'Paragraph 1: About us ... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
+  sectionHero_Heading: 'Energietechnik und Smart-Home-Lösungen in der Region Köln.',
+  sectionHero_Paragraph: '',
+
+  sectionTextAndImage_Heading: 'Heading 1: About us ...',
+  sectionTextAndImage_Paragraph: 'Willkommen bei Peters Elektro GmbH, Ihrem zuverlässigen Partner für professionelle Elektro-Dienstleistungen. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen – von regelmäßiger Wartung bis hin zu modernen Smart-Home-Lösungen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
 };
 
-function About() {
+
+
+const About = () => {
+  const buttonPrimaryProps = {
+    buttonPrimaryCaption: 'About from about.tsx',
+    buttonPrimaryLink: 'about',
+  };
+
+  const buttonSecondaryProps = {
+    buttonSecondaryCaption: 'About from about.tsx',
+    buttonSecondaryLink: 'about',
+  };
   return (
     <>
       <div className="">
         <Header></Header>
-        {/* <SectionHero heading={cdCopy.heading} paragraph={cdCopy.paragraph} image={cdImages.image1}></SectionHero> */}
-        <SectionTextAndImage heading={cdCopy.heading} paragraph={cdCopy.paragraph} image={cdImages.image8}></SectionTextAndImage>
+        {/* <SectionHero
+          heading={cdCopy.sectionTextAndImage_Heading}
+          paragraph={cdCopy.sectionTextAndImage_Paragraph}
+          image={cdImages.image8}
+          logo={cdImages.logo}
+        ></SectionHero> */}
+        <SectionTextAndImage 
+          heading={cdCopy.sectionTextAndImage_Heading}
+          paragraph={cdCopy.sectionTextAndImage_Paragraph}
+          image={cdImages.image8}
+          buttonPrimaryProps={buttonPrimaryProps}
+          buttonSecondaryProps={buttonSecondaryProps}
+          ></SectionTextAndImage>
         <Footer></Footer>
       </div>
     </>

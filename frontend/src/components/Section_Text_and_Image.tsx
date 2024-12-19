@@ -1,22 +1,5 @@
-
-const cdImages = {
-  image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
-  image2: '/src/assets/images/mohamed-marey-M9mRKGW9L30-unsplash.jpg',
-  image3: '/src/assets/images/james-sandbrook-h0-lwHj7heI-unsplash.jpg',
-  image4: '/src/assets/images/mika-baumeister-dp9AxaKHdVg-unsplash.png',
-  image5: '/src/assets/images/steve-johnson-hokONTrHIAQ-unsplash.jpg',
-  image6: '/src/assets/images/david-dvoracek-2kWxMl5IWTA-unsplash.jpg',
-  image7: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png',
-  image8: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
-  image9: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
-
-};
-
-const cdCopy = {
-  textAndImageHeading1: 'Heading 1: Lorem Ipsum',
-  textAndImageParagraph1: 'Paragraph 1: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
-};
-
+import Button_primary from "./buttons/button_primary";
+import Button_secondary from "./buttons/button_secondary";
 
 const cdColors = {
   primaryColor: '#98BB48',
@@ -40,13 +23,30 @@ const cdColors = {
   tertiaryFontColor: '#D6D5CB'
 };
 
+const cdCopy = {
+  buttonPrimaryCaption: '',
+  buttonPrimaryUrl: '',
+  buttonSecondaryCaption: '',
+  buttonSecondaryUrl: '',
+};
+
 interface SectionTextAndImageProps {
   paragraph: string;
   image: string;
   heading: string;
+  buttonPrimaryProps: {
+    buttonPrimaryCaption: string;
+    buttonPrimaryLink: string;
+  };
+  buttonSecondaryProps: {
+    buttonSecondaryCaption: string;
+    buttonSecondaryLink: string;
+  };
 }
 
-function SectionTextAndImage({ paragraph, image, heading }: SectionTextAndImageProps) {
+
+
+function SectionTextAndImage({ paragraph, image, heading, buttonPrimaryProps, buttonSecondaryProps }: SectionTextAndImageProps) {
   return (
     <>
       <div className='min-h-screen flex flex-col justify-center items-center' >
@@ -58,35 +58,22 @@ function SectionTextAndImage({ paragraph, image, heading }: SectionTextAndImageP
             <div className="flex flex-col p-8 h-auto w-auto justify-center items-start md:full ">
               <h1 style={{ color: cdColors.secondaryFontColor }}>{heading}</h1>
               <br></br>
-              <p className="">{paragraph}</p> 
+              <p className="">{paragraph}</p>
+              <br></br>
+              <Button_primary buttonPrimaryCaption={buttonPrimaryProps.buttonPrimaryCaption} buttonPrimaryUrl={cdCopy.buttonPrimaryUrl}></Button_primary>
+              <Button_secondary buttonSecondaryCaption={buttonSecondaryProps.buttonSecondaryCaption} buttonSecondaryUrl={cdCopy.buttonSecondaryUrl}></Button_secondary>
             </div>
           </div>  
           
           <div className="flex flex-col h-fit m-6 w-auto justify-around items-center md:h-fit md:w-7/12">
             <img className='h-fit p-6 md:p-18' src={image} alt="Placeholder"></img>
           </div>
+
           
         </div>
 
       </div>
     
-      {/* <div className='min-h-screen mt-10 relative px-2 2xl:px-20' style={{ backgroundColor: cdColors.secondaryColor }}>
-        <div className='flex flex-col h-screen justify-around items-start md:flex-row bg-orange-400'>
-          <div className="flex flex-col justify-around items-start h-fit w-full  bg-red-400">
-            <h2>Heading</h2>
-            <p>Paragraph</p>
-            <ul>List
-              <li>item</li>
-              <li>item</li>
-              <li>item</li>
-            </ul>
-          </div>
-          <br></br>
-          <div className="flex flex-col justify-around items-center h-fit w-full  bg-blue-400">
-            <img></img>
-          </div>
-        </div>
-        </div> */}
     </>
   )
 }

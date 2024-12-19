@@ -17,6 +17,10 @@ const cdCopy = {
   card4Paragraph1: 'Paragraph 1: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
   card5Heading1: 'Heading 1: Lorem Ipsum',
   card5Paragraph1: 'Paragraph 1: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+  buttonPrimaryCaption: 'test123',
+  buttonPrimaryUrl: 'about',
+  buttonSecondaryCaption: 'test456',
+  buttonSecondaryUrl: 'about',
 };
 
 const cdColors = {
@@ -40,6 +44,7 @@ const cdColors = {
   secondaryFontColor: '#817E72',
   tertiaryFontColor: '#D6D5CB'
 };
+
 
 function SectionCards() {
   return (
@@ -66,8 +71,8 @@ function SectionCards() {
           <p className="text-lg font-normal">{cdCopy.card1Paragraph1}</p>
           <br></br>
           <br></br>
-          <Button_primary caption="Mehr erfahren" buttonPrimaryUrl="about"></Button_primary>
-          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
+          <Button_primary buttonPrimaryCaption={cdCopy.buttonPrimaryCaption} buttonPrimaryUrl={cdCopy.buttonPrimaryUrl}></Button_primary>
+          <Button_secondary buttonSecondaryCaption={cdCopy.buttonSecondaryCaption} buttonSecondaryUrl={cdCopy.buttonSecondaryUrl}></Button_secondary>
         </div>
       </div>
 
@@ -87,8 +92,8 @@ function SectionCards() {
           <p className="text-lg font-normal">{cdCopy.card2Paragraph1}</p>
           <br></br>
           <br></br>
-          <Button_primary caption="Mehr erfahren" buttonPrimaryUrl="about"></Button_primary>
-          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
+          <Button_primary buttonPrimaryCaption={cdCopy.buttonPrimaryCaption} buttonPrimaryUrl={cdCopy.buttonPrimaryUrl}></Button_primary>
+          <Button_secondary buttonSecondaryCaption={cdCopy.buttonSecondaryCaption} buttonSecondaryUrl={cdCopy.buttonSecondaryUrl}></Button_secondary>
         </div>
       </div>
 
@@ -113,8 +118,8 @@ function SectionCards() {
           <p className="text-lg font-normal">{cdCopy.card3Paragraph1}</p>
           <br></br>
           <br></br>
-          <Button_primary caption="Mehr erfahren" buttonPrimaryUrl="about"></Button_primary>
-          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
+          <Button_primary buttonPrimaryCaption={cdCopy.buttonPrimaryCaption} buttonPrimaryUrl={cdCopy.buttonPrimaryUrl}></Button_primary>
+          <Button_secondary buttonSecondaryCaption={cdCopy.buttonSecondaryCaption} buttonSecondaryUrl={cdCopy.buttonSecondaryUrl}></Button_secondary>
         </div>
       </div>
 
@@ -134,8 +139,8 @@ function SectionCards() {
           <p className="text-lg font-normal">{cdCopy.card4Paragraph1}</p>
           <br></br>
           <br></br>
-          <Button_primary caption="Mehr erfahren" buttonPrimaryUrl="about"></Button_primary>
-          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
+          <Button_primary buttonPrimaryCaption={cdCopy.buttonPrimaryCaption} buttonPrimaryUrl={cdCopy.buttonPrimaryUrl}></Button_primary>
+          <Button_secondary buttonSecondaryCaption={cdCopy.buttonSecondaryCaption} buttonSecondaryUrl={cdCopy.buttonSecondaryUrl}></Button_secondary>
         </div>
       </div>
 
@@ -160,8 +165,8 @@ function SectionCards() {
           <p className="text-lg font-normal">{cdCopy.card4Paragraph1}</p>
           <br></br>
           <br></br>
-          <Button_primary caption="Mehr erfahren" buttonPrimaryUrl="about"></Button_primary>
-          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
+          <Button_primary buttonPrimaryCaption={cdCopy.buttonPrimaryCaption} buttonPrimaryUrl={cdCopy.buttonPrimaryUrl}></Button_primary>
+          <Button_secondary buttonSecondaryCaption={cdCopy.buttonSecondaryCaption} buttonSecondaryUrl={cdCopy.buttonSecondaryUrl}></Button_secondary>
         </div>
       </div>
 
