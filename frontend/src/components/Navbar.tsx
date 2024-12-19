@@ -83,17 +83,14 @@ const Navbar = () => {
 
         <div className="flex flex-row justify-end items-center ">
 
-        <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
+          <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
+            <img className="" src={Phone}></img>
+            <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
+          </div>
+          {/* <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary> */}
 
-          <div className="flex flex-row items-center justify-end">
-            <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
-              <img className="" src={Phone}></img>
-              <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
-            </div>
-
-            <div className="md:hidden">
-              <ToggleHamburger></ToggleHamburger>
-            </div>
+          <div className="">
+            <ToggleHamburger></ToggleHamburger>
           </div>
 
         </div>
@@ -112,14 +109,19 @@ const Navbar = () => {
         <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
-            <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
-              <img className="" src={Phone}></img>
-              <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
-            </div>
+
+
+
+          <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
+            <img className="" src={Phone}></img>
+            <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
+          </div>
+          {/* <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary> */}
 
             <div className="">
               <ToggleHamburger></ToggleHamburger>
             </div>
+
           </div>
 
         </div>
