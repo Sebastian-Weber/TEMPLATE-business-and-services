@@ -1,6 +1,14 @@
 
 const cdImages = {
-  imageAndTextImage: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png'
+  image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
+  image2: '/src/assets/images/mohamed-marey-M9mRKGW9L30-unsplash.jpg',
+  image3: '/src/assets/images/james-sandbrook-h0-lwHj7heI-unsplash.jpg',
+  image4: '/src/assets/images/mika-baumeister-dp9AxaKHdVg-unsplash.png',
+  image5: '/src/assets/images/steve-johnson-hokONTrHIAQ-unsplash.jpg',
+  image6: '/src/assets/images/david-dvoracek-2kWxMl5IWTA-unsplash.jpg',
+  image7: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png',
+  image8: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
+  image9: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
 
 };
 
@@ -33,12 +41,12 @@ const cdColors = {
 };
 
 interface SectionTextAndImageProps {
-  text: string;
+  paragraph: string;
   image: string;
-  heading2: string;
+  heading: string;
 }
 
-function SectionTextAndImage({ text, image, heading2 }: SectionTextAndImageProps) {
+function SectionTextAndImage({ paragraph, image, heading }: SectionTextAndImageProps) {
   return (
     <>
       <div className='min-h-screen mt-10 px-2 2xl:px-20' style={{ backgroundColor:cdColors.secondaryColor }}>
@@ -47,8 +55,8 @@ function SectionTextAndImage({ text, image, heading2 }: SectionTextAndImageProps
           
           <div className="flex flex-col h-1/2 w-full justify-around items-center md:items-center md:w-5/12 md:h-full bg-red-400">
             <div className="flex flex-col w-fit h-fit justify-center md:w-5/12">
-              <h2 style={{ color: cdColors.tertiaryFontColor }}>{heading2}</h2>
-              <p>{text}</p>
+              <h2 style={{ color: cdColors.tertiaryFontColor }}>{heading}</h2>
+              <p>{paragraph}</p>
             </div>
           </div>  
           

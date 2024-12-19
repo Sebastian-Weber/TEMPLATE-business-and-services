@@ -84,7 +84,7 @@ const Section_Gallery: React.FC<SectionGalleryProps> = ({ image1, image2, image3
         </div> */}
 
 
-        <div className=" grid grid-cols-12 gap-6 w-full bg-red-500">
+        <div className="grid grid-cols-12 gap-6 w-full bg-red-500">
 
           <div className="col-start-1 col-span-2 col-end-5">
             <img className="h-full w-auto" src={image1}></img>

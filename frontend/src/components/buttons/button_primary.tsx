@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const cdColors = {
   primaryColor: '#98BB48',
   secondaryColor: '#FFF1B7',
@@ -24,11 +26,14 @@ const cdColors = {
 
 interface ButtonPrimaryProps {
   caption: string;
+  buttonPrimaryUrl: string;
 }
 
-function Button_primary({ caption }: ButtonPrimaryProps) {
+function Button_primary({ caption, buttonPrimaryUrl }: ButtonPrimaryProps) {
     return (
-      <button  style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }}className=" font-semibold text-sm px-4 mx-6 rounded-md py-2 hover:opacity-50 transition ease-in-out delay-50"  >{caption}</button>
+      <Link to={`/${buttonPrimaryUrl}`}>
+        <button style={{ color: cdColors.secondaryColor, backgroundColor: cdColors.primaryColor }} className="font-semibold text-sm px-4 py-2 mx-4 my-2 rounded-md hover:opacity-50 transition ease-in-out delay-50">{caption}</button>
+      </Link>
     )
   }
   

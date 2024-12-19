@@ -1,3 +1,6 @@
+import Button_primary from "./buttons/button_primary";
+import Button_secondary from "./buttons/button_secondary";
+
 const cdImages = {
   placeholderImage: '/src/assets/images/Placeholder600x400.png'
 
@@ -23,16 +26,16 @@ const cdColors = {
   secondaryAccentColor: '',
   primaryBackgroundColorDark: '#165287',
   primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#ACC6DD',
+  primaryBackgroundColorLight: '#E9D9D3',
   secondaryBackgroundColorDark: '#165287',
   secondaryBackgroundColorDefaukt: '#165287',
-  secondaryBackgroundColorLight: '#165287',
+  secondaryBackgroundColorLight: '#BBD3C6',
   tertiaryBackgroundColorDark: '#165287',
   tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#165287',
+  tertiaryBackgroundColorLight: '#B5CFE6',
   quaternaryBackgroundColorDark: '#165287',
   quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#165287',
+  quaternaryBackgroundColorLight: '#F3EBC9',
   primaryFontColor: '#191A1E',
   secondaryFontColor: '#817E72',
   tertiaryFontColor: '#D6D5CB'
@@ -42,20 +45,20 @@ function SectionCards() {
   return (
 
   <>
-    <div className='min-h-screen mt-10 px-2 md:p-20 2xl:px-20' style={{ backgroundColor:cdColors.secondaryColor }}>
+    <div className='min-h-screen mt-10 px-2 md:p-4 2xl:px-20 bg-white'>
 
     {/* first row */}
-    <div className="flex flex-col justify-around items-center md:px-2 md:flex-row bg-orange-400">
+    <div className="flex flex-col justify-around items-center md:px-2 md:flex-row">
       
-      {/* 1. box */}
-      <div className="flex flex-col lg:w-2/3 lg:flex-col m-2 bg-pink-200">
+      {/* card 1 */}
+      <div className="flex flex-col p-4 lg:w-2/3 lg:flex-col m-2 bg-pink-200" style={{ backgroundColor:cdColors.primaryBackgroundColorLight }}>
         <div className="flex flex-row md:flex-col items-center">
           <div className="flex flex-row justify-center items-center">
             <img className="w-full" src={cdImages.placeholderImage} alt="Placeholder"></img>
           </div>
           <br></br>
         </div>
-        <div className="w-fit">
+        <div className="">
           <div className="flex flex-col w-fit h-fit justify-center md:w-5/12">
             <h2 className="" style={{ color: cdColors.primaryFontColor }}>{cdCopy.card1Heading1}</h2>
             <br></br>
@@ -63,12 +66,13 @@ function SectionCards() {
           <p className="text-lg font-normal">{cdCopy.card1Paragraph1}</p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <Button_primary caption="Mehr erfahren" buttonPrimaryUrl="about"></Button_primary>
+          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
         </div>
       </div>
 
-      {/* 2. box */}
-      <div className="flex flex-col lg:w-2/3 lg:flex-col m-2 bg-pink-200">
+      {/* card 2*/}
+      <div className="flex flex-col p-4 lg:w-2/3 lg:flex-col m-2 bg-pink-200" style={{ backgroundColor:cdColors.secondaryBackgroundColorLight }}>
         <div className="flex flex-row md:flex-col items-center">
           <div className="flex flex-row justify-center items-center">
             <img className="w-full" src={cdImages.placeholderImage} alt="Placeholder"></img>
@@ -83,17 +87,18 @@ function SectionCards() {
           <p className="text-lg font-normal">{cdCopy.card2Paragraph1}</p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <Button_primary caption="Mehr erfahren" buttonPrimaryUrl="about"></Button_primary>
+          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
         </div>
       </div>
 
     </div>
 
     {/* second row */}
-    <div className="flex flex-col justify-around items-center md:px-2 md:flex-row bg-orange-300">
+    <div className="flex flex-col justify-around items-center md:px-2 md:flex-row">
       
-      {/* 3. box */}
-      <div className="flex flex-col lg:w-2/3 lg:flex-col m-2 bg-pink-200">
+      {/* card 3 */}
+      <div className="flex flex-col p-4 lg:w-2/3 lg:flex-col m-2" style={{ backgroundColor:cdColors.tertiaryBackgroundColorLight }}>
         <div className="flex flex-row md:flex-col items-center">
           <div className="flex flex-row justify-center items-center">
             <img className="w-full" src={cdImages.placeholderImage} alt="Placeholder"></img>
@@ -108,19 +113,20 @@ function SectionCards() {
           <p className="text-lg font-normal">{cdCopy.card3Paragraph1}</p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <Button_primary caption="Mehr erfahren" buttonPrimaryUrl="about"></Button_primary>
+          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
         </div>
       </div>
 
-      {/* 4. box */}
-      <div className="flex flex-col lg:w-2/3 lg:flex-col m-2 bg-pink-200">
+      {/* card 4 */}
+      <div className="flex flex-col p-4 lg:w-2/3 lg:flex-col m-2" style={{ backgroundColor:cdColors.quaternaryBackgroundColorLight }}>
         <div className="flex flex-row md:flex-col items-center">
           <div className="flex flex-row justify-center items-center">
             <img className="w-full" src={cdImages.placeholderImage} alt="Placeholder"></img>
           </div>
           <br></br>
         </div>
-        <div className="w-fit">
+        <div className="w-full">
           <div className="flex flex-col w-fit h-fit justify-center md:w-5/12">
             <h2 className="" style={{ color: cdColors.primaryFontColor }}>{cdCopy.card4Heading1}</h2>
             <br></br>
@@ -128,17 +134,19 @@ function SectionCards() {
           <p className="text-lg font-normal">{cdCopy.card4Paragraph1}</p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <Button_primary caption="Mehr erfahren" buttonPrimaryUrl="about"></Button_primary>
+          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
         </div>
       </div>
 
     </div>
 
     {/* third row */}
-    <div className="flex flex-col justify-around items-center md:px-2 md:flex-row bg-orange-400">
-
-    <div className="flex flex-col lg:w-full lg:flex-col m-2 bg-purple-200">
-        <div className="flex flex-row md:flex-col items-start justify-center">
+    <div className="flex flex-col p-4 justify-around items-center md:px-2 md:flex-row">
+      
+      {/* card 5 */}
+      <div className="flex flex-col p-4 lg:w-full lg:flex-col m-2" style={{ backgroundColor:cdColors.quaternaryBackgroundColorLight }}>
+        <div className="flex flex-row w-fit md:flex-col items-center">
           <div className="flex flex-row justify-center items-center">
             <img className="w-full" src={cdImages.placeholderImage} alt="Placeholder"></img>
           </div>

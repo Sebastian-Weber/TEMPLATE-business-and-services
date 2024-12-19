@@ -36,11 +36,12 @@ const cdColors = {
 interface SectionHeroProps {
   primaryColor?: string;
   secondaryColor?: string;
+  heading: string;
+  paragraph: string;
+  image: string;
 }
 
-console.log(cdImages.heroImage);
-
-function SectionHero({ secondaryColor = cdColors.secondaryColor }: SectionHeroProps) {
+function SectionHero({ heading, paragraph, image, secondaryColor = cdColors.secondaryColor }: SectionHeroProps) {
   return (
     <>
       <div className='min-h-full mt-10 ' style={{ backgroundColor: secondaryColor }}>
@@ -52,13 +53,13 @@ function SectionHero({ secondaryColor = cdColors.secondaryColor }: SectionHeroPr
               <img className=' ' src={cdImages.heroLogotype} alt="Placeholder"></img>
             </div>
             <div className="flex flex-col p-6 w-auto h-auto justify-center">
-              <h1 style={{ color: cdColors.secondaryFontColor }}>{cdCopy.heroHeading1}</h1>
-              {/* <p>{cdCopy.heroParagraph1}</p> */}
+              <h1 style={{ color: cdColors.secondaryFontColor }}>{heading}</h1>
+              <p>{paragraph}</p> 
             </div>
           </div>  
           
           <div className="flex flex-col h-fill w-auto justify-around items-center md:w-auto md:h-full bg-blue-400">
-            <img className='object-cover md:w-full md:h-full' src={cdImages.heroImage} alt="Placeholder"></img>
+            <img className='object-cover md:w-full md:h-full' src={image} alt="Placeholder"></img>
           </div>
           
         </div>

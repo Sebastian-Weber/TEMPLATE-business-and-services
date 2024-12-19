@@ -15,12 +15,14 @@ const cdImages = {
   image5: '/src/assets/images/steve-johnson-hokONTrHIAQ-unsplash.jpg',
   image6: '/src/assets/images/david-dvoracek-2kWxMl5IWTA-unsplash.jpg',
   image7: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png',
+  image8: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
+  image9: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
 
 };
 
 const cdCopy = {
-  heading2: 'Heading 1: Lorem Ipsum Home test',
-  text: 'Paragraph 1: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
+  heading: 'Heading 1: Lorem Ipsum Home test',
+  paragraph: 'Paragraph 1: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
 };
 
 
@@ -29,10 +31,10 @@ function Home() {
     <>
     <div className="">
       <Header></Header>
-      <SectionHero></SectionHero>
+      <SectionHero heading={cdCopy.heading} paragraph={cdCopy.paragraph} image={cdImages.image9}></SectionHero>
       <SectionTextAndImage 
-        heading2={cdCopy.heading2}
-        text={cdCopy.text}
+        heading={cdCopy.heading}
+        paragraph={cdCopy.paragraph}
         image={cdImages.image1}
         ></SectionTextAndImage>
       <SectionCards></SectionCards>

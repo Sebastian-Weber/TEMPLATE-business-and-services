@@ -6,7 +6,8 @@ import Phone from '/src/assets/Phone.svg'
 
 import ToggleHamburger from './buttons/toggle_hamburger';
 import Button_primary from './buttons/button_primary';
-import Navbar_xl_dropdown_template from './dropdowns/navbar_xl_dropdown_template';
+import Button_secondary from './buttons/button_secondary';
+import Navbar_xl_dropdown_template from './dropdowns/Navbar_xl_dropdown_template';
 
 const cdImages = {
   image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
@@ -65,19 +66,6 @@ const Navbar = () => {
           <Link to="/" >
             <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
           </Link>
-
-          {/* Hamburger icon */}
-          {/* <button onClick={() => { setIsOpen(!isOpen); setOverlayVisible(!isOverlayVisible); }}>
-            <div className={`${genericHamburgerLine} ${isOpen 
-              ? "rotate-45 translate-y-1 group-hover:opacity-100"
-              : "opacity-100 group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryColor }}/>
-              <div className={`${genericHamburgerLine} ${isOpen 
-                ? "opacity-0" 
-                : "group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryColor }}/>
-              <div className={`${genericHamburgerLine} ${ isOpen
-                ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
-                : "opacity-100 group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryColor }}/>
-          </button> */}
         
             <div className="">
               <ToggleHamburger></ToggleHamburger>
@@ -94,10 +82,8 @@ const Navbar = () => {
         </Link>   
 
         <div className="flex flex-row justify-end items-center ">
-          {/* <button className="" style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }}>Kontakt</button> */}
-          <div>
-            <Button_primary caption='Kontakt'  ></Button_primary>
-          </div>
+
+        <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
@@ -122,10 +108,8 @@ const Navbar = () => {
         </Link>   
 
         <div className="flex flex-row justify-end items-center ">
-          {/* <button className="" style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }}>Kontakt</button> */}
-          <div>
-            <Button_primary caption='Kontakt'></Button_primary>
-          </div>
+
+        <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
@@ -160,7 +144,7 @@ const Navbar = () => {
         </Link>
 
         <Navbar_xl_dropdown_template DropdownCaption='Leistungen' DropdownItem1Heading='Test_Item_1' DropdownItem1Image={cdImages.image1} DropdownItem1Subheading='Test_Item_1_Subheading' DropdownItem1Url='Elektro-Dienstleistungen-Privatkunden' caption='Placeholder'></Navbar_xl_dropdown_template>
-        <Navbar_xl_dropdown_template DropdownCaption='Energielösungen' DropdownItem1heading='Geschäftskunden_Test_Item_1' DropdownItem1url='Test_Item_1' caption='Placeholder'></Navbar_xl_dropdown_template>
+        <Navbar_xl_dropdown_template DropdownCaption='Energielösungen' DropdownItem1Heading='Geschäftskunden_Test_Item_1' DropdownItem1Image={cdImages.image1} DropdownItem1Subheading='Test_Item_1_Subheading' DropdownItem1Url='Test_Item_1' caption='Placeholder'></Navbar_xl_dropdown_template>
 
         <Link className="flex flex-row items-start" to="/about">
           <div className="font-fredoka text-xl font-medium menu-hover" style={{ color: cdColors.secondaryColor }}>
@@ -173,10 +157,8 @@ const Navbar = () => {
         </div>        
 
         <div className="flex flex-row justify-end items-center ">
-          {/* <button className="" style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }}>Kontakt</button> */}
-          <div>
-            <Button_primary caption='Kontakt'  ></Button_primary>
-          </div>
+
+          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">

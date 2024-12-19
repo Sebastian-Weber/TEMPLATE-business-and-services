@@ -16,16 +16,7 @@ function SectionDivider() {
     <div className="h-64 w-full" style={{backgroundImage: 
     'repeating-linear-gradient(-45deg, transparent, transparent 51px, #d6c722 51px, #d6c722 102px)',
 backgroundColor: '#4017ce'}}>
-    </div>
-
-    <div className="h-64 w-full" style={{backgroundImage: 
-    'repeating-linear-gradient(-45deg, transparent, transparent 51px, #d6c722 51px, #d6c722 102px)',
-backgroundColor: '#4017ce'}}>
-    </div>
-
-
-    
-    
+    </div>    
     </>
   )
 }
