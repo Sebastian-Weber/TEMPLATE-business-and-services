@@ -48,7 +48,7 @@ function SectionHero({ heading, paragraph, image, secondaryColor = cdColors.seco
 
       <div className="flex flex-col h-screen w-fit justify-around items-center md:flex-row">
           
-          <div className="flex flex-col mt-24 p-4 justify-center items-center h-1/2 bg-green-500 w-full  md:h-fit md:w-8/12 md:items-center">
+          <div className="flex flex-col mt-24 p-4 justify-center items-center h-1/2 bg-green-500 w-full  md:h-fit md:w-9/12 md:items-center">
             <div className="flex flex-col h-auto justify-center">
               <img className=' object-cover' src={cdImages.heroLogotype} alt="Placeholder"></img>
             </div>

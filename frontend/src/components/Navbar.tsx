@@ -63,19 +63,19 @@ const Navbar = () => {
 
   return (
     <>
-        {/* small */}
-        <div className="fixed md:hidden flex flex-row justify-between items-center w-full py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
-          
-          {/* Firmenlogo */}
-          <Link to="/" >
-            <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
-          </Link>
+      {/* small */}
+      <div className="fixed md:hidden flex flex-row justify-between items-center w-full py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
         
-            <div className="">
-              <ToggleHamburger></ToggleHamburger>
-            </div>
+        {/* Firmenlogo */}
+        <Link to="/" >
+          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+        </Link>
+      
+          <div className="">
+            <ToggleHamburger></ToggleHamburger>
+          </div>
 
-        </div>
+      </div>
 
       {/* Medium */}
       <div className="fixed hidden md:flex flex-row justify-between items-center w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
@@ -116,7 +116,7 @@ const Navbar = () => {
 
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
               <img className="" src={Phone}></img>
-              <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
+              <div className="text-xl cursor-default" style={{ color: cdColors.secondaryColor}}>+49 12345 6789</div>
             </div>
 
             <div className="">
@@ -134,14 +134,14 @@ const Navbar = () => {
 
         {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-10" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          <img className="w-18 -mt-6"  src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>
 
         <div className="flex flex-row justify-start items-center mx-4">
 
         {/* Ueber uns  */}
         <Link className="" to="/about">
-          <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
+          <div className="text-xl font-medium menu-hover mx-2 px-2" style={{ color: cdColors.secondaryColor }}>
             Über uns
           </div>
         </Link>
@@ -196,11 +196,12 @@ const Navbar = () => {
           DropdownItem5Url='Elektro-Dienstleistungen-Privatkunden' 
         ></Navbar_xl_dropdown_template>
 
-        <Link className="flex flex-row items-start" to="/about">
+        {/* Offene Stellen */}
+        {/* <Link className="flex flex-row items-start" to="/about">
           <div className="font-fredoka text-xl font-medium menu-hover" style={{ color: cdColors.secondaryColor }}>
-            Jobs
+            Offene Stellen
           </div>
-        </Link>
+        </Link> */}
 
         </div>
 

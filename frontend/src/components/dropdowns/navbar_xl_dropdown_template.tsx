@@ -147,9 +147,9 @@ function Navbar_xl_dropdown_template({
     {/* Dropdown Template */}
     <div className="relative group cursor-pointer mx-2">
 
-        <div className="relative flex flex-row items-center justify-between my-2">
+        <div className="relative flex flex-row items-center justify-between">
             <Link to="/">
-                <div className="text-xl font-medium menu-hover my-2 py-2" style={{ color: cdColors.secondaryColor }} >
+                <div className="text-xl font-medium menu-hover my-2" style={{ color: cdColors.secondaryColor }} >
                     {DropdownCaption}
                 </div>
             </Link>
@@ -161,7 +161,7 @@ function Navbar_xl_dropdown_template({
         </div>
 
         {/*  Overlay menu */}
-        <div className="left-0 top-22 invisible fixed w-screen items-center p-4 justify-start group-hover:visible" style={{ backgroundColor: cdColors.primaryColor, color: cdColors.secondaryColor }}>
+        <div className="left-0 top-22 invisible fixed w-screen items-center p-6 justify-start group-hover:visible" style={{ backgroundColor: cdColors.primaryColor, color: cdColors.secondaryColor }}>
             
             <div className="flex flex-row justify-evenly items-start">
 
