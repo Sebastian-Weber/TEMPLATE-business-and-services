@@ -49,19 +49,21 @@ interface SectionTextAndImageProps {
 function SectionTextAndImage({ paragraph, image, heading }: SectionTextAndImageProps) {
   return (
     <>
-      <div className='min-h-screen mt-10 px-2 2xl:px-20' style={{ backgroundColor:cdColors.secondaryColor }}>
+      <div className='min-h-screen flex flex-col justify-center items-center' >
 
-        <div className="flex flex-col h-screen justify-around items-center md:flex-row bg-orange-400">
+        <div className="flex flex-col h-fulljustify-around items-center md:flex-row">
           
-          <div className="flex flex-col h-1/2 w-full justify-around items-center md:items-center md:w-5/12 md:h-full bg-red-400">
-            <div className="flex flex-col w-fit h-fit justify-center md:w-5/12">
-              <h2 style={{ color: cdColors.tertiaryFontColor }}>{heading}</h2>
-              <p>{paragraph}</p>
+        <div className="flex flex-col p-5 justify-center items-center h-1/2 w-full  md:m-12 md:h-fit md:w-9/12 md:items-center">
+            <br></br>
+            <div className="flex flex-col p-8 h-auto w-auto justify-center items-start md:full ">
+              <h1 style={{ color: cdColors.secondaryFontColor }}>{heading}</h1>
+              <br></br>
+              <p className="">{paragraph}</p> 
             </div>
           </div>  
           
-          <div className="flex flex-col h-fit w-auto justify-around items-center md:h-fit md:w-7/12 bg-blue-400">
-            <img className='h-fit' src={image} alt="Placeholder"></img>
+          <div className="flex flex-col h-fit m-6 w-auto justify-around items-center md:h-fit md:w-7/12">
+            <img className='h-fit p-6 md:p-18' src={image} alt="Placeholder"></img>
           </div>
           
         </div>
