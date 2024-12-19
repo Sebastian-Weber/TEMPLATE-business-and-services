@@ -84,7 +84,7 @@ function Footer() {
         {/* xl */}
         <div className="hidden xl:flex flex-row justify-center items-center bottom-0">
           <div className="flex flex-row justify-center items-center py-4" style={{ backgroundColor: cdColors.primaryColor }}>
-            <ul className="flex flex-row justify-center items-center w-screen">
+            <ul className="flex flex-row justify-center items-center w-screen ">
 
              {/* Firmenlogo */}
               <li className="">

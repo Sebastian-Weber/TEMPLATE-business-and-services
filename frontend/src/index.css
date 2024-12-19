@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide horizontal scrollbar */
+body {
+  overflow-x: hidden;
+}
+
+/* Optional: Hide horizontal scrollbar for specific elements */
+.some-element {
+  overflow-x: hidden;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
