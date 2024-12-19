@@ -44,13 +44,13 @@ interface SectionHeroProps {
 function SectionHero({ heading, paragraph, image, secondaryColor = cdColors.secondaryColor }: SectionHeroProps) {
   return (
     <>
-      <div className='min-h-full mt-10 ' style={{ backgroundColor: secondaryColor }}>
+      <div className='min-h-full mt-10' style={{ backgroundColor: secondaryColor }}>
 
-      <div className="flex flex-col h-screen justify-around items-center md:flex-row">
+      <div className="flex flex-col h-screen w-fit justify-around items-center md:flex-row">
           
-          <div className="flex flex-col mt-24 p-4 w-full justify-center items-center md:w-9/12 md:items-center md:h-full">
+          <div className="flex flex-col mt-24 p-4 justify-center items-center h-1/2 bg-green-500 w-full  md:h-fit md:w-8/12 md:items-center">
             <div className="flex flex-col h-auto justify-center">
-              <img className=' ' src={cdImages.heroLogotype} alt="Placeholder"></img>
+              <img className=' object-cover' src={cdImages.heroLogotype} alt="Placeholder"></img>
             </div>
             <div className="flex flex-col p-6 w-auto h-auto justify-center">
               <h1 style={{ color: cdColors.secondaryFontColor }}>{heading}</h1>
@@ -58,8 +58,8 @@ function SectionHero({ heading, paragraph, image, secondaryColor = cdColors.seco
             </div>
           </div>  
           
-          <div className="flex flex-col h-fill w-auto justify-around items-center md:w-auto md:h-full bg-blue-400">
-            <img className='object-cover md:w-full md:h-full' src={image} alt="Placeholder"></img>
+          <div className="flex flex-col h-fit justify-around items-center  md:h-full md:w-full object-cover  bg-blue-400">
+            <img className='h-72 w-screen object-cover md:w-full md:h-full' src={image} alt="Placeholder"></img>
           </div>
           
         </div>

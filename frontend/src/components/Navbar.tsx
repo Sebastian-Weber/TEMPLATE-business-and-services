@@ -17,6 +17,10 @@ const cdImages = {
   image5: '/src/assets/images/steve-johnson-hokONTrHIAQ-unsplash.jpg',
   image6: '/src/assets/images/david-dvoracek-2kWxMl5IWTA-unsplash.jpg',
   image7: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png',
+  image8: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
+  image9: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
+  image10: '/src/assets/images/ernys-grI-lghNqMI-unsplash.jpg',
+  image11: '/src/assets/images/tekton-ndJlw4Bz-1Y-unsplash.jpg',
 
 };
 
@@ -84,10 +88,10 @@ const Navbar = () => {
         <div className="flex flex-row justify-end items-center ">
 
           <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
-            <img className="" src={Phone}></img>
+              <img className="" src={Phone}></img>
             <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
           </div>
-          {/* <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary> */}
+          {/* <Button_secondary caption="Kontakt" buttonSecondaryUrl="About"></Button_secondary> */}
 
           <div className="">
             <ToggleHamburger></ToggleHamburger>
@@ -106,17 +110,14 @@ const Navbar = () => {
 
         <div className="flex flex-row justify-end items-center ">
 
-        <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
+        <Button_secondary caption="Kontakt" buttonSecondaryUrl="About"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
 
-
-
-          <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
-            <img className="" src={Phone}></img>
-            <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
-          </div>
-          {/* <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary> */}
+            <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
+              <img className="" src={Phone}></img>
+              <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
+            </div>
 
             <div className="">
               <ToggleHamburger></ToggleHamburger>
@@ -145,8 +146,55 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <Navbar_xl_dropdown_template DropdownCaption='Leistungen' DropdownItem1Heading='Test_Item_1' DropdownItem1Image={cdImages.image1} DropdownItem1Subheading='Test_Item_1_Subheading' DropdownItem1Url='Elektro-Dienstleistungen-Privatkunden' caption='Placeholder'></Navbar_xl_dropdown_template>
-        <Navbar_xl_dropdown_template DropdownCaption='Energielösungen' DropdownItem1Heading='Geschäftskunden_Test_Item_1' DropdownItem1Image={cdImages.image1} DropdownItem1Subheading='Test_Item_1_Subheading' DropdownItem1Url='Test_Item_1' caption='Placeholder'></Navbar_xl_dropdown_template>
+        <Navbar_xl_dropdown_template 
+          DropdownCaption='Leistungen'
+          caption='Placeholder'
+          DropdownItem1Heading='Elektro-Dienstleistungen für Privatkunden' 
+          DropdownItem1Image={cdImages.image11} 
+          DropdownItem1Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
+          DropdownItem1Url='Elektro-Dienstleistungen-Privatkunden'
+          DropdownItem2Heading='Elektro-Dienstleistungen für Privatkunden' 
+          DropdownItem2Image={cdImages.image2} 
+          DropdownItem2Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
+          DropdownItem2Url='Elektro-Dienstleistungen-Privatkunden'  
+          DropdownItem3Heading='Elektro-Dienstleistungen für Privatkunden' 
+          DropdownItem3Image={cdImages.image1} 
+          DropdownItem3Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
+          DropdownItem3Url='Elektro-Dienstleistungen-Privatkunden'
+          DropdownItem4Heading='Elektro-Dienstleistungen für Privatkunden' 
+          DropdownItem4Image={cdImages.image3} 
+          DropdownItem4Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
+          DropdownItem4Url='Elektro-Dienstleistungen-Privatkunden'
+          DropdownItem5Heading='Elektro-Dienstleistungen für Privatkunden' 
+          DropdownItem5Image={cdImages.image4} 
+          DropdownItem5Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
+          DropdownItem5Url='Elektro-Dienstleistungen-Privatkunden'  
+
+        ></Navbar_xl_dropdown_template>
+        <Navbar_xl_dropdown_template 
+          DropdownCaption='Energielösungen'
+          caption='Placeholder'
+          DropdownItem1Heading='Elektro-Dienstleistungen für Privatkunden' 
+          DropdownItem1Image={cdImages.image5} 
+          DropdownItem1Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
+          DropdownItem1Url='Elektro-Dienstleistungen-Privatkunden'
+          DropdownItem2Heading='Elektro-Dienstleistungen für Privatkunden' 
+          DropdownItem2Image={cdImages.image6} 
+          DropdownItem2Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
+          DropdownItem2Url='Elektro-Dienstleistungen-Privatkunden'  
+          DropdownItem3Heading='Elektro-Dienstleistungen für Privatkunden' 
+          DropdownItem3Image={cdImages.image7} 
+          DropdownItem3Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
+          DropdownItem3Url='Elektro-Dienstleistungen-Privatkunden'
+          DropdownItem4Heading='Elektro-Dienstleistungen für Privatkunden' 
+          DropdownItem4Image={cdImages.image8} 
+          DropdownItem4Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
+          DropdownItem4Url='Elektro-Dienstleistungen-Privatkunden'
+          DropdownItem5Heading='Elektro-Dienstleistungen für Privatkunden' 
+          DropdownItem5Image={cdImages.image9} 
+          DropdownItem5Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
+          DropdownItem5Url='Elektro-Dienstleistungen-Privatkunden' 
+        ></Navbar_xl_dropdown_template>
 
         <Link className="flex flex-row items-start" to="/about">
           <div className="font-fredoka text-xl font-medium menu-hover" style={{ color: cdColors.secondaryColor }}>
@@ -160,7 +208,7 @@ const Navbar = () => {
 
         <div className="flex flex-row justify-end items-center ">
 
-          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
+          <Button_secondary caption="Kontakt" buttonSecondaryUrl="About"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">

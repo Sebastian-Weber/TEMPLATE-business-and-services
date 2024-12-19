@@ -160,7 +160,8 @@ function SectionCards() {
           <p className="text-lg font-normal">{cdCopy.card4Paragraph1}</p>
           <br></br>
           <br></br>
-          <button className="">Mehr erfahren</button>
+          <Button_primary caption="Mehr erfahren" buttonPrimaryUrl="about"></Button_primary>
+          <Button_secondary caption="Mehr erfahren" buttonSecondaryUrl="About"></Button_secondary>
         </div>
       </div>
 

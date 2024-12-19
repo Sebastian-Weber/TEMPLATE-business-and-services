@@ -29,27 +29,27 @@ const cdCopy = {
 function Home() {
   return (
     <>
-    <div className="">
-      <Header></Header>
-      <SectionHero heading={cdCopy.heading} paragraph={cdCopy.paragraph} image={cdImages.image9}></SectionHero>
-      <SectionTextAndImage 
-        heading={cdCopy.heading}
-        paragraph={cdCopy.paragraph}
-        image={cdImages.image1}
-        ></SectionTextAndImage>
-      <SectionCards></SectionCards>
-      <Section_Gallery 
-        image1={cdImages.image1}
-        image2={cdImages.image2} 
-        image3={cdImages.image3} 
-        image4={cdImages.image4}
-        image5={cdImages.image5}
-        image6={cdImages.image6}
-        image7={cdImages.image7}
-       ></Section_Gallery>
-       <SectionDivider></SectionDivider>
-      <Footer></Footer>
-    </div>
+      <div className="">
+        <Header></Header>
+        <SectionHero heading={cdCopy.heading} paragraph={cdCopy.paragraph} image={cdImages.image9}></SectionHero>
+        <SectionTextAndImage 
+          heading={cdCopy.heading}
+          paragraph={cdCopy.paragraph}
+          image={cdImages.image1}
+          ></SectionTextAndImage>
+        <SectionCards></SectionCards>
+        <Section_Gallery 
+          image1={cdImages.image1}
+          image2={cdImages.image2} 
+          image3={cdImages.image3} 
+          image4={cdImages.image4}
+          image5={cdImages.image5}
+          image6={cdImages.image6}
+          image7={cdImages.image7}
+        ></Section_Gallery>
+        <SectionDivider></SectionDivider>
+        <Footer></Footer>
+      </div>
     </>
   )
 }

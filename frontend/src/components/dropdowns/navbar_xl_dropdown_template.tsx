@@ -4,6 +4,23 @@ import { Link } from "react-router-dom";
 // image resources
 import Placeholder from '/src/assets/images/Placeholder.png'
 
+
+const cdImages = {
+    image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
+    image2: '/src/assets/images/mohamed-marey-M9mRKGW9L30-unsplash.jpg',
+    image3: '/src/assets/images/james-sandbrook-h0-lwHj7heI-unsplash.jpg',
+    image4: '/src/assets/images/mika-baumeister-dp9AxaKHdVg-unsplash.png',
+    image5: '/src/assets/images/steve-johnson-hokONTrHIAQ-unsplash.jpg',
+    image6: '/src/assets/images/david-dvoracek-2kWxMl5IWTA-unsplash.jpg',
+    image7: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png',
+    image8: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
+    image9: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
+    image10: '/src/assets/images/ernys-grI-lghNqMI-unsplash.jpg',
+    image11: '/src/assets/images/tekton-ndJlw4Bz-1Y-unsplash.jpg',
+  
+  };
+  
+
 const cdColors = {
     primaryColor: '#98BB48',
     secondaryColor: '#FFF1B7',
@@ -31,9 +48,9 @@ const Navbar_XL_dropdown_items = [
     // Item 1
     {
     item_1_image: Placeholder,
-    item_1_heading: '1 Placeholder',
+    item_1_heading: 'Elektro-Dienstleistungen für Privatkunden',
     item_1_subheading: '1 Placeholder',
-    item_1_url: '/valid-path-1',
+    item_1_url: '/Elektro-Dienstleistungen-Privatkunden',
     },
     // Item 2
     {
@@ -73,9 +90,57 @@ interface NavbarXlDropdownTemplateProps {
     DropdownItem1Subheading: string;
     DropdownItem1Url: string;
 
+    DropdownItem2Image: string;
+    DropdownItem2Heading: string;
+    DropdownItem2Subheading: string;
+    DropdownItem2Url: string;
+
+    DropdownItem3Image: string;
+    DropdownItem3Heading: string;
+    DropdownItem3Subheading: string;
+    DropdownItem3Url: string;
+
+    DropdownItem4Image: string;
+    DropdownItem4Heading: string;
+    DropdownItem4Subheading: string;
+    DropdownItem4Url: string;
+
+    DropdownItem5Image: string;
+    DropdownItem5Heading: string;
+    DropdownItem5Subheading: string;
+    DropdownItem5Url: string;
+
 }
 
-function Navbar_xl_dropdown_template({ DropdownCaption, DropdownItem1Heading, DropdownItem1Subheading, DropdownItem1Image, DropdownItem1Url }: NavbarXlDropdownTemplateProps)  {
+function Navbar_xl_dropdown_template({ 
+    DropdownCaption, 
+
+    DropdownItem1Heading, 
+    DropdownItem1Subheading, 
+    DropdownItem1Image, 
+    DropdownItem1Url, 
+
+    DropdownItem2Heading, 
+    DropdownItem2Subheading, 
+    DropdownItem2Image, 
+    DropdownItem2Url, 
+
+    DropdownItem3Heading, 
+    DropdownItem3Subheading, 
+    DropdownItem3Image, 
+    DropdownItem3Url, 
+
+    DropdownItem4Heading, 
+    DropdownItem4Subheading, 
+    DropdownItem4Image, 
+    DropdownItem4Url,  
+
+    DropdownItem5Heading, 
+    DropdownItem5Subheading, 
+    DropdownItem5Image, 
+    DropdownItem5Url, 
+
+}: NavbarXlDropdownTemplateProps)  {
   return (
     <>
 
@@ -96,14 +161,14 @@ function Navbar_xl_dropdown_template({ DropdownCaption, DropdownItem1Heading, Dr
         </div>
 
         {/*  Overlay menu */}
-        <div className="left-0 top-22 invisible fixed w-screen items-center justify-start group-hover:visible" style={{ backgroundColor: cdColors.primaryColor, color: cdColors.secondaryColor }}>
+        <div className="left-0 top-22 invisible fixed w-screen items-center p-4 justify-start group-hover:visible" style={{ backgroundColor: cdColors.primaryColor, color: cdColors.secondaryColor }}>
             
             <div className="flex flex-row justify-evenly items-start">
 
                 {/* Menu item 1 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to="#">
-                        <img className="w-64 h-auto" src={DropdownItem1Image}></img>
+                        <img className="h-36 w-64 object-cover" src={DropdownItem1Image}></img>
                     </Link>
                     <br></br>
                     <Link to={`/${DropdownItem1Url}`}>
@@ -122,117 +187,93 @@ function Navbar_xl_dropdown_template({ DropdownCaption, DropdownItem1Heading, Dr
                     </Link>
                 </div>  
 
-                {/* Menu item 2 */}
+                {/* Menu item 1 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
-                    <Link to="/">
-                        {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <img key={index} className="w-64 h-auto" src={Dropdownitem.item_2_image}></img>
-                        ))}
+                    <Link to="#">
+                        <img className="h-36 w-64 object-cover" src={DropdownItem2Image}></img>
                     </Link>
                     <br></br>
-                    <Link to="/valid-path-2">
-                        <div className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <div key={index} className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                                {Dropdownitem.item_2_heading}
+                    <Link to={`/${DropdownItem2Url}`}>
+                        <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                            <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                                {DropdownItem2Heading}
                             </div>
-                            ))}
                         </div>
                     </Link>
                     <Link to="#">
-                        <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <div key={index} className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                                {Dropdownitem.item_2_subheading}
+                        <div className="mt-1 block border-gray-100 font-semibold  hover:opacity-50">
+                            <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
+                                {DropdownItem2Subheading}
                             </div>
-                            ))}
                         </div>
                     </Link>
-                </div>
+                </div>  
 
                 {/* Menu item 3 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
-                    <Link to="/">
-                        {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <img key={index} className="w-64 h-auto" src={Dropdownitem.item_3_image}></img>
-                        ))}
+                    <Link to="#">
+                        <img className="h-36 w-64 object-cover" src={DropdownItem3Image}></img>
                     </Link>
                     <br></br>
-                    <Link to="#">
-                        <div className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <div key={index} className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                                {Dropdownitem.item_3_heading}
+                    <Link to={`/${DropdownItem3Url}`}>
+                        <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                            <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                                {DropdownItem3Heading}
                             </div>
-                            ))}
                         </div>
                     </Link>
                     <Link to="#">
-                        <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <div key={index} className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                                {Dropdownitem.item_3_subheading}
+                        <div className="mt-1 block border-gray-100 font-semibold  hover:opacity-50">
+                            <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
+                                {DropdownItem3Subheading}
                             </div>
-                            ))}
                         </div>
                     </Link>
-                </div>
+                </div>  
       
                 {/* Menu item 4 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
-                <Link to="/">
-                        {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <img key={index} className="w-64 h-auto" src={Dropdownitem.item_4_image}></img>
-                        ))}
+                    <Link to="#">
+                        <img className="h-36 w-64 object-cover" src={DropdownItem4Image}></img>
                     </Link>
                     <br></br>
-                    <Link to="#">
-                        <div className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <div key={index} className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                                {Dropdownitem.item_4_heading}
+                    <Link to={`/${DropdownItem4Url}`}>
+                        <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                            <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                                {DropdownItem4Heading}
                             </div>
-                            ))}
                         </div>
                     </Link>
                     <Link to="#">
-                        <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <div key={index} className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                                {Dropdownitem.item_4_subheading}
+                        <div className="mt-1 block border-gray-100 font-semibold  hover:opacity-50">
+                            <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
+                                {DropdownItem4Subheading}
                             </div>
-                            ))}
                         </div>
                     </Link>
-                </div>
+                </div>  
 
-                {/* Menu item 4 */}
+                {/* Menu item 5 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
-                <Link to="/">
-                        {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <img key={index} className="w-64 h-auto" src={Dropdownitem.item_5_image}></img>
-                        ))}
+                    <Link to="#">
+                        <img className="h-36 w-64 object-cover" src={DropdownItem5Image}></img>
                     </Link>
                     <br></br>
-                    <Link to="#">
-                        <div className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <div key={index} className="mt-1 block text-xl border-gray-100 font-bold nav-text-color hover:opacity-50">
-                                {Dropdownitem.item_5_heading}
+                    <Link to={`/${DropdownItem5Url}`}>
+                        <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                            <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                                {DropdownItem5Heading}
                             </div>
-                            ))}
                         </div>
                     </Link>
                     <Link to="#">
-                        <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                            {Navbar_XL_dropdown_items.map((Dropdownitem, index) => (
-                            <div key={index} className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
-                                {Dropdownitem.item_5_subheading}
+                        <div className="mt-1 block border-gray-100 font-semibold  hover:opacity-50">
+                            <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
+                                {DropdownItem5Subheading}
                             </div>
-                            ))}
                         </div>
                     </Link>
-                </div>
+                </div>  
 
             </div>
         </div>
