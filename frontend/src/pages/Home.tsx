@@ -21,8 +21,11 @@ const cdImages = {
 };
 
 const cdCopy = {
-  heading: 'Heading 1: Lorem Ipsum Home test',
-  paragraph: 'Paragraph 1: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
+  sectionHero_Heading: 'Energietechnik und Smart-Home-Lösungen in der Region Köln.',
+  sectionHero_Paragraph: '',
+
+  sectionTextAndImage_Heading: 'Von der Steckdose bis zur Smart-Home-Lösung.',
+  sectionTextAndImage_Paragraph: 'Willkommen bei Peters Elektro GmbH, Ihrem zuverlässigen Partner für professionelle Elektro-Dienstleistungen. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen – von regelmäßiger Wartung bis hin zu modernen Smart-Home-Lösungen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
 };
 
 
@@ -31,10 +34,10 @@ function Home() {
     <>
       <div className="">
         <Header></Header>
-        <SectionHero heading={cdCopy.heading} paragraph={cdCopy.paragraph} image={cdImages.image9}></SectionHero>
+        <SectionHero heading={cdCopy.sectionHero_Heading} paragraph={cdCopy.sectionHero_Paragraph} image={cdImages.image9}></SectionHero>
         <SectionTextAndImage 
-          heading={cdCopy.heading}
-          paragraph={cdCopy.paragraph}
+          heading={cdCopy.sectionTextAndImage_Heading}
+          paragraph={cdCopy.sectionTextAndImage_Paragraph}
           image={cdImages.image1}
           ></SectionTextAndImage>
         <SectionCards></SectionCards>
