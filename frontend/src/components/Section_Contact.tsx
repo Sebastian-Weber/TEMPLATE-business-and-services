@@ -10,7 +10,7 @@ const cdImages = {
   image9: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
   image10: '/src/assets/images/ernys-grI-lghNqMI-unsplash.jpg',
   image11: '/src/assets/images/tekton-ndJlw4Bz-1Y-unsplash.jpg',
-  image12: '/src/assets/images/quino-al-8gWEAAXJjtI-unsplash.jpg',
+  image12: '/src/assets/images/quino-al-8gWEAAXJjtI-unsplash.png',
 
 };
 
@@ -48,7 +48,7 @@ function SectionContact() {
   return (
     <>
      <div className='min-h-screen flex flex-col justify-center items-center' >
-        <div className="flex flex-col-reverse h-full justify-around items-center md:flex-row">
+        <div className="flex flex-col h-full justify-around items-start md:flex-row">
   
             {/* left box */}
             <div className="flex flex-col p-5 justify-center items-center h-1/2 w-full  md:m-12 md:h-fit md:w-9/12 md:items-center">
@@ -88,15 +88,15 @@ function SectionContact() {
             <form className="flex flex-col justify-start items-start">
               <div className="flex flex-col w-full">
               <label>Vor & Nachname*</label>
-              <input></input>
+              <input className="border-2"></input>
               <br></br>
 
               <label>Email Adresse*</label>
-              <input></input>
+              <input className="border-2"></input>
               <br></br>
 
               <label>Telefonnummer</label>
-              <input></input>
+              <input className="border-2"></input>
               <br></br>
 
               <label>Nachricht*</label>
@@ -106,7 +106,7 @@ function SectionContact() {
               <label className="text-sm font-mono text-gray-700">Bei mit * gekennzeichneten Felder handelt es sich um Pflichtfelder</label>
               <br></br>
               <div className="flex flex-row justify-start items-center">
-                <input type="checkbox" className="m-2"></input>
+              <input className="border-2"></input>
                 <label className="text-sm font-mono text-gray-700">Mit dem Senden der Nachricht akzeptiere ich die Datenschutzbedingungen</label>
               </div>
               <br></br>
@@ -119,7 +119,7 @@ function SectionContact() {
           </div>
 
           {/* right box */}
-          <div className="flex flex-col h-fit m-6 w-auto justify-around items-center md:h-fit md:w-7/12 md:-mt-72">
+          <div className="flex flex-col h-fit m-6 w-auto justify-around items-center md:h-fit md:w-7/12">
             <img className="min-w-52" src={cdImages.image12}></img>
           </div>
 
