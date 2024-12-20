@@ -35,11 +35,11 @@ function ElektroDienstleistungenPrivatkunden() {
     <div>Elektro-Dienstleistungen-Privatkunden</div>
       <Header></Header>
       <SectionHero heading={cdCopy.heading} paragraph={cdCopy.paragraph} image={cdImages.image9}></SectionHero>
-      <SectionTextAndImage 
+      {/* <SectionTextAndImage 
         heading={cdCopy.heading}
         paragraph={cdCopy.paragraph}
         image={cdImages.image1}
-        ></SectionTextAndImage>
+        ></SectionTextAndImage> */}
       <SectionCards></SectionCards>
       <Section_Gallery 
         image1={cdImages.image1}

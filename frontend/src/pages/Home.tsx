@@ -2,6 +2,7 @@
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import SectionCards from "../components/Section_Cards"
+import SectionContact from "../components/Section_Contact"
 import SectionDivider from "../components/Section_Divider"
 import Section_Gallery from "../components/Section_Gallery"
 import SectionHero from "../components/Section_Hero"
@@ -76,7 +77,15 @@ const Home = () => {
           image6={cdImages.image6}
           image7={cdImages.image7}
         ></Section_Gallery>
-        <SectionDivider></SectionDivider>
+        <SectionTextAndImage 
+          heading={cdCopy.sectionTextAndImage_Heading}
+          paragraph={cdCopy.sectionTextAndImage_Paragraph}
+          image={cdImages.image7}
+          buttonPrimaryProps={buttonPrimaryProps}
+          buttonSecondaryProps={buttonSecondaryProps}
+          ></SectionTextAndImage>
+        {/* <SectionDivider></SectionDivider> */}
+        <SectionContact></SectionContact>
         <Footer></Footer>
       </div>
     </>

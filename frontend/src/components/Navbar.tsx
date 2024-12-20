@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Firmenlogo from '/src/assets/Firmenlogo.svg'
-import Phone from '/src/assets/Phone.svg'
+import Phone from '/src/assets/icons/Phone.svg'
 
 import ToggleHamburger from './buttons/toggle_hamburger';
 import Button_primary from './buttons/button_primary';

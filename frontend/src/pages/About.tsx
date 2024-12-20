@@ -31,12 +31,12 @@ const cdCopy = {
 const About = () => {
   const buttonPrimaryProps = {
     buttonPrimaryCaption: 'About from about.tsx',
-    buttonPrimaryLink: 'about',
+    buttonPrimaryLink: 'home',
   };
 
   const buttonSecondaryProps = {
     buttonSecondaryCaption: 'About from about.tsx',
-    buttonSecondaryLink: 'about',
+    buttonSecondaryLink: 'home',
   };
   return (
     <>

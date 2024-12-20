@@ -23,12 +23,12 @@ const cdColors = {
   tertiaryFontColor: '#D6D5CB'
 };
 
-const cdCopy = {
-  buttonPrimaryCaption: '',
-  buttonPrimaryUrl: '',
-  buttonSecondaryCaption: '',
-  buttonSecondaryUrl: '',
-};
+// const cdCopy = {
+//   buttonPrimaryCaption: '',
+//   buttonPrimaryLink: '',
+//   buttonSecondaryCaption: '',
+//   buttonSecondaryLink: '',
+// };
 
 interface SectionTextAndImageProps {
   paragraph: string;
@@ -51,17 +51,17 @@ function SectionTextAndImage({ paragraph, image, heading, buttonPrimaryProps, bu
     <>
       <div className='min-h-screen flex flex-col justify-center items-center' >
 
-        <div className="flex flex-col h-fulljustify-around items-center md:flex-row">
+        <div className="flex flex-col h-full justify-around items-center md:flex-row">
           
         <div className="flex flex-col p-5 justify-center items-center h-1/2 w-full  md:m-12 md:h-fit md:w-9/12 md:items-center">
             <br></br>
             <div className="flex flex-col p-8 h-auto w-auto justify-center items-start md:full ">
-              <h1 style={{ color: cdColors.secondaryFontColor }}>{heading}</h1>
+              <h2 style={{ color: cdColors.secondaryFontColor }}>{heading}</h2>
               <br></br>
               <p className="">{paragraph}</p>
               <br></br>
-              <Button_primary buttonPrimaryCaption={buttonPrimaryProps.buttonPrimaryCaption} buttonPrimaryUrl={cdCopy.buttonPrimaryUrl}></Button_primary>
-              <Button_secondary buttonSecondaryCaption={buttonSecondaryProps.buttonSecondaryCaption} buttonSecondaryUrl={cdCopy.buttonSecondaryUrl}></Button_secondary>
+              <Button_primary buttonPrimaryCaption={buttonPrimaryProps.buttonPrimaryCaption} buttonPrimaryLink={buttonPrimaryProps.buttonPrimaryLink}></Button_primary>
+              {/* <Button_secondary buttonSecondaryCaption={buttonSecondaryProps.buttonSecondaryCaption} buttonSecondaryLink={buttonSecondaryProps.buttonSecondaryLink}></Button_secondary> */}
             </div>
           </div>  
           
@@ -73,7 +73,6 @@ function SectionTextAndImage({ paragraph, image, heading, buttonPrimaryProps, bu
         </div>
 
       </div>
-    
     </>
   )
 }
