@@ -6,6 +6,7 @@ import Placeholder from '/src/assets/images/Placeholder.png'
 
 
 const cdImages = {
+    logo: '/src/assets/Peters_Logotype.svg',
     image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
     image2: '/src/assets/images/mohamed-marey-M9mRKGW9L30-unsplash.jpg',
     image3: '/src/assets/images/james-sandbrook-h0-lwHj7heI-unsplash.jpg',
@@ -15,9 +16,19 @@ const cdImages = {
     image7: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png',
     image8: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
     image9: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
-    image10: '/src/assets/images/ernys-grI-lghNqMI-unsplash.jpg',
-    image11: '/src/assets/images/tekton-ndJlw4Bz-1Y-unsplash.jpg',
-  
+    image10: '/src/assets/images/thisisengineering-ZPeXrWxOjRQ-unsplash.jpg',
+    image11: '/src/assets/images/gidlark-d662tNZfe_g-unsplash.jpg',
+    image12: '/src/assets/images/brian-wangenheim--yWw3HlVVnQ-unsplash.jpg',
+    image13: '/src/assets/images/shirish-suwal-ctmuaOO-JJI-unsplash.jpg',
+    image14: '/src/assets/images/gidlark-d662tNZfe_g-unsplash.jpg',
+    image15: '/src/assets/images/tekton-ndJlw4Bz-1Y-unsplash.jpg',
+    image16: '/src/assets/images/thisisengineering-zhXR20LFowA-unsplash.jpg',
+    image17: '/src/assets/images/steffen-lemmerzahl-fu3iLPBe964-unsplash.jpg',
+    image18: '/src/assets/images/s-tsuchiya-gxIg8FcDIC8-unsplash.jpg',
+    image19: '/src/assets/images/alex-wolowiecki-uXgoasNqYqw-unsplash.jpg',
+    image20: '/src/assets/images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg',
+    image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
+    image22: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
   };
   
 

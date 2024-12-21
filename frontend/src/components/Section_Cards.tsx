@@ -165,8 +165,8 @@ function SectionCards() {
           <p className="text-lg font-normal">{cdCopy.card4Paragraph1}</p>
           <br></br>
           <br></br>
-          <Button_primary buttonPrimaryCaption={cdCopy.buttonPrimaryCaption} buttonPrimaryUrl={cdCopy.buttonPrimaryUrl}></Button_primary>
-          <Button_secondary buttonSecondaryCaption={cdCopy.buttonSecondaryCaption} buttonSecondaryUrl={cdCopy.buttonSecondaryUrl}></Button_secondary>
+          <Button_primary buttonPrimaryCaption={cdCopy.buttonPrimaryCaption} buttonPrimaryLink={cdCopy.buttonPrimaryLink}></Button_primary>
+          <Button_secondary buttonSecondaryCaption={cdCopy.buttonSecondaryCaption} buttonSecondaryLink={cdCopy.buttonSecondaryLink}></Button_secondary>
         </div>
       </div>
 

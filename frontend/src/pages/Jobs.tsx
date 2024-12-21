@@ -29,8 +29,9 @@ const cdImages = {
   image17: '/src/assets/images/steffen-lemmerzahl-fu3iLPBe964-unsplash.jpg',
   image18: '/src/assets/images/s-tsuchiya-gxIg8FcDIC8-unsplash.jpg',
   image19: '/src/assets/images/alex-wolowiecki-uXgoasNqYqw-unsplash.jpg',
-  image20: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
-
+  image20: '/src/assets/images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg',
+  image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
+  image22: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
 };
 
 const cdCopy = {
@@ -64,7 +65,7 @@ function Jobs() {
         <SectionHero
           heading={cdCopy.sectionTextAndImage_Heading}
           paragraph={cdCopy.sectionTextAndImage_Paragraph}
-          image={cdImages.image14}
+          image={cdImages.image20}
           logo={cdImages.logo}
         ></SectionHero>
         <SectionTextAndImage 
