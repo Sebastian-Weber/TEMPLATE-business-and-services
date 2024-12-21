@@ -51,11 +51,11 @@ const cdCopy = {
 function SectionContact() {
   return (
     <>
-      <div className='min-h-screen flex flex-col justify-center items-center md:justify-center md:items-center bg-purple-500' >
+      <div className='min-h-screen flex flex-col justify-center items-center md:justify-center md:items-center' style={{ backgroundColor: cdColors.secondaryColor }}>
       <div className="flex flex-col h-full w-full md:p-12 md:flex-row  ">
   
           {/* left box */}
-          <div className="flex flex-col p-12 justify-center items-center md:items-center h-1/2 w-full md:p-6 md:h-fit  md:justify-normal bg-red-500">
+          <div className="flex flex-col p-12 justify-center items-center md:items-center h-1/2 w-full md:p-6 md:h-fit  md:justify-normal">
             <div className="w-full md:w-2/3 ">
             <Text_field caption="Your Caption" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
             <Text_field caption="Your Caption" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
@@ -67,8 +67,8 @@ function SectionContact() {
           </div>
 
           {/* right box */}
-          <div className="flex flex-col justify-center items-center h-fit w-full md:h-fit md:py-12 bg-blue-600">
-            <img className="min-w-52" src={cdImages.image12}></img>
+          <div className="flex flex-col justify-center items-center h-fit w-full md:h-fit md:py-12">
+            <img className="min-w-52 p-12" src={cdImages.image12}></img>
           </div>
 
         </div>

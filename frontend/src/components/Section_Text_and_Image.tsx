@@ -45,15 +45,14 @@ interface SectionTextAndImageProps {
 }
 
 
-
 function SectionTextAndImage({ paragraph, image, heading, buttonPrimaryProps, buttonSecondaryProps }: SectionTextAndImageProps) {
   return (
     <>
-      <div className='min-h-screen flex flex-col justify-center items-center bg-orange-500' >
+      <div className='min-h-screen flex flex-col justify-center items-center' >
         <div className="flex flex-col h-full justify-around items-center md:flex-row">
 
         {/* left box   */}
-        <div className="flex flex-col p-5 justify-center items-center h-1/2 w-full md:m-12 md:h-fit md:w-9/12 md:items-center bg-red-500">
+        <div className="flex flex-col p-5 justify-center items-center h-1/2 w-full md:m-12 md:h-fit md:w-9/12 md:items-center">
             <br></br>
             <div className="flex flex-col p-8 h-auto w-auto justify-center items-start md:full ">
               <h2 style={{ color: cdColors.secondaryFontColor }}>{heading}</h2>
@@ -66,8 +65,8 @@ function SectionTextAndImage({ paragraph, image, heading, buttonPrimaryProps, bu
           </div>  
           
           {/* right box */}
-          <div className="flex flex-col h-fit m-6 w-auto justify-around items-center md:h-fit md:w-7/12">
-            <img className='h-fit p-6 md:p-18' src={image} alt="Placeholder"></img>
+          <div className="flex flex-col h-fit m-6 w-auto justify-around items-center md:h-fit md:w-7/12 ">
+            <img className='h-fit p-12 md:p-18' src={image} alt="Placeholder"></img>
           </div>
 
           
