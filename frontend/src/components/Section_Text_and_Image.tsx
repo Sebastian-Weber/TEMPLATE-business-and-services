@@ -1,5 +1,5 @@
 import Button_primary from "./buttons/button_primary";
-import Button_secondary from "./buttons/button_secondary";
+// import Button_secondary from "./buttons/button_secondary";
 
 const cdColors = {
   primaryColor: '#98BB48',
@@ -38,14 +38,10 @@ interface SectionTextAndImageProps {
     buttonPrimaryCaption: string;
     buttonPrimaryLink: string;
   };
-  buttonSecondaryProps: {
-    buttonSecondaryCaption: string;
-    buttonSecondaryLink: string;
-  };
 }
 
 
-function SectionTextAndImage({ paragraph, image, heading, buttonPrimaryProps, buttonSecondaryProps }: SectionTextAndImageProps) {
+function SectionTextAndImage({ paragraph, image, heading, buttonPrimaryProps }: SectionTextAndImageProps) {
   return (
     <>
       <div className='min-h-screen flex flex-col justify-center items-center' >
@@ -60,7 +56,6 @@ function SectionTextAndImage({ paragraph, image, heading, buttonPrimaryProps, bu
               <p className="">{paragraph}</p>
               <br></br>
               <Button_primary buttonPrimaryCaption={buttonPrimaryProps.buttonPrimaryCaption} buttonPrimaryLink={buttonPrimaryProps.buttonPrimaryLink}></Button_primary>
-              {/* <Button_secondary buttonSecondaryCaption={buttonSecondaryProps.buttonSecondaryCaption} buttonSecondaryLink={buttonSecondaryProps.buttonSecondaryLink}></Button_secondary> */}
             </div>
           </div>  
           

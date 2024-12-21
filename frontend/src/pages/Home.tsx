@@ -1,4 +1,5 @@
 
+import React, { useState } from 'react';
 import Footer from "../components/Footer"
 import Header from "../components/Header"
 import SectionCards from "../components/Section_Cards"
@@ -7,6 +8,8 @@ import SectionDivider from "../components/Section_Divider"
 import Section_Gallery from "../components/Section_Gallery"
 import SectionHero from "../components/Section_Hero"
 import SectionTextAndImage from "../components/Section_Text_and_Image"
+import { ButtonPrimaryProvider } from "../contexts/ButtonPrimaryContext"
+
 
 const cdImages = {
   logo: '/src/assets/Peters_Logotype.svg',
@@ -31,33 +34,53 @@ const cdImages = {
   image19: '/src/assets/images/alex-wolowiecki-uXgoasNqYqw-unsplash.jpg',
   image20: '/src/assets/images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg',
   image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
-  image22: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
+  image22: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
+  image23: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
 };
 
 const cdCopy = {
   sectionHero_Heading: 'Energietechnik und Smart-Home-Lösungen in der Region Köln',
-  sectionHero_Paragraph: '',
+  sectionHero_Paragraph: 'Energietechnik und Smart-Home-Lösungen in der Region Köln',
 
-  sectionTextAndImage_Heading: 'Von der Steckdose bis zur Smart-Home-Lösung',
-  sectionTextAndImage_Paragraph: 'Willkommen bei Peters Elektro GmbH, Ihrem zuverlässigen Partner für professionelle Elektro-Dienstleistungen. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen – von regelmäßiger Wartung bis hin zu modernen Smart-Home-Lösungen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
-  
+  sectionIntro_Heading: 'Von der Steckdose bis zur Smart-Home-Lösung',
+  sectionIntro_Paragraph: 'Willkommen bei Peters Elektro GmbH, Ihrem zuverlässigen Partner für professionelle Elektro-Dienstleistungen. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen – von regelmäßiger Wartung bis hin zu modernen Smart-Home-Lösungen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
+
+  sectionContact_Heading: 'Lust, mit uns die Zukunft zu elektrisieren?',
+  sectionContact_Paragraph: 'Du suchst eine neue Herausforderung in einem modernen Elektroinstallationsunternehmen mit Herz? Bei Peters erwarten dich spannende Projekte im Kölner Raum, ein familiäres Team und echte Entwicklungsmöglichkeiten. Wir legen Wert auf Qualität, Innovation und ein Arbeitsklima, in dem sich jeder wohlfühlt? Das bieten wir dir: Abwechslungsreiche Aufgaben in einem zukunftssicheren Handwerk. Kreativer Freiraum, um eigene Ideen in unsere Projekte einzubringen. Eine Arbeitskultur, die Eigenverantwortung und Teamg-geist fördert. Bewirb dich jetzt und werde Teil unseres Teams! Wir freuen uns auf deine Bewerbung.',
+
   buttonPrimaryCaption: 'Mehr über uns erfahren -- kommt aus Home.tsx',
   buttonPrimaryURL: 'about',
-  buttonSecondaryCaption: 'Mehr über uns erfahren  -- kommt aus Home.tsx',
-  buttonSecondaryLink: 'about',
+  
+  // buttonSecondaryCaption: 'Mehr über uns erfahren  -- kommt aus Home.tsx',
+  // buttonSecondaryLink: 'about',
 };
 
 
 const Home = () => {
-  const buttonPrimaryProps = {
-    buttonPrimaryCaption: 'Home from Home.tsx',
-    buttonPrimaryLink: 'about',
+  const [buttonPrimaryCaption1, setButtonPrimaryCaption1] = useState('Mehr über uns erfahren');
+  const [buttonPrimaryLink1, setButtonPrimaryLink1] = useState('/about');
+
+  const [buttonPrimaryCaption2, setButtonPrimaryCaption2] = useState('Zu den offenen Stellen');
+  const [buttonPrimaryLink2, setButtonPrimaryLink2] = useState('/#kontakt');
+
+  const buttonPrimaryProps1 = {
+    buttonPrimaryCaption: buttonPrimaryCaption1,
+    buttonPrimaryLink: buttonPrimaryLink1,
+    setButtonPrimaryCaption: setButtonPrimaryCaption1,
+    setButtonPrimaryLink: setButtonPrimaryLink1,
   };
 
-  const buttonSecondaryProps = {
-    buttonSecondaryCaption: 'Home from Home.tsx',
-    buttonSecondaryLink: 'about',
+  const buttonPrimaryProps2 = {
+    buttonPrimaryCaption: buttonPrimaryCaption2,
+    buttonPrimaryLink: buttonPrimaryLink2,
+    setButtonPrimaryCaption: setButtonPrimaryCaption2,
+    setButtonPrimaryLink: setButtonPrimaryLink2,
   };
+
+  // const buttonSecondaryProps = {
+  //   buttonSecondaryCaption: 'Home from Home.tsx',
+  //   buttonSecondaryLink: 'about',
+  // };
 
   return (
     <>
@@ -69,13 +92,16 @@ const Home = () => {
         image={cdImages.image9}
         logo={cdImages.logo}>
         </SectionHero>
-        <SectionTextAndImage 
-          heading={cdCopy.sectionTextAndImage_Heading}
-          paragraph={cdCopy.sectionTextAndImage_Paragraph}
+
+        <ButtonPrimaryProvider value={buttonPrimaryProps1}>
+          <SectionTextAndImage 
+          heading={cdCopy.sectionIntro_Heading}
+          paragraph={cdCopy.sectionIntro_Paragraph}
           image={cdImages.image7}
-          buttonPrimaryProps={buttonPrimaryProps}
-          buttonSecondaryProps={buttonSecondaryProps}
-          ></SectionTextAndImage>
+            buttonPrimaryProps={buttonPrimaryProps1}>
+          </SectionTextAndImage>
+        </ButtonPrimaryProvider>
+
         <SectionCards></SectionCards>
         <Section_Gallery 
           image1={cdImages.image1}
@@ -86,13 +112,28 @@ const Home = () => {
           image6={cdImages.image6}
           image7={cdImages.image7}
         ></Section_Gallery>
-        <SectionTextAndImage 
-          heading={cdCopy.sectionTextAndImage_Heading}
-          paragraph={cdCopy.sectionTextAndImage_Paragraph}
-          image={cdImages.image7}
-          buttonPrimaryProps={buttonPrimaryProps}
-          buttonSecondaryProps={buttonSecondaryProps}
-          ></SectionTextAndImage>
+
+        <ButtonPrimaryProvider value={buttonPrimaryProps2}>
+          <SectionTextAndImage 
+          heading={cdCopy.sectionContact_Heading}
+          paragraph={cdCopy.sectionContact_Paragraph}
+          image={cdImages.image22}
+            buttonPrimaryProps={buttonPrimaryProps2}>
+          </SectionTextAndImage>
+        </ButtonPrimaryProvider>
+
+          {/* <SectionTextAndImage 
+          heading={cdCopy.sectionContact_Heading}
+          paragraph={cdCopy.sectionContact_Paragraph}
+          image={cdImages.image23}
+            buttonPrimaryProps={buttonPrimaryProps}>
+          </SectionTextAndImage> */}
+        {/* <SectionTextAndImage 
+          heading={cdCopy.sectionContact_Headin}
+          paragraph={cdCopy.sectionContext_Paragraph}
+          image={cdImages.image10}
+            buttonPrimaryProps={buttonPrimaryProps}>
+          </SectionTextAndImage> */}
         {/* <SectionDivider></SectionDivider> */}
 
         <SectionContact></SectionContact>

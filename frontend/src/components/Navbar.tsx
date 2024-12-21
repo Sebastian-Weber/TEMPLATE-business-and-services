@@ -220,7 +220,7 @@ const Navbar = () => {
 
         <div className="flex flex-row justify-end items-center ">
 
-          <Button_secondary caption="Kontakt" link="Kontakt"></Button_secondary>
+        <Button_secondary buttonSecondaryCaption="Kontakt" buttonSecondaryLink="about"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">

@@ -1,4 +1,5 @@
-import { Link } from 'react-router-dom';
+
+import { useButtonPrimaryContext } from '../../contexts/ButtonPrimaryContext';
 
 const cdColors = {
   primaryColor: '#98BB48',
@@ -23,18 +24,27 @@ const cdColors = {
 };
 
 
-
 interface ButtonPrimaryProps {
+
   buttonPrimaryCaption: string;
+
   buttonPrimaryLink: string;
+
 }
 
-function Button_primary({ buttonPrimaryCaption, buttonPrimaryLink }: ButtonPrimaryProps) {
-    return (
-      <Link to={`/${buttonPrimaryLink}`}>
-        <button style={{ color: cdColors.secondaryColor, backgroundColor: cdColors.primaryColor }} className="font-semibold text-sm px-4 py-2  my-2 rounded-md hover:opacity-50 transition ease-in-out delay-50">{buttonPrimaryCaption}</button>
-      </Link>
-    )
-  }
-  
-  export default Button_primary
+
+const Button_primary = ({ buttonPrimaryCaption, buttonPrimaryLink }: ButtonPrimaryProps) => {
+
+  return (
+    <a href={buttonPrimaryLink}>
+      <button
+        style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }}
+        className="font-semibold text-sm px-4 py-2 mx-4 my-2 rounded-md hover:opacity-50 transition ease-in-out delay-50"
+      >
+        {buttonPrimaryCaption}
+      </button>
+    </a>
+  );
+};
+
+export default Button_primary;
