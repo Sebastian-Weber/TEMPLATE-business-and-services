@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Expander_sm from '../dropdowns/Expander_sm';
+import Expander_sm from '../expanders/Expander_sm';
 import { Link } from 'react-router-dom';
 
 const cdColors = {

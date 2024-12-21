@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Firmenlogo from '/src/assets/Firmenlogo.svg'
 import Phone from '/src/assets/icons/Phone.svg'
 
-import ToggleHamburger from './buttons/toggle_hamburger';
+import ToggleHamburger from './toggles/toggle_hamburger';
 import Button_primary from './buttons/button_primary';
 import Button_secondary from './buttons/button_secondary';
 import Navbar_xl_dropdown_template from './dropdowns/Navbar_xl_dropdown_template';
