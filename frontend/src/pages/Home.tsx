@@ -19,8 +19,13 @@ const cdImages = {
   image7: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png',
   image8: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
   image9: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
-
-  buttonSecondaryLink: 'about',
+  image10: '/src/assets/images/thisisengineering-ZPeXrWxOjRQ-unsplash.jpg',
+  image11: '/src/assets/images/gidlark-d662tNZfe_g-unsplash.jpg',
+  image12: '/src/assets/images/brian-wangenheim--yWw3HlVVnQ-unsplash.jpg',
+  image13: '/src/assets/images/shirish-suwal-ctmuaOO-JJI-unsplash.jpg',
+  image14: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
+  image15: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
+  image16: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
 };
 
 const cdCopy = {
@@ -47,8 +52,6 @@ const Home = () => {
     buttonSecondaryCaption: 'Home from Home.tsx',
     buttonSecondaryLink: 'about',
   };
-
-
 
   return (
     <>
@@ -85,6 +88,7 @@ const Home = () => {
           buttonSecondaryProps={buttonSecondaryProps}
           ></SectionTextAndImage>
         {/* <SectionDivider></SectionDivider> */}
+
         <SectionContact></SectionContact>
         <Footer></Footer>
       </div>

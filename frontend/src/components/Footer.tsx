@@ -108,7 +108,7 @@ function Footer() {
               </Link>
 
               {/* Impressum  */}
-              <Link className="" to="/about">
+              <Link className="" to="/impressum">
                 <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
                 Impressum
                 </div>

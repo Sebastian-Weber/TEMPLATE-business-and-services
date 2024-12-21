@@ -51,6 +51,7 @@ const cdCopy = {
 function SectionContact() {
   return (
     <>
+      <a id="kontakt"></a>
       <div className='min-h-screen flex flex-col justify-center items-center md:justify-center md:items-center' style={{ backgroundColor: cdColors.secondaryColor }}>
       <div className="flex flex-col h-full w-full md:p-12 md:flex-row  ">
   

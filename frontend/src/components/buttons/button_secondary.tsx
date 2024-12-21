@@ -25,14 +25,14 @@ const cdColors = {
 
 
 interface ButtonSecondaryProps {
-  buttonSecondaryCaption: string;
-  buttonSecondaryLink: string;
+  caption: string;
+  link: string;
 }
 
-function Button_secondary({ buttonSecondaryCaption, buttonSecondaryLink }: ButtonSecondaryProps) {
+function Button_secondary({ caption, link }: ButtonSecondaryProps) {
     return (
-      <Link to={`/${buttonSecondaryLink}`}>
-        <button style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }} className="font-semibold text-sm px-4 py-2 mx-4 my-2 rounded-md hover:opacity-50 transition ease-in-out delay-50">{buttonSecondaryCaption}</button>
+      <Link to={`/${link}`}>
+        <button style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }} className="font-semibold text-sm px-4 py-2 mx-4 my-2 rounded-md hover:opacity-50 transition ease-in-out delay-50">{caption}</button>
       </Link>
     )
   }

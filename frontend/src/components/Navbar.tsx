@@ -110,7 +110,7 @@ const Navbar = () => {
 
         <div className="flex flex-row justify-end items-center ">
 
-        <Button_secondary caption="Kontakt" buttonSecondaryUrl="About"></Button_secondary>
+        <Button_secondary caption="Kontakt" link="About"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
 
@@ -197,11 +197,11 @@ const Navbar = () => {
         ></Navbar_xl_dropdown_template>
 
         {/* Offene Stellen */}
-        {/* <Link className="flex flex-row items-start" to="/about">
+        <Link className="flex flex-row items-start" to="/jobs">
           <div className="font-fredoka text-xl font-medium menu-hover" style={{ color: cdColors.secondaryColor }}>
             Offene Stellen
           </div>
-        </Link> */}
+        </Link>
 
         </div>
 
@@ -209,7 +209,7 @@ const Navbar = () => {
 
         <div className="flex flex-row justify-end items-center ">
 
-          <Button_secondary caption="Kontakt" buttonSecondaryUrl="About"></Button_secondary>
+          <Button_secondary caption="Kontakt" link="#kontakt"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">

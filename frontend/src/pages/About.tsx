@@ -5,7 +5,7 @@ import SectionHero from "../components/Section_Hero"
 import SectionTextAndImage from "../components/Section_Text_and_Image"
 
 const cdImages = {
-  logo: '/src/assets/images/Peters_Logo.svg',
+  logo: '/src/assets/Peters_Logotype.svg',
   image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
   image2: '/src/assets/images/mohamed-marey-M9mRKGW9L30-unsplash.jpg',
   image3: '/src/assets/images/james-sandbrook-h0-lwHj7heI-unsplash.jpg',
@@ -15,7 +15,13 @@ const cdImages = {
   image7: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png',
   image8: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
   image9: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
-
+  image10: '/src/assets/images/thisisengineering-ZPeXrWxOjRQ-unsplash.jpg',
+  image11: '/src/assets/images/gidlark-d662tNZfe_g-unsplash.jpg',
+  image12: '/src/assets/images/brian-wangenheim--yWw3HlVVnQ-unsplash.jpg',
+  image13: '/src/assets/images/shirish-suwal-ctmuaOO-JJI-unsplash.jpg',
+  image14: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
+  image15: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
+  image16: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
 };
 
 const cdCopy = {
@@ -42,19 +48,18 @@ const About = () => {
     <>
       <div className="">
         <Header></Header>
-        {/* <SectionHero
+        <SectionHero
           heading={cdCopy.sectionTextAndImage_Heading}
           paragraph={cdCopy.sectionTextAndImage_Paragraph}
           image={cdImages.image8}
           logo={cdImages.logo}
-        ></SectionHero> */}
+        ></SectionHero>
         <SectionTextAndImage 
           heading={cdCopy.sectionTextAndImage_Heading}
           paragraph={cdCopy.sectionTextAndImage_Paragraph}
-          image={cdImages.image8}
+          image={cdImages.image10}
           buttonPrimaryProps={buttonPrimaryProps}
-          buttonSecondaryProps={buttonSecondaryProps}
-          ></SectionTextAndImage>
+          buttonSecondaryProps={buttonSecondaryProps}></SectionTextAndImage>
         <Footer></Footer>
       </div>
     </>

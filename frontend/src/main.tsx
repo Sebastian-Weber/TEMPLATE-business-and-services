@@ -19,6 +19,8 @@ import './index.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import ElektroDienstleistungenPrivatkunden from './pages/Elektro-Dienstleistungen-Privatkunden';
+import Impressum from './pages/Impressum';
+import Jobs from './pages/Jobs';
 
 
 
@@ -41,9 +43,17 @@ const router = createBrowserRouter([
               element: <About />,
             },
             {
+                path: '/Jobs',
+                element: <Jobs />,
+              },
+            {
                 path: '/Elektro-Dienstleistungen-Privatkunden',
                 element: <ElektroDienstleistungenPrivatkunden />,
             },
+            {
+                path: '/Impressum',
+                element: <Impressum />,
+              },
 
         ]
     }

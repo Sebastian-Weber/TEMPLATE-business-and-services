@@ -1,7 +1,11 @@
-function impressum() {
+import Section_Impressum from "../components/Section_Impressum"
+
+function Impressum() {
   return (
-    <div>impressum</div>
+    <>
+    <Section_Impressum  />
+    </>
   )
 }
 
-export default impressum
+export default Impressum
