@@ -19,9 +19,14 @@ const cdImages = {
   image11: '/src/assets/images/gidlark-d662tNZfe_g-unsplash.jpg',
   image12: '/src/assets/images/brian-wangenheim--yWw3HlVVnQ-unsplash.jpg',
   image13: '/src/assets/images/shirish-suwal-ctmuaOO-JJI-unsplash.jpg',
-  image14: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
-  image15: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
-  image16: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
+  image14: '/src/assets/images/gidlark-d662tNZfe_g-unsplash.jpg',
+  image15: '/src/assets/images/tekton-ndJlw4Bz-1Y-unsplash.jpg',
+  image16: '/src/assets/images/thisisengineering-zhXR20LFowA-unsplash.jpg',
+  image17: '/src/assets/images/steffen-lemmerzahl-fu3iLPBe964-unsplash.jpg',
+  image18: '/src/assets/images/s-tsuchiya-gxIg8FcDIC8-unsplash.jpg',
+  image19: '/src/assets/images/alex-wolowiecki-uXgoasNqYqw-unsplash.jpg',
+  image20: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+
 };
 
 const cdCopy = {

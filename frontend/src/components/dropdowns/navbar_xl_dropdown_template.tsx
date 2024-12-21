@@ -148,7 +148,7 @@ function Navbar_xl_dropdown_template({
     <div className="relative group cursor-pointer mx-2">
 
         <div className="relative flex flex-row items-center justify-between">
-            <Link to="/">
+            <Link to="">
                 <div className="text-xl font-medium menu-hover my-2" style={{ color: cdColors.secondaryColor }} >
                     {DropdownCaption}
                 </div>

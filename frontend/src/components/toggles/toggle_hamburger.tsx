@@ -53,20 +53,31 @@ const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease
         <div className={`absolute left-0 top-24 w-full items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
         <div className="flex flex-col justify-normal h-screen items-start" style={{ backgroundColor: cdColors.primaryColor }}>
             <ul className="py-6 px-6 w-full mt-12">
+
             <li>
-                <Link className="" to="/about">
+            <Link className="" to="/about">
                 <div className="cursor-pointer" onClick={() => setOverlayVisible(!isOverlayVisible)} style={{ color:cdColors.secondaryColor}}>
                 Über uns
                 </div>
-                </Link>               
+            </Link>               
             </li>
-            <li className="cursor-pointer" style={{ color:cdColors.secondaryColor}}>Overlay menu item2
-                <Expander_sm caption="Expander" />
+
+            <li>
+                <Expander_sm caption="Leistungen" />
             </li>
-            {/* <li>
-                <Expander_sm caption="Expander" />
-            </li> */}
-            <li className="cursor-pointer" onClick={() => setOverlayVisible(!isOverlayVisible)} style={{ color:cdColors.secondaryColor}}>Overlay menu item3</li>
+
+            <li>
+                <Expander_sm caption="Energielösungen" />
+            </li>
+            
+            <li>
+            <Link className="" to="/jobs">
+                <div className="cursor-pointer" onClick={() => setOverlayVisible(!isOverlayVisible)} style={{ color:cdColors.secondaryColor}}>
+                Offene Stellen
+                </div>
+            </Link>               
+            </li>
+
             </ul>
         </div>    
 

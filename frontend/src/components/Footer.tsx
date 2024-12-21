@@ -32,13 +32,11 @@ function Footer() {
       {/* small */} 
       <div className="xl:hidden flex flex-row justify-center items-center bottom-0 w-screen py-4" style={{ backgroundColor: cdColors.primaryColor }}>
         <ul className="flex flex-col nav-text-color justify-center items-center">
-          
 
           {/* Firmenlogo */}
           <Link to="/" >
             <img className="w-18 -mt-4" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
           </Link>
-
 
           {/* Über uns  */}
           <Link className="" to="/about">
@@ -48,36 +46,36 @@ function Footer() {
           </Link>
 
           {/* Offene Stellen */}
-          <Link className="" to="/about">
+          <Link className="" to="/jobs">
             <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
-              Offene Stellen
-            </div>
-          </Link>
+                Offene Stellen
+              </div>
+            </Link>
 
           {/* Impressum  */}
-          <Link className="" to="/about">
+          <Link className="" to="/impressum">
             <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
             Impressum
             </div>
           </Link>
 
-          {/* Instagram  */}
-          <Link className="" to="/about">
+          {/* Instagram */}
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
             <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
-            Instagram
+              Instagram
             </div>
-          </Link>
+          </a>
 
-          {/* Facebook  */}
-          <Link className="" to="/about">
+          {/* Facebook */}
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
             <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
-            Facebook
+              Facebook
             </div>
-          </Link>
+          </a>
 
           <li className="">
-          <Button_secondary caption="Kontakt" buttonSecondaryUrl="Kontakt"></Button_secondary>
-          </li>
+          <Button_secondary buttonSecondaryCaption="Kontakt" buttonSecondaryLink="about"></Button_secondary>
+        </li>
         </ul>
       </div>
 
@@ -101,7 +99,7 @@ function Footer() {
               </Link> */}
 
               {/* Offene Stellen */}
-              <Link className="" to="/about">
+              <Link className="" to="/jobs">
                 <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
                   Offene Stellen
                 </div>
@@ -113,20 +111,20 @@ function Footer() {
                 Impressum
                 </div>
               </Link>
-
-              {/* Instagram  */}
-              <Link className="" to="/about">
-                <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
-                Instagram
-                </div>
-              </Link>
   
-              {/* Instagram  */}
-              <Link className="" to="/about">
+              {/* Instagram */}
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                 <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
-                Facebook
+                  Instagram
                 </div>
-              </Link>
+              </a>
+
+              {/* Facebook */}
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
+                  Facebook
+                </div>
+              </a>
 
               {/* Kontakt  */}
               {/* <li className="">
