@@ -23,6 +23,8 @@ const cdCopy = {
   buttonSecondaryLink: 'about',
 };
 
+
+
 const cdColors = {
   primaryColor: '#98BB48',
   secondaryColor: '#FFF1B7',
@@ -30,20 +32,39 @@ const cdColors = {
   secondaryAccentColor: '',
   primaryBackgroundColorDark: '#165287',
   primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#E9D9D3',
+  primaryBackgroundColorLight: '#ACC6DD',
   secondaryBackgroundColorDark: '#165287',
   secondaryBackgroundColorDefaukt: '#165287',
-  secondaryBackgroundColorLight: '#BBD3C6',
+  secondaryBackgroundColorLight: '#165287',
   tertiaryBackgroundColorDark: '#165287',
   tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#B5CFE6',
+  tertiaryBackgroundColorLight: '#165287',
   quaternaryBackgroundColorDark: '#165287',
   quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#F3EBC9',
+  quaternaryBackgroundColorLight: '#165287',
   primaryFontColor: '#191A1E',
   secondaryFontColor: '#817E72',
   tertiaryFontColor: '#D6D5CB'
 };
+
+// const cdCopy = {
+//   buttonPrimaryCaption: '',
+//   buttonPrimaryLink: '',
+//   buttonSecondaryCaption: '',
+//   buttonSecondaryLink: '',
+// };
+
+interface SectionTextAndImageProps {
+  paragraph: string;
+  image: string;
+  heading: string;
+  background?: string;
+  buttonPrimaryProps?: {
+    buttonPrimaryCaption?: string;
+    buttonPrimaryLink?: string;
+  };
+  listItems?: string[];
+}
 
 
 function SectionCards() {
@@ -52,8 +73,32 @@ function SectionCards() {
   <>
     <div className='min-h-screen mt-10 px-2 md:p-4 2xl:px-20 bg-white'>
 
-    {/* first row */}
-    <div className="flex flex-col justify-around items-center md:px-2 md:flex-row">
+      <div className="flex flex-col h-fit bg-red-500">12234
+      
+      <div className="flex flex-col h-full justify-around items-center md:flex-row">
+
+{/* left box */}
+<div className="flex flex-col p-5 justify-center items-center h-1/2 w-full md:m-12 md:h-fit md:w-9/12 md:items-center">
+    <br></br>
+    <div className="flex flex-col p-8 h-auto w-full justify-center items-start md:full bg-purple-600">
+test1234
+  </div>
+</div> 
+  
+  {/* right box */}
+  <div className="flex flex-col h-fit m-6 w-auto justify-around items-center md:h-fit md:w-7/12 ">
+    {/* <img className='h-fit p-12 md:p-18' src={image} alt="Placeholder"></img> */}
+  </div>
+
+  
+</div>
+
+      </div>
+
+      <div className="flex flex-col h-1/2 bg-blue-500">12234
+      
+   {/* first row */}
+   <div className="flex flex-col justify-around items-center md:px-2 md:flex-row">
       
       {/* card 1 */}
       <div className="flex flex-col p-4 lg:w-2/3 lg:flex-col m-2 bg-pink-200" style={{ backgroundColor:cdColors.primaryBackgroundColorLight }}>
@@ -171,7 +216,12 @@ function SectionCards() {
       </div>
 
     </div> 
-  </div> 
+
+      </div>
+
+ 
+    </div>
+
 </>
   )
 }

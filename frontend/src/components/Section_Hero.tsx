@@ -20,7 +20,7 @@ const cdColors = {
   primaryBackgroundColorDefault: '#1D6DB4',
   primaryBackgroundColorLight: '#ACC6DD',
   secondaryBackgroundColorDark: '#165287',
-  secondaryBackgroundColorDefaukt: '#165287',
+  secondaryBackgroundColorDefault: '#165287',
   secondaryBackgroundColorLight: '#165287',
   tertiaryBackgroundColorDark: '#165287',
   tertiaryBackgroundColorDefault: '#165287',
@@ -40,23 +40,32 @@ interface SectionHeroProps {
   heading: string;
   paragraph: string;
   image: string;
+  background: string;
 }
 
-function SectionHero({ heading, paragraph, image, logo, secondaryColor = cdColors.secondaryColor }: SectionHeroProps) {
+function SectionHero({ heading, paragraph, image, logo, background = cdColors.secondaryColor }: SectionHeroProps) {
   return (
     <>
-      <div className=' min-w-full' style={{ backgroundColor: secondaryColor }}>
+      <div className='min-w-full' style={{ backgroundColor: background }}>
 
       <div className="mt-10 min-h-full flex flex-col h-screen w-fit justify-around items-center md:min-w-full md:flex-row">
           
           <div className="flex flex-col mt-24 p-20  justify-center items-center h-1/2 w-full md:h-fit md:w-11/12 md:items-center">
-            <div className="flex flex-col m-4 h-auto justify-center ">
-              <img className='-mt-44 object-cover' src={logo} alt="Placeholder"></img>
-              <br></br>
-              <h1 className="font-semibold text-xl" style={{ color: cdColors.secondaryFontColor }}>{heading}</h1>
-              <br></br>
-              <p className={paragraph}></p>
-            </div>
+            <div className="flex flex-col m-4 h-auto justify-center">
+              {logo && (
+                <>
+                  <img className='-mt-44 object-cover' src={logo} alt="Placeholder"></img>
+                  <br />
+                </>
+              )}
+              {heading && (
+                <>
+                  <h1 className="font-semibold text-xl" style={{ color: cdColors.secondaryFontColor }}>{heading}</h1>
+                  <br />
+                </>
+              )}
+              <p className="font-semibold text-xl" style={{ color: cdColors.secondaryFontColor }}>{paragraph}</p>
+              </div>
           </div>  
           
           <div className="flex flex-col h-fit justify-around items-center object-cover md:h-full md:w-full ">

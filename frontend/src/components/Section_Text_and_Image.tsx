@@ -34,30 +34,41 @@ interface SectionTextAndImageProps {
   paragraph: string;
   image: string;
   heading: string;
-  buttonPrimaryProps: {
-    buttonPrimaryCaption: string;
-    buttonPrimaryLink: string;
+  background?: string;
+  buttonPrimaryProps?: {
+    buttonPrimaryCaption?: string;
+    buttonPrimaryLink?: string;
   };
+  listItems?: string[];
 }
 
 
-function SectionTextAndImage({ paragraph, image, heading, buttonPrimaryProps }: SectionTextAndImageProps) {
+function SectionTextAndImage({ paragraph, image, heading, background, buttonPrimaryProps, listItems  }: SectionTextAndImageProps) {
   return (
     <>
-      <div className='min-h-screen flex flex-col justify-center items-center' >
+      <div className='min-h-screen flex flex-col justify-center items-center' style={{ backgroundColor: background }}>
         <div className="flex flex-col h-full justify-around items-center md:flex-row">
 
-        {/* left box   */}
+        {/* left box */}
         <div className="flex flex-col p-5 justify-center items-center h-1/2 w-full md:m-12 md:h-fit md:w-9/12 md:items-center">
             <br></br>
             <div className="flex flex-col p-8 h-auto w-auto justify-center items-start md:full ">
               <h2 style={{ color: cdColors.secondaryFontColor }}>{heading}</h2>
               <br></br>
               <p className="">{paragraph}</p>
-              <br></br>
-              <Button_primary buttonPrimaryCaption={buttonPrimaryProps.buttonPrimaryCaption} buttonPrimaryLink={buttonPrimaryProps.buttonPrimaryLink}></Button_primary>
-            </div>
-          </div>  
+              <br />
+            {buttonPrimaryProps && buttonPrimaryProps.buttonPrimaryCaption && buttonPrimaryProps.buttonPrimaryLink && (
+              <Button_primary buttonPrimaryCaption={buttonPrimaryProps.buttonPrimaryCaption} buttonPrimaryLink={buttonPrimaryProps.buttonPrimaryLink} />
+            )}
+            {listItems && listItems.length > 0 && (
+              <ul className="list-disc pl-5 mt-4">
+                {listItems.map((item, index) => (
+                  <li key={index} className="mt-2">{item}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div> 
           
           {/* right box */}
           <div className="flex flex-col h-fit m-6 w-auto justify-around items-center md:h-fit md:w-7/12 ">

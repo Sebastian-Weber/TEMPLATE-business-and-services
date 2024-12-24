@@ -35,11 +35,13 @@ const cdImages = {
   image20: '/src/assets/images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg',
   image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
   image22: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
-  image23: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
+  image23: '/src/assets/images/frames-for-your-heart-iOLHAIaxpDA-unsplash.jpg',
+  image24: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
+  
 };
 
 const cdCopy = {
-  sectionHero_Heading: 'Energietechnik und Smart-Home-Lösungen in der Region Köln',
+  sectionHero_Heading: '',
   sectionHero_Paragraph: 'Energietechnik und Smart-Home-Lösungen in der Region Köln',
 
   sectionIntro_Heading: 'Von der Steckdose bis zur Smart-Home-Lösung',
@@ -55,13 +57,37 @@ const cdCopy = {
   // buttonSecondaryLink: 'about',
 };
 
+const cdColors = {
+  primaryColor: '#98BB48',
+  secondaryColor: '#FFF1B7',
+  primaryAccentColor: '',
+  secondaryAccentColor: '',
+  primaryBackgroundColorDark: '#165287',
+  primaryBackgroundColorDefault: '#1D6DB4',
+  primaryBackgroundColorLight: '#E9D9D3',
+  secondaryBackgroundColorDark: '#165287',
+  secondaryBackgroundColorDefault: '#165287',
+  secondaryBackgroundColorLight: '#BBD3C6',
+  tertiaryBackgroundColorDark: '#165287',
+  tertiaryBackgroundColorDefault: '#165287',
+  tertiaryBackgroundColorLight: '#B5CFE6',
+  quaternaryBackgroundColorDark: '#165287',
+  quaternaryBackgroundColorDefault: '#165287',
+  quaternaryBackgroundColorLight: '#F3EBC9',
+  primaryFontColor: '#191A1E',
+  secondaryFontColor: '#817E72',
+  tertiaryFontColor: '#D6D5CB'
+};
+
+
+
 
 const Home = () => {
   const [buttonPrimaryCaption1, setButtonPrimaryCaption1] = useState('Mehr über uns erfahren');
   const [buttonPrimaryLink1, setButtonPrimaryLink1] = useState('/about');
 
   const [buttonPrimaryCaption2, setButtonPrimaryCaption2] = useState('Zu den offenen Stellen');
-  const [buttonPrimaryLink2, setButtonPrimaryLink2] = useState('/#kontakt');
+  const [buttonPrimaryLink2, setButtonPrimaryLink2] = useState('/jobs');
 
   const buttonPrimaryProps1 = {
     buttonPrimaryCaption: buttonPrimaryCaption1,
@@ -90,7 +116,8 @@ const Home = () => {
         heading={cdCopy.sectionHero_Heading}
         paragraph={cdCopy.sectionHero_Paragraph} 
         image={cdImages.image9}
-        logo={cdImages.logo}>
+        logo={cdImages.logo}
+        background={cdColors.secondaryColor}>
         </SectionHero>
 
         <ButtonPrimaryProvider value={buttonPrimaryProps1}>
@@ -98,7 +125,8 @@ const Home = () => {
           heading={cdCopy.sectionIntro_Heading}
           paragraph={cdCopy.sectionIntro_Paragraph}
           image={cdImages.image7}
-            buttonPrimaryProps={buttonPrimaryProps1}>
+          buttonPrimaryProps={buttonPrimaryProps1}
+          background={''}>
           </SectionTextAndImage>
         </ButtonPrimaryProvider>
 
@@ -134,7 +162,7 @@ const Home = () => {
           image={cdImages.image10}
             buttonPrimaryProps={buttonPrimaryProps}>
           </SectionTextAndImage> */}
-        {/* <SectionDivider></SectionDivider> */}
+        <SectionDivider></SectionDivider>
 
         <SectionContact></SectionContact>
         <Footer></Footer>

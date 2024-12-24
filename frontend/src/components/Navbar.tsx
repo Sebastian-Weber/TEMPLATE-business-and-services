@@ -5,7 +5,6 @@ import Firmenlogo from '/src/assets/Firmenlogo.svg'
 import Phone from '/src/assets/icons/Phone.svg'
 
 import ToggleHamburger from './toggles/toggle_hamburger';
-import Button_primary from './buttons/button_primary';
 import Button_secondary from './buttons/button_secondary';
 import Navbar_xl_dropdown_template from './dropdowns/Navbar_xl_dropdown_template';
 
@@ -121,7 +120,7 @@ const Navbar = () => {
 
         <div className="flex flex-row justify-end items-center ">
 
-        <Button_secondary buttonSecondaryCaption="Kontakt" buttonSecondaryLink="about"></Button_secondary>
+        <Button_secondary buttonSecondaryCaption="Kontakt" buttonSecondaryLink="kontakt"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
 
@@ -220,7 +219,10 @@ const Navbar = () => {
 
         <div className="flex flex-row justify-end items-center ">
 
-        <Button_secondary buttonSecondaryCaption="Kontakt" buttonSecondaryLink="about"></Button_secondary>
+        
+
+
+        <Button_secondary buttonSecondaryCaption="Kontakt" buttonSecondaryLink="#kontakt"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">

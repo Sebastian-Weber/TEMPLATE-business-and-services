@@ -1,5 +1,5 @@
 
-import { useButtonPrimaryContext } from '../../contexts/ButtonPrimaryContext';
+// import { useButtonPrimaryContext } from '../../contexts/ButtonPrimaryContext';
 
 const cdColors = {
   primaryColor: '#98BB48',
@@ -38,8 +38,8 @@ const Button_primary = ({ buttonPrimaryCaption, buttonPrimaryLink }: ButtonPrima
   return (
     <a href={buttonPrimaryLink}>
       <button
-        style={{ color: cdColors.primaryColor, backgroundColor: cdColors.secondaryColor }}
-        className="font-semibold text-sm px-4 py-2 mx-4 my-2 rounded-md hover:opacity-50 transition ease-in-out delay-50"
+        style={{ color: cdColors.secondaryColor, backgroundColor: cdColors.primaryColor }}
+        className="font-semibold text-sm px-4 py-2 mr-1 my-2 rounded-md hover:opacity-50 transition ease-in-out delay-50"
       >
         {buttonPrimaryCaption}
       </button>

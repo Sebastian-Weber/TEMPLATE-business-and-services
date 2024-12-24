@@ -18,7 +18,6 @@ const cdImages = {
 
 };
 
-
 const cdColors = {
   primaryColor: '#98BB48',
   secondaryColor: '#FFF1B7',
@@ -26,20 +25,21 @@ const cdColors = {
   secondaryAccentColor: '',
   primaryBackgroundColorDark: '#165287',
   primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#ACC6DD',
+  primaryBackgroundColorLight: '#E9D9D3',
   secondaryBackgroundColorDark: '#165287',
   secondaryBackgroundColorDefaukt: '#165287',
-  secondaryBackgroundColorLight: '#165287',
+  secondaryBackgroundColorLight: '#BBD3C6',
   tertiaryBackgroundColorDark: '#165287',
   tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#165287',
+  tertiaryBackgroundColorLight: '#B5CFE6',
   quaternaryBackgroundColorDark: '#165287',
   quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#165287',
+  quaternaryBackgroundColorLight: '#F3EBC9',
   primaryFontColor: '#191A1E',
   secondaryFontColor: '#817E72',
   tertiaryFontColor: '#D6D5CB'
 };
+
 
 const cdCopy = {
   sectionContact_Heading: 'Wie Sie uns erreichen können',
@@ -51,19 +51,30 @@ const cdCopy = {
 function SectionContact() {
   return (
     <>
+
+      <div className='min-h-screen flex flex-col justify-center items-center md:justify-center md:items-center' style={{ backgroundColor: cdColors.tertiaryBackgroundColorLight }}>
       <a id="kontakt"></a>
-      <div className='min-h-screen flex flex-col justify-center items-center md:justify-center md:items-center' style={{ backgroundColor: cdColors.secondaryColor }}>
       <div className="flex flex-col h-full w-full md:p-12 md:flex-row  ">
   
           {/* left box */}
           <div className="flex flex-col p-12 justify-center items-center md:items-center h-1/2 w-full md:p-6 md:h-fit  md:justify-normal">
             <div className="w-full md:w-2/3 ">
-            <Text_field caption="Your Caption" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
-            <Text_field caption="Your Caption" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
-            <Text_field caption="Your Caption" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
-            <Text_field caption="Your Caption" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
-            <Text_area caption="Your Caption" placeholder="Your Placeholder" alt="Your Alt Text"></Text_area>
-            <Button_primary buttonPrimaryCaption="Your Button Caption" buttonPrimaryLink="Your Button Link"></Button_primary>
+            <Text_field caption="Vor & Nachname*" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
+            <Text_field caption="E-Mail-Adresse*" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
+            <Text_field caption="Telefonnummer" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
+            <Text_area caption="Nachricht*" placeholder="Your Placeholder" alt="Your Alt Text"></Text_area>
+            
+            
+            <label className="text-sm text-gray-700">Bei mit * gekennzeichneten Felder handelt es sich um Pflichtfelder.</label>
+            <br></br>
+            <br></br>
+            <div className="flex flex-row justify-start items-center">
+                <input type="checkbox" className="m-2"></input>
+                <label className="text-sm text-gray-700">Mit dem Senden der Nachricht akzeptiere ich die Datenschutzbedingungen</label>
+            </div>
+              <br></br>
+            
+            <Button_primary buttonPrimaryCaption="Nachricht senden" buttonPrimaryLink="Your Button Link"></Button_primary>
             </div>
           </div>
 

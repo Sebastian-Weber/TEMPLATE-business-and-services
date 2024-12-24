@@ -31,12 +31,14 @@ const cdImages = {
   image19: '/src/assets/images/alex-wolowiecki-uXgoasNqYqw-unsplash.jpg',
   image20: '/src/assets/images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg',
   image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
-  image22: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
+  image22: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
+  image23: '/src/assets/images/frames-for-your-heart-iOLHAIaxpDA-unsplash.jpg',
+  image24: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
 };
 
 const cdCopy = {
-  sectionHero_Heading: 'Energietechnik und Smart-Home-Lösungen in der Region Köln',
-  sectionHero_Paragraph: '',
+  sectionHero_Heading: 'Karriere bei Peters Elektro GmbH',
+  sectionHero_Paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 
   sectionTextAndImage_Heading: 'Von der Steckdose bis zur Smart-Home-Lösung',
   sectionTextAndImage_Paragraph: 'Willkommen bei Peters Elektro GmbH, Ihrem zuverlässigen Partner für professionelle Elektro-Dienstleistungen. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen – von regelmäßiger Wartung bis hin zu modernen Smart-Home-Lösungen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
@@ -46,6 +48,29 @@ const cdCopy = {
   buttonSecondaryCaption: 'Mehr über uns erfahren  -- kommt aus Home.tsx',
   buttonSecondaryLink: 'about',
 };
+
+const cdColors = {
+  primaryColor: '#98BB48',
+  secondaryColor: '#FFF1B7',
+  primaryAccentColor: '',
+  secondaryAccentColor: '',
+  primaryBackgroundColorDark: '#165287',
+  primaryBackgroundColorDefault: '#1D6DB4',
+  primaryBackgroundColorLight: '#E9D9D3',
+  secondaryBackgroundColorDark: '#165287',
+  secondaryBackgroundColorDefault: '#165287',
+  secondaryBackgroundColorLight: '#BBD3C6',
+  tertiaryBackgroundColorDark: '#165287',
+  tertiaryBackgroundColorDefault: '#165287',
+  tertiaryBackgroundColorLight: '#B5CFE6',
+  quaternaryBackgroundColorDark: '#165287',
+  quaternaryBackgroundColorDefault: '#165287',
+  quaternaryBackgroundColorLight: '#F3EBC9',
+  primaryFontColor: '#191A1E',
+  secondaryFontColor: '#817E72',
+  tertiaryFontColor: '#D6D5CB'
+};
+
 
 function Jobs() {
 
@@ -63,17 +88,19 @@ function Jobs() {
     <>
         <Header></Header>
         <SectionHero
-          heading={cdCopy.sectionTextAndImage_Heading}
-          paragraph={cdCopy.sectionTextAndImage_Paragraph}
-          image={cdImages.image20}
-          logo={cdImages.logo}
-        ></SectionHero>
+          heading={cdCopy.sectionHero_Heading}
+          paragraph={cdCopy.sectionHero_Paragraph}
+          image={cdImages.image22}
+          background={cdColors.quaternaryBackgroundColorLight}>
+        </SectionHero>
         <SectionTextAndImage 
           heading={cdCopy.sectionTextAndImage_Heading}
           paragraph={cdCopy.sectionTextAndImage_Paragraph}
           image={cdImages.image10}
           buttonPrimaryProps={buttonPrimaryProps}
           buttonSecondaryProps={buttonSecondaryProps}></SectionTextAndImage>
+          <SectionDivider></SectionDivider>
+          <SectionContact></SectionContact>
         <Footer></Footer>
     </>
   )
