@@ -30,9 +30,21 @@ const cdImages = {
   image17: '/src/assets/images/steffen-lemmerzahl-fu3iLPBe964-unsplash.jpg',
   image18: '/src/assets/images/s-tsuchiya-gxIg8FcDIC8-unsplash.jpg',
   image19: '/src/assets/images/alex-wolowiecki-uXgoasNqYqw-unsplash.jpg',
-  image20: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
-
+  image20: '/src/assets/images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg',
+  image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
+  image22: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
+  image23: '/src/assets/images/frames-for-your-heart-iOLHAIaxpDA-unsplash.jpg',
+  image24: '/src/assets/images/jimmy-nilsson-masth-hrIpsXkrAO0-unsplash.png',
+  image25: '/src/assets/images/markus-spiske-rNn_TU8dvoY-unsplash.png',
+  image26: '/src/assets/images/kumpan-electric-AjNgSvEt-v4-unsplash.jpg',
+  image27: '/src/assets/images/smart-me-ag-j2E-2YQe_c8-unsplash.jpg',
+  image28: '/src/assets/images/waldemar-rHfTdK9YU2Q-unsplash.jpg',
+  image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
+  image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image31: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
 };
+
 
 const cdColors = {
   primaryColor: '#98BB48',
@@ -159,24 +171,24 @@ const Navbar = () => {
         <Navbar_xl_dropdown_template 
           DropdownCaption='Leistungen'
           caption='Placeholder'
-          DropdownItem1Heading='Elektro-Dienstleistungen für Privatkunden' 
           DropdownItem1Image={cdImages.image3} 
-          DropdownItem1Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
+          DropdownItem1Heading='Elektro-Dienstleistungen für Privatkunden'
+          DropdownItem1Subheading='Elektroinstallationen für Ihr Zuhause' 
           DropdownItem1Url='Elektro-Dienstleistungen-Privatkunden'
-          DropdownItem2Heading='Elektro-Dienstleistungen für Gewerbekunden' 
           DropdownItem2Image={cdImages.image17} 
-          DropdownItem2Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
-          DropdownItem2Url='Elektro-Dienstleistungen-Gewerbekunden'  
+          DropdownItem2Heading='Elektro-Dienstleistungen für Gewerbekunden' 
+          DropdownItem2Subheading='Einbau, Austausch und Wartung' 
+          DropdownItem2Url='Elektro-Dienstleistungen-Gewerbekunden'
+          DropdownItem3Image={cdImages.image30}  
           DropdownItem3Heading='Smart-Home Lösungen' 
-          DropdownItem3Image={cdImages.image1} 
-          DropdownItem3Subheading='Smart-Home Lösungen' 
-          DropdownItem3Url='Elektro-Dienstleistungen-Privatkunden'
+          DropdownItem3Subheading='Smart-Home Lösungen für Ihr Zuhause' 
+          DropdownItem3Url=''
+          DropdownItem4Image={cdImages.image31} 
           DropdownItem4Heading='Beleuchtungsdesign und -installation' 
-          DropdownItem4Image={cdImages.image18} 
           DropdownItem4Subheading='Beleuchtungsdesign und -installation' 
-          DropdownItem4Url='Elektro-Dienstleistungen-Privatkunden'
-          DropdownItem5Heading='Notfallreparaturen' 
+          DropdownItem4Url=''
           DropdownItem5Image={cdImages.image4} 
+          DropdownItem5Heading='Notfallreparaturen' 
           DropdownItem5Subheading='Notfallreparaturen' 
           DropdownItem5Url='Elektro-Dienstleistungen-Privatkunden'  
 
@@ -185,25 +197,25 @@ const Navbar = () => {
           DropdownCaption='Nachhaltigkeit & Energielösungen'
           caption='Placeholder'
           DropdownItem1Heading='Photovoltaik-Anlagen' 
-          DropdownItem1Image={cdImages.image5} 
+          DropdownItem1Image={cdImages.image25} 
           DropdownItem1Subheading='...' 
           DropdownItem1Url='Elektro-Dienstleistungen-Privatkunden'
           DropdownItem2Heading='Solaranlagen-Installation' 
-          DropdownItem2Image={cdImages.image6} 
+          DropdownItem2Image={cdImages.image24} 
           DropdownItem2Subheading='...' 
-          DropdownItem2Url='Elektro-Dienstleistungen-Privatkunden'  
+          DropdownItem2Url=''  
           DropdownItem3Heading='Energieeffiziente Beleuchtung' 
-          DropdownItem3Image={cdImages.image7} 
+          DropdownItem3Image={cdImages.image18} 
           DropdownItem3Subheading='...' 
-          DropdownItem3Url='Elektro-Dienstleistungen-Privatkunden'
+          DropdownItem3Url=''
           DropdownItem4Heading='Ladestationen für E-Fahrzeuge' 
-          DropdownItem4Image={cdImages.image8} 
+          DropdownItem4Image={cdImages.image28} 
           DropdownItem4Subheading='...' 
-          DropdownItem4Url='Elektro-Dienstleistungen-Privatkunden'
-          DropdownItem5Heading='Elektro-Dienstleistungen für Privatkunden' 
-          DropdownItem5Image={cdImages.image9} 
-          DropdownItem5Subheading='Einbau, Austausch und Wartung von Elektrogeräten' 
-          DropdownItem5Url='Elektro-Dienstleistungen-Privatkunden' 
+          DropdownItem4Url=''
+          DropdownItem5Heading='' 
+          DropdownItem5Image={''} 
+          DropdownItem5Subheading='' 
+          DropdownItem5Url='' 
         ></Navbar_xl_dropdown_template>
 
         {/* Offene Stellen */}

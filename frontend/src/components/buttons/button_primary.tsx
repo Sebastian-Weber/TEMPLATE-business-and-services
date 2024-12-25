@@ -28,7 +28,7 @@ interface ButtonPrimaryProps {
 
   buttonPrimaryCaption: string;
 
-  buttonPrimaryLink: string;
+  buttonPrimaryLink?: string;
 
 }
 

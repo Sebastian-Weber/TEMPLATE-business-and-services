@@ -36,13 +36,20 @@ const cdImages = {
   image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
   image22: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
   image23: '/src/assets/images/frames-for-your-heart-iOLHAIaxpDA-unsplash.jpg',
-  image24: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
-  
+  image24: '/src/assets/images/jimmy-nilsson-masth-hrIpsXkrAO0-unsplash.png',
+  image25: '/src/assets/images/markus-spiske-rNn_TU8dvoY-unsplash.png',
+  image26: '/src/assets/images/kumpan-electric-AjNgSvEt-v4-unsplash.jpg',
+  image27: '/src/assets/images/smart-me-ag-j2E-2YQe_c8-unsplash.jpg',
+  image28: '/src/assets/images/waldemar-rHfTdK9YU2Q-unsplash.jpg',
+  image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
+  image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image31: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
 };
 
 const cdCopy = {
   sectionHero_Heading: '',
-  sectionHero_Paragraph: 'Energietechnik und Smart-Home-Lösungen in der Region Köln',
+  sectionHero_Subheading: 'Energietechnik und Smart-Home-Lösungen in der Region Köln',
+  sectionHero_Paragraph: '',
 
   sectionIntro_Heading: 'Von der Steckdose bis zur Smart-Home-Lösung',
   sectionIntro_Paragraph: 'Willkommen bei Peters Elektro GmbH, Ihrem zuverlässigen Partner für professionelle Elektro-Dienstleistungen. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen – von regelmäßiger Wartung bis hin zu modernen Smart-Home-Lösungen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
@@ -114,6 +121,7 @@ const Home = () => {
         <Header></Header>
         <SectionHero 
         heading={cdCopy.sectionHero_Heading}
+        subheading={cdCopy.sectionHero_Subheading}
         paragraph={cdCopy.sectionHero_Paragraph} 
         image={cdImages.image9}
         logo={cdImages.logo}

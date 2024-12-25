@@ -5,10 +5,11 @@ const cdImages = {
 
 };
 
-const cdCopy = {
-  heroHeading1: 'Smart-Home-Lösungen und Energietechnik in der Region Köln.',
-  heroParagraph1: 'Paragraph 1: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
-};
+// const cdCopy = {
+//   heroHeading1: 'Heading 1: ...',
+//   heroSubhading1: 'Heading 1: ...',
+//   heroParagraph1: 'Paragraph 1: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+// };
 
 
 const cdColors = {
@@ -37,13 +38,14 @@ interface SectionHeroProps {
   logo?: string;
   primaryColor?: string;
   secondaryColor?: string;
-  heading: string;
+  heading?: string;
+  subheading?: string;
   paragraph: string;
   image: string;
   background: string;
 }
 
-function SectionHero({ heading, paragraph, image, logo, background = cdColors.secondaryColor }: SectionHeroProps) {
+function SectionHero({ heading, subheading, paragraph, image, logo, background = cdColors.secondaryColor }: SectionHeroProps) {
   return (
     <>
       <div className='min-w-full' style={{ backgroundColor: background }}>
@@ -55,16 +57,21 @@ function SectionHero({ heading, paragraph, image, logo, background = cdColors.se
               {logo && (
                 <>
                   <img className='-mt-44 object-cover' src={logo} alt="Placeholder"></img>
-                  <br />
                 </>
               )}
               {heading && (
                 <>
-                  <h1 className="font-semibold text-xl" style={{ color: cdColors.secondaryFontColor }}>{heading}</h1>
+                  <h1 style={{ color: cdColors.secondaryFontColor }}>{heading}</h1>
                   <br />
                 </>
               )}
-              <p className="font-semibold text-xl" style={{ color: cdColors.secondaryFontColor }}>{paragraph}</p>
+              {subheading && (
+                <>
+                  <h2 style={{ color: cdColors.secondaryFontColor }}>{subheading}</h2>
+                  <br />
+                </>
+              )}
+              <p className="" style={{ color: cdColors.secondaryFontColor }}>{paragraph}</p>
               </div>
           </div>  
           

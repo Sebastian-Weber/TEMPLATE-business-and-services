@@ -28,7 +28,11 @@ const cdImages = {
     image19: '/src/assets/images/alex-wolowiecki-uXgoasNqYqw-unsplash.jpg',
     image20: '/src/assets/images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg',
     image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
-    image22: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
+    image22: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
+    image23: '/src/assets/images/frames-for-your-heart-iOLHAIaxpDA-unsplash.jpg',
+    image24: '/src/assets/images/jimmy-nilsson-masth-hrIpsXkrAO0-unsplash.png',
+    image25: '/src/assets/images/markus-spiske-rNn_TU8dvoY-unsplash.png',
+    image26: '/src/assets/images/jimmy-nilsson-masth-hrIpsXkrAO0-unsplash.png',
   };
   
 
@@ -55,39 +59,39 @@ const cdColors = {
   };
   
 
-const Navbar_XL_dropdown_items = [
-    // Item 1
-    {
-    item_1_image: Placeholder,
-    item_1_heading: 'Elektro-Dienstleistungen für Privatkunden',
-    item_1_subheading: '1 Placeholder',
-    item_1_url: '/Elektro-Dienstleistungen-Privatkunden',
-    },
-    // Item 2
-    {
-    item_2_image: Placeholder,
-    item_2_heading: '2 Placeholder',
-    item_2_subheading: '2 Placeholder',
-    },
-    // Item 3
-    {
-    item_3_image: Placeholder,
-    item_3_heading: '3 Placeholder',
-    item_3_subheading: '3 Placeholder',
-    },
-    // Item 4
-    {
-    item_4_image: Placeholder,
-    item_4_heading: '4 Placeholder',
-    item_4_subheading: '4 Placeholder',
-    },
-    // Item 5
-    {
-    item_5_image: Placeholder,
-    item_5_heading: '5 Placeholder',
-    item_5_subheading: '5 Placeholder',
-     },
-  ];
+// const Navbar_XL_dropdown_items = [
+//     // Item 1
+//     {
+//     item_1_image: Placeholder,
+//     item_1_heading: 'Elektro-Dienstleistungen für Privatkunden',
+//     item_1_subheading: '1 Placeholder',
+//     item_1_url: '/Elektro-Dienstleistungen-Privatkunden',
+//     },
+//     // Item 2
+//     {
+//     item_2_image: Placeholder,
+//     item_2_heading: '2 Placeholder',
+//     item_2_subheading: '2 Placeholder',
+//     },
+//     // Item 3
+//     {
+//     item_3_image: Placeholder,
+//     item_3_heading: '3 Placeholder',
+//     item_3_subheading: '3 Placeholder',
+//     },
+//     // Item 4
+//     {
+//     item_4_image: Placeholder,
+//     item_4_heading: '4 Placeholder',
+//     item_4_subheading: '4 Placeholder',
+//     },
+//     // Item 5
+//     {
+//     item_5_image: Placeholder,
+//     item_5_heading: '5 Placeholder',
+//     item_5_subheading: '5 Placeholder',
+//      },
+//   ];
 
 
 
@@ -178,18 +182,14 @@ function Navbar_xl_dropdown_template({
 
                 {/* Menu item 1 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
-                    <Link to="#">
-                        <img className="h-36 w-64 object-cover" src={DropdownItem1Image}></img>
-                    </Link>
-                    <br></br>
                     <Link to={`/${DropdownItem1Url}`}>
+                        <img className="h-36 w-64 object-cover" src={DropdownItem1Image}></img>
+                        <br></br>
                         <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
                             <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
                                 {DropdownItem1Heading}
                             </div>
                         </div>
-                    </Link>
-                    <Link to="#">
                         <div className="mt-1 block border-gray-100 font-semibold  hover:opacity-50">
                             <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                                 {DropdownItem1Subheading}
@@ -200,18 +200,14 @@ function Navbar_xl_dropdown_template({
 
                 {/* Menu item 1 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
-                    <Link to="#">
-                        <img className="h-36 w-64 object-cover" src={DropdownItem2Image}></img>
-                    </Link>
-                    <br></br>
                     <Link to={`/${DropdownItem2Url}`}>
+                        <img className="h-36 w-64 object-cover" src={DropdownItem2Image}></img>
+                        <br></br>
                         <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
                             <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
                                 {DropdownItem2Heading}
                             </div>
                         </div>
-                    </Link>
-                    <Link to="#">
                         <div className="mt-1 block border-gray-100 font-semibold  hover:opacity-50">
                             <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                                 {DropdownItem2Subheading}
@@ -222,18 +218,14 @@ function Navbar_xl_dropdown_template({
 
                 {/* Menu item 3 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
-                    <Link to="#">
-                        <img className="h-36 w-64 object-cover" src={DropdownItem3Image}></img>
-                    </Link>
-                    <br></br>
                     <Link to={`/${DropdownItem3Url}`}>
+                        <img className="h-36 w-64 object-cover" src={DropdownItem3Image}></img>
+                        <br></br>
                         <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
                             <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
                                 {DropdownItem3Heading}
                             </div>
                         </div>
-                    </Link>
-                    <Link to="#">
                         <div className="mt-1 block border-gray-100 font-semibold  hover:opacity-50">
                             <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                                 {DropdownItem3Subheading}
@@ -244,18 +236,14 @@ function Navbar_xl_dropdown_template({
       
                 {/* Menu item 4 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
-                    <Link to="#">
-                        <img className="h-36 w-64 object-cover" src={DropdownItem4Image}></img>
-                    </Link>
-                    <br></br>
                     <Link to={`/${DropdownItem4Url}`}>
+                        <img className="h-36 w-64 object-cover" src={DropdownItem4Image}></img>
+                        <br></br>
                         <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
                             <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
                                 {DropdownItem4Heading}
                             </div>
                         </div>
-                    </Link>
-                    <Link to="#">
                         <div className="mt-1 block border-gray-100 font-semibold  hover:opacity-50">
                             <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                                 {DropdownItem4Subheading}
@@ -266,18 +254,14 @@ function Navbar_xl_dropdown_template({
 
                 {/* Menu item 5 */}
                 <div className="flex flex-col justify-normal items-start px-6 max-w-72">
-                    <Link to="#">
-                        <img className="h-36 w-64 object-cover" src={DropdownItem5Image}></img>
-                    </Link>
-                    <br></br>
                     <Link to={`/${DropdownItem5Url}`}>
+                        <img className="h-36 w-64 object-cover" src={DropdownItem5Image}></img>
+                        <br></br>
                         <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
                             <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
                                 {DropdownItem5Heading}
                             </div>
                         </div>
-                    </Link>
-                    <Link to="#">
                         <div className="mt-1 block border-gray-100 font-semibold  hover:opacity-50">
                             <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
                                 {DropdownItem5Subheading}

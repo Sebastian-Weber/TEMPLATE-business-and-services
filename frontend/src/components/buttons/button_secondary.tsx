@@ -26,7 +26,7 @@ const cdColors = {
 
 interface ButtonSecondaryProps {
   buttonSecondaryCaption: string;
-  buttonSecondaryLink: string;
+  buttonSecondaryLink?: string;
 }
 
 function Button_secondary({ buttonSecondaryCaption, buttonSecondaryLink }: ButtonSecondaryProps) {

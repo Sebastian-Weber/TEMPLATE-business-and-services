@@ -38,6 +38,7 @@ const cdImages = {
 
 const cdCopy = {
   sectionHero_Heading: 'Karriere bei Peters Elektro GmbH',
+  sectionHero_Subheading: '',
   sectionHero_Paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 
   sectionTextAndImage_Heading: 'Von der Steckdose bis zur Smart-Home-Lösung',
@@ -89,6 +90,7 @@ function Jobs() {
         <Header></Header>
         <SectionHero
           heading={cdCopy.sectionHero_Heading}
+          subheading={cdCopy.sectionHero_Subheading}
           paragraph={cdCopy.sectionHero_Paragraph}
           image={cdImages.image22}
           background={cdColors.quaternaryBackgroundColorLight}>

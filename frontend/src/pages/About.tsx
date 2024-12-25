@@ -58,6 +58,7 @@ const cdColors = {
 
 const cdCopy = {
   sectionHero_Heading: 'Über uns - Elektro Peters',
+  sectionHero_Subheading: '',
   sectionHero_Paragraph: 'Unser Erfolg basiert auf nachhaltigen Lösungen und einem verantwortungsvollen Umgang mit Ressourcen.',
 
   sectionTextAndImage_Heading: 'Unser Leistungsangebot',
@@ -74,7 +75,7 @@ const cdCopy = {
 const About = () => {
   const buttonPrimaryProps = {
     buttonPrimaryCaption: '',
-    buttonPrimaryLink: 'jobs',
+    buttonPrimaryLink: '',
   };
 
   const listItems = [
@@ -104,6 +105,7 @@ const About = () => {
         <Header></Header>
         <SectionHero
           heading={cdCopy.sectionHero_Heading}
+          subheading={cdCopy.sectionHero_Subheading}
           paragraph={cdCopy.sectionHero_Paragraph}
           image={cdImages.image8}
           logo={''}

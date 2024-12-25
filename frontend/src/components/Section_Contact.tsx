@@ -59,10 +59,10 @@ function SectionContact() {
           {/* left box */}
           <div className="flex flex-col p-12 justify-center items-center md:items-center h-1/2 w-full md:p-6 md:h-fit  md:justify-normal">
             <div className="w-full md:w-2/3 ">
-            <Text_field caption="Vor & Nachname*" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
-            <Text_field caption="E-Mail-Adresse*" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
-            <Text_field caption="Telefonnummer" placeholder="Your Placeholder" alt="Your Alt Text"></Text_field>
-            <Text_area caption="Nachricht*" placeholder="Your Placeholder" alt="Your Alt Text"></Text_area>
+            <Text_field caption="Vor- & Nachname*" placeholder="" alt="Ihr Vor- und Nachname"></Text_field>
+            <Text_field caption="E-Mail-Adresse*" placeholder="" alt="Ihre E-Mail-Adresse"></Text_field>
+            <Text_field caption="Telefonnummer" placeholder="" alt="Ihre Telefonnumer"></Text_field>
+            <Text_area caption="Nachricht*" placeholder="" alt="Ihre Nachricht"></Text_area>
             
             
             <label className="text-sm text-gray-700">Bei mit * gekennzeichneten Felder handelt es sich um Pflichtfelder.</label>
@@ -74,7 +74,7 @@ function SectionContact() {
             </div>
               <br></br>
             
-            <Button_primary buttonPrimaryCaption="Nachricht senden" buttonPrimaryLink="Your Button Link"></Button_primary>
+            <Button_primary buttonPrimaryCaption="Nachricht senden" buttonPrimaryLink=""></Button_primary>
             </div>
           </div>
 

@@ -63,13 +63,33 @@ const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease
             </li>
 
             <li>
-                <Expander_sm caption="Leistungen" />
+                <Expander_sm 
+                    DropdownCaption="Leistungen"
+                    DropdownItem1Heading="Elektro-Dienstleistungen für Privatkunden" 
+                    DropdownItem1Link="/Elektro-Dienstleistungen-Privatkunden" 
+                    DropdownItem2Heading="Item 2 Heading" 
+                    DropdownItem2Link="/item2" 
+                    DropdownItem3Heading="Item 3 Heading" 
+                    DropdownItem3Link="/item3" 
+                    DropdownItem4Heading="Item 4 Heading" 
+                    DropdownItem4Link="/item4" 
+                    DropdownItem5Heading="Item 5 Heading" 
+                    DropdownItem5Link="/item5" 
+                />
             </li>
-
-            <li>
-                <Expander_sm caption="Energielösungen" />
-            </li>
-            
+                <Expander_sm 
+                    DropdownCaption="Energielösungen" 
+                    DropdownItem1Heading="Item 1 Heading" 
+                    DropdownItem1Link="/item1" 
+                    DropdownItem2Heading="Item 2 Heading" 
+                    DropdownItem2Link="/item2" 
+                    DropdownItem3Heading="Item 3 Heading" 
+                    DropdownItem3Link="/item3" 
+                    DropdownItem4Heading="Item 4 Heading" 
+                    DropdownItem4Link="/item4" 
+                    DropdownItem5Heading="Item 5 Heading" 
+                    DropdownItem5Link="/item5" 
+                />
             <li>
             <Link className="" to="/jobs">
                 <div className="cursor-pointer" onClick={() => setOverlayVisible(!isOverlayVisible)} style={{ color:cdColors.secondaryColor}}>
