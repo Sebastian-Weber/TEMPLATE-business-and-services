@@ -6,6 +6,29 @@ import Section_Gallery from "../components/Section_Gallery"
 import SectionHero from "../components/Section_Hero"
 import SectionTextAndImage from "../components/Section_Text_and_Image"
 import Footer from "../components/Footer"
+import SectionContact from "../components/Section_Contact"
+
+const cdColors = {
+  primaryColor: '#98BB48',
+  secondaryColor: '#FFF1B7',
+  primaryAccentColor: '',
+  secondaryAccentColor: '',
+  primaryBackgroundColorDark: '#165287',
+  primaryBackgroundColorDefault: '#1D6DB4',
+  primaryBackgroundColorLight: '#E9D9D3',
+  secondaryBackgroundColorDark: '#165287',
+  secondaryBackgroundColorDefault: '#165287',
+  secondaryBackgroundColorLight: '#BBD3C6',
+  tertiaryBackgroundColorDark: '#165287',
+  tertiaryBackgroundColorDefault: '#165287',
+  tertiaryBackgroundColorLight: '#B5CFE6',
+  quaternaryBackgroundColorDark: '#165287',
+  quaternaryBackgroundColorDefault: '#165287',
+  quaternaryBackgroundColorLight: '#F3EBC9',
+  primaryFontColor: '#191A1E',
+  secondaryFontColor: '#817E72',
+  tertiaryFontColor: '#D6D5CB'
+};
 
 const cdImages = {
   logo: '/src/assets/Peters_Logotype.svg',
@@ -42,12 +65,15 @@ function ElektroDienstleistungenPrivatkunden() {
       <SectionHero 
       heading={cdCopy.heading} 
       paragraph={cdCopy.paragraph} 
-      image={cdImages.image15}></SectionHero>
-      {/* <SectionTextAndImage 
+      image={cdImages.image15}
+      logo={''}
+      background={cdColors.secondaryBackgroundColorLight}>
+      </SectionHero>
+      <SectionTextAndImage 
         heading={cdCopy.heading}
         paragraph={cdCopy.paragraph}
         image={cdImages.image1}
-        ></SectionTextAndImage> */}
+        ></SectionTextAndImage>
       <SectionCards></SectionCards>
       <Section_Gallery 
         image1={cdImages.image1}
@@ -59,6 +85,7 @@ function ElektroDienstleistungenPrivatkunden() {
         image7={cdImages.image7}
       ></Section_Gallery>
       <SectionDivider></SectionDivider>
+      <SectionContact></SectionContact>
       <Footer></Footer>
   </>
   )
