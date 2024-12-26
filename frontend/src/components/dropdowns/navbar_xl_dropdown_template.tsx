@@ -110,20 +110,20 @@ interface NavbarXlDropdownTemplateProps {
     DropdownItem2Subheading: string;
     DropdownItem2Url: string;
 
-    DropdownItem3Image: string;
-    DropdownItem3Heading: string;
-    DropdownItem3Subheading: string;
-    DropdownItem3Url: string;
+    DropdownItem3Image?: string;
+    DropdownItem3Heading?: string;
+    DropdownItem3Subheading?: string;
+    DropdownItem3Url?: string;
 
-    DropdownItem4Image: string;
-    DropdownItem4Heading: string;
-    DropdownItem4Subheading: string;
-    DropdownItem4Url: string;
+    DropdownItem4Image?: string;
+    DropdownItem4Heading?: string;
+    DropdownItem4Subheading?: string;
+    DropdownItem4Url?: string;
 
-    DropdownItem5Image: string;
-    DropdownItem5Heading: string;
-    DropdownItem5Subheading: string;
-    DropdownItem5Url: string;
+    DropdownItem5Image?: string;
+    DropdownItem5Heading?: string;
+    DropdownItem5Subheading?: string;
+    DropdownItem5Url?: string;
 
 }
 
