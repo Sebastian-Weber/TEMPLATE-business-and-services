@@ -55,7 +55,7 @@ function Footer() {
           {/* Impressum  */}
           <Link className="" to="/impressum">
             <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
-            Impressum
+              Impressum
             </div>
           </Link>
 
@@ -87,7 +87,7 @@ function Footer() {
              {/* Firmenlogo */}
               <li className="">
                 <Link to="/">
-                  <img className="w-18 -mt-4" src={Firmenlogo} alt="Firmenlogo" />
+                  <img className="w-18 -mt-8" src={Firmenlogo} alt="Firmenlogo" />
                </Link>
               </li>
 

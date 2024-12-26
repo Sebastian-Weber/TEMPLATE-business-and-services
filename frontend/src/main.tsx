@@ -21,6 +21,11 @@ import About from './pages/About';
 import ElektroDienstleistungenPrivatkunden from './pages/Elektro-Dienstleistungen-Privatkunden';
 import Impressum from './pages/Impressum';
 import Jobs from './pages/Jobs';
+import ElektroDienstleistungenGewerbekunden from './pages/Elektro-Dienstleistungen-Gewerbekunden';
+import SmartHomeLoesungen from './pages/Smart-Home-Loesungen';
+import Notfallreparaturen from './pages/Notfallreparaturen';
+import LichtdesignundInstallation from './pages/Lichtdesign-und-Installation';
+
 
 
 
@@ -49,6 +54,22 @@ const router = createBrowserRouter([
             {
                 path: '/Elektro-Dienstleistungen-Privatkunden',
                 element: <ElektroDienstleistungenPrivatkunden />,
+            },
+            {
+                path: '/Elektro-Dienstleistungen-Gewerbekunden',
+                element: <ElektroDienstleistungenGewerbekunden />,
+            },
+            {
+                path: '/Smart-Home-Loesungen',
+                element: <SmartHomeLoesungen />,
+            },
+            {
+                path: '/Lichtdesign-und-Installation',
+                element: <LichtdesignundInstallation />,
+            },
+            {
+                path: '/Notfallreparaturen',
+                element: <Notfallreparaturen />,
             },
             {
                 path: '/Impressum',

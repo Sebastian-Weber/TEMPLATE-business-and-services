@@ -80,8 +80,38 @@ const Navbar = () => {
     setMenuItem1ExpanderVisible(!isMenuItem1ExpanderVisible);
   };
 
-  // const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300'
-
+   const dropdownItems = [
+    {
+      heading: 'Home',
+      subheading: 'Welcome to our homepage',
+      url: 'home',
+      image: '/path/to/home-image.jpg',
+    },
+    {
+      heading: 'About',
+      subheading: 'Learn more about us',
+      url: 'about',
+      image: '/path/to/about-image.jpg',
+    },
+    {
+      heading: 'Services',
+      subheading: 'Discover our services',
+      url: 'services',
+      image: '/path/to/services-image.jpg',
+    },
+    {
+      heading: 'Contact',
+      subheading: 'Get in touch with us',
+      url: 'contact',
+      image: '/path/to/contact-image.jpg',
+    },
+    {
+      heading: 'Blog',
+      subheading: 'Read our latest posts',
+      url: 'blog',
+      image: '/path/to/blog-image.jpg',
+    },
+  ];
 
   return (
     <>
@@ -127,7 +157,7 @@ const Navbar = () => {
 
         {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          <img className="w-18 -mt-8" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>   
 
         <div className="flex flex-row justify-end items-center ">
@@ -156,7 +186,7 @@ const Navbar = () => {
 
         {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-6"  src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          <img className="w-18 -mt-8"  src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>
 
         <div className="flex flex-row justify-start items-center mx-4">
@@ -182,15 +212,15 @@ const Navbar = () => {
           DropdownItem3Image={cdImages.image30}  
           DropdownItem3Heading='Smart-Home Lösungen' 
           DropdownItem3Subheading='Smart-Home Lösungen für Ihr Zuhause' 
-          DropdownItem3Url=''
+          DropdownItem3Url='Smart-Home-Loesungen'
           DropdownItem4Image={cdImages.image31} 
-          DropdownItem4Heading='Beleuchtungsdesign und -installation' 
-          DropdownItem4Subheading='Beleuchtungsdesign und -installation' 
-          DropdownItem4Url=''
+          DropdownItem4Heading='Lichtdesign und -installation' 
+          DropdownItem4Subheading='Lichtdesign und -installation' 
+          DropdownItem4Url='Lichtdesign-und-Installation'
           DropdownItem5Image={cdImages.image4} 
           DropdownItem5Heading='Notfallreparaturen' 
           DropdownItem5Subheading='Notfallreparaturen' 
-          DropdownItem5Url='Elektro-Dienstleistungen-Privatkunden'  
+          DropdownItem5Url='Notfallreparaturen'  
 
         ></Navbar_xl_dropdown_template>
         <Navbar_xl_dropdown_template 

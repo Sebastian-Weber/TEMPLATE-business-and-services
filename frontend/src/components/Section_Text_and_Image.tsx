@@ -75,7 +75,6 @@ function SectionTextAndImage({ paragraph, image, heading, background, buttonPrim
             <img className='h-fit p-12 md:p-18' src={image} alt="Placeholder"></img>
           </div>
 
-          
         </div>
 
       </div>

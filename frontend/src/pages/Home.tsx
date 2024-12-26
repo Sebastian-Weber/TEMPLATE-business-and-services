@@ -87,8 +87,6 @@ const cdColors = {
 };
 
 
-
-
 const Home = () => {
   const [buttonPrimaryCaption1, setButtonPrimaryCaption1] = useState('Mehr über uns erfahren');
   const [buttonPrimaryLink1, setButtonPrimaryLink1] = useState('/about');
@@ -110,10 +108,7 @@ const Home = () => {
     setButtonPrimaryLink: setButtonPrimaryLink2,
   };
 
-  // const buttonSecondaryProps = {
-  //   buttonSecondaryCaption: 'Home from Home.tsx',
-  //   buttonSecondaryLink: 'about',
-  // };
+
 
   return (
     <>
@@ -139,6 +134,7 @@ const Home = () => {
         </ButtonPrimaryProvider>
 
         <SectionCards></SectionCards>
+        {/* <SectionDivider></SectionDivider> */}
         <Section_Gallery 
           image1={cdImages.image1}
           image2={cdImages.image2} 
