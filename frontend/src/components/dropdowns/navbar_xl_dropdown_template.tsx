@@ -1,39 +1,10 @@
 
 import { Link } from "react-router-dom";
 
-// image resources
-import Placeholder from '/src/assets/images/Placeholder.png'
 
 
-const cdImages = {
-    logo: '/src/assets/Peters_Logotype.svg',
-    image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
-    image2: '/src/assets/images/mohamed-marey-M9mRKGW9L30-unsplash.jpg',
-    image3: '/src/assets/images/james-sandbrook-h0-lwHj7heI-unsplash.jpg',
-    image4: '/src/assets/images/mika-baumeister-dp9AxaKHdVg-unsplash.png',
-    image5: '/src/assets/images/steve-johnson-hokONTrHIAQ-unsplash.jpg',
-    image6: '/src/assets/images/david-dvoracek-2kWxMl5IWTA-unsplash.jpg',
-    image7: '/src/assets/images/neven-krcmarek-67FG6zD8WPQ-unsplash.png',
-    image8: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
-    image9: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
-    image10: '/src/assets/images/thisisengineering-ZPeXrWxOjRQ-unsplash.jpg',
-    image11: '/src/assets/images/gidlark-d662tNZfe_g-unsplash.jpg',
-    image12: '/src/assets/images/brian-wangenheim--yWw3HlVVnQ-unsplash.jpg',
-    image13: '/src/assets/images/shirish-suwal-ctmuaOO-JJI-unsplash.jpg',
-    image14: '/src/assets/images/gidlark-d662tNZfe_g-unsplash.jpg',
-    image15: '/src/assets/images/tekton-ndJlw4Bz-1Y-unsplash.jpg',
-    image16: '/src/assets/images/thisisengineering-zhXR20LFowA-unsplash.jpg',
-    image17: '/src/assets/images/steffen-lemmerzahl-fu3iLPBe964-unsplash.jpg',
-    image18: '/src/assets/images/s-tsuchiya-gxIg8FcDIC8-unsplash.jpg',
-    image19: '/src/assets/images/alex-wolowiecki-uXgoasNqYqw-unsplash.jpg',
-    image20: '/src/assets/images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg',
-    image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
-    image22: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
-    image23: '/src/assets/images/frames-for-your-heart-iOLHAIaxpDA-unsplash.jpg',
-    image24: '/src/assets/images/jimmy-nilsson-masth-hrIpsXkrAO0-unsplash.png',
-    image25: '/src/assets/images/markus-spiske-rNn_TU8dvoY-unsplash.png',
-    image26: '/src/assets/images/jimmy-nilsson-masth-hrIpsXkrAO0-unsplash.png',
-  };
+
+
   
 
 const cdColors = {
@@ -59,104 +30,18 @@ const cdColors = {
   };
   
 
-// const Navbar_XL_dropdown_items = [
-//     // Item 1
-//     {
-//     item_1_image: Placeholder,
-//     item_1_heading: 'Elektro-Dienstleistungen für Privatkunden',
-//     item_1_subheading: '1 Placeholder',
-//     item_1_url: '/Elektro-Dienstleistungen-Privatkunden',
-//     },
-//     // Item 2
-//     {
-//     item_2_image: Placeholder,
-//     item_2_heading: '2 Placeholder',
-//     item_2_subheading: '2 Placeholder',
-//     },
-//     // Item 3
-//     {
-//     item_3_image: Placeholder,
-//     item_3_heading: '3 Placeholder',
-//     item_3_subheading: '3 Placeholder',
-//     },
-//     // Item 4
-//     {
-//     item_4_image: Placeholder,
-//     item_4_heading: '4 Placeholder',
-//     item_4_subheading: '4 Placeholder',
-//     },
-//     // Item 5
-//     {
-//     item_5_image: Placeholder,
-//     item_5_heading: '5 Placeholder',
-//     item_5_subheading: '5 Placeholder',
-//      },
-//   ];
-
-
-
-
-interface NavbarXlDropdownTemplateProps {
-    DropdownCaption: string;
-    caption: string;
-
-    DropdownItem1Image: string;
-    DropdownItem1Heading: string;
-    DropdownItem1Subheading: string;
-    DropdownItem1Url: string;
-
-    DropdownItem2Image: string;
-    DropdownItem2Heading: string;
-    DropdownItem2Subheading: string;
-    DropdownItem2Url: string;
-
-    DropdownItem3Image?: string;
-    DropdownItem3Heading?: string;
-    DropdownItem3Subheading?: string;
-    DropdownItem3Url?: string;
-
-    DropdownItem4Image?: string;
-    DropdownItem4Heading?: string;
-    DropdownItem4Subheading?: string;
-    DropdownItem4Url?: string;
-
-    DropdownItem5Image?: string;
-    DropdownItem5Heading?: string;
-    DropdownItem5Subheading?: string;
-    DropdownItem5Url?: string;
-
-}
-
-function Navbar_xl_dropdown_template({ 
-    DropdownCaption, 
-
-    DropdownItem1Heading, 
-    DropdownItem1Subheading, 
-    DropdownItem1Image, 
-    DropdownItem1Url, 
-
-    DropdownItem2Heading, 
-    DropdownItem2Subheading, 
-    DropdownItem2Image, 
-    DropdownItem2Url, 
-
-    DropdownItem3Heading, 
-    DropdownItem3Subheading, 
-    DropdownItem3Image, 
-    DropdownItem3Url, 
-
-    DropdownItem4Heading, 
-    DropdownItem4Subheading, 
-    DropdownItem4Image, 
-    DropdownItem4Url,  
-
-    DropdownItem5Heading, 
-    DropdownItem5Subheading, 
-    DropdownItem5Image, 
-    DropdownItem5Url, 
-
-}: NavbarXlDropdownTemplateProps)  {
-  return (
+  interface NavbarXlDropdownTemplateProps {
+    dropdownCaption: string;
+    dropdownItems: {
+      heading: string;
+      subheading: string;
+      url: string;
+      image: string;
+    }[];
+  }
+  
+  const Navbar_xl_dropdown_template: React.FC<NavbarXlDropdownTemplateProps> = ({ dropdownCaption, dropdownItems }) => {
+    return (
     <>
 
     {/* Dropdown Template */}
@@ -165,7 +50,7 @@ function Navbar_xl_dropdown_template({
         <div className="relative flex flex-row items-center justify-between">
             <Link to="">
                 <div className="text-xl font-medium menu-hover my-2" style={{ color: cdColors.secondaryColor }} >
-                    {DropdownCaption}
+                    {dropdownCaption}
                 </div>
             </Link>
             <div className="px-2">
@@ -180,8 +65,27 @@ function Navbar_xl_dropdown_template({
             
             <div className="flex flex-row justify-evenly items-start">
 
+            {dropdownItems.map((item, index) => (
+          <div key={index} className="flex flex-col justify-normal items-start px-6 max-w-72">
+            <Link to={`/${item.url}`}>
+              <img className="h-36 w-64 object-cover" src={item.image} alt={item.heading} />
+              <br />
+              <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                <div className="mt-1 block text-xl border-gray-100 font-bold hover:opacity-50">
+                  {item.heading}
+                </div>
+              </div>
+              <div className="mt-1 block border-gray-100 font-semibold hover:opacity-50">
+                <div className="mt-1 block border-gray-100 font-semibold nav-text-color hover:opacity-50">
+                  {item.subheading}
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+
                 {/* Menu item 1 */}
-                <div className="flex flex-col justify-normal items-start px-6 max-w-72">
+                {/* <div className="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to={`/${DropdownItem1Url}`}>
                         <img className="h-36 w-64 object-cover" src={DropdownItem1Image}></img>
                         <br></br>
@@ -196,10 +100,10 @@ function Navbar_xl_dropdown_template({
                             </div>
                         </div>
                     </Link>
-                </div>  
+                </div>   */}
 
-                {/* Menu item 1 */}
-                <div className="flex flex-col justify-normal items-start px-6 max-w-72">
+                {/* Menu item 2 */}
+                {/* <div className="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to={`/${DropdownItem2Url}`}>
                         <img className="h-36 w-64 object-cover" src={DropdownItem2Image}></img>
                         <br></br>
@@ -214,10 +118,10 @@ function Navbar_xl_dropdown_template({
                             </div>
                         </div>
                     </Link>
-                </div>  
+                </div>   */}
 
                 {/* Menu item 3 */}
-                <div className="flex flex-col justify-normal items-start px-6 max-w-72">
+                {/* <div className="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to={`/${DropdownItem3Url}`}>
                         <img className="h-36 w-64 object-cover" src={DropdownItem3Image}></img>
                         <br></br>
@@ -232,10 +136,10 @@ function Navbar_xl_dropdown_template({
                             </div>
                         </div>
                     </Link>
-                </div>  
+                </div>   */}
       
                 {/* Menu item 4 */}
-                <div className="flex flex-col justify-normal items-start px-6 max-w-72">
+                {/* <div className="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to={`/${DropdownItem4Url}`}>
                         <img className="h-36 w-64 object-cover" src={DropdownItem4Image}></img>
                         <br></br>
@@ -250,10 +154,10 @@ function Navbar_xl_dropdown_template({
                             </div>
                         </div>
                     </Link>
-                </div>  
+                </div>   */}
 
                 {/* Menu item 5 */}
-                <div className="flex flex-col justify-normal items-start px-6 max-w-72">
+                {/* <div className="flex flex-col justify-normal items-start px-6 max-w-72">
                     <Link to={`/${DropdownItem5Url}`}>
                         <img className="h-36 w-64 object-cover" src={DropdownItem5Image}></img>
                         <br></br>
@@ -268,7 +172,7 @@ function Navbar_xl_dropdown_template({
                             </div>
                         </div>
                     </Link>
-                </div>  
+                </div>   */}
 
             </div>
         </div>

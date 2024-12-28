@@ -33,6 +33,14 @@ body {
 }
 
 h1 {
+  font-weight: 500;
+  color: #707070;
+  font-size: 32px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+h2 {
   font-weight: normal;
   color: #707070;
   font-size: 24px;
@@ -43,6 +51,13 @@ h2 {
   color: #707070;
   font-size: 20px;
 }
+
+p {
+  font-weight: normal;
+  color: #707070;
+  font-size: 20px;
+}
+
 
 
 /* :root {

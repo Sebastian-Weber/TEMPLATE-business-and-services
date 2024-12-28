@@ -49,10 +49,7 @@ interface ListProps {
     listitem2: string;
   
     listitem3: string;
-  
-    listitem4: string;
-  
-    listitem5: string;
+
   
   }
 
@@ -71,7 +68,7 @@ function SectionListAndImage({ heading, paragraph, image, background, buttonPrim
               <br></br>
               <p className="">{paragraph}</p>
               <br />
-            <List></List>
+            <List listItems={[listitem1, listitem2, listitem3]}></List>
             {buttonPrimaryProps && buttonPrimaryProps.buttonPrimaryCaption && buttonPrimaryProps.buttonPrimaryLink && (
               <Button_primary buttonPrimaryCaption={buttonPrimaryProps.buttonPrimaryCaption} buttonPrimaryLink={buttonPrimaryProps.buttonPrimaryLink} />
             )}

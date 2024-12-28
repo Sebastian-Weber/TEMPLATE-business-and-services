@@ -3,7 +3,7 @@
 import Header from './Header';
 import SectionHero from './Section_Hero';
 import SectionTextAndImage from './Section_Text_and_Image';
-import SectionCards from './Section_Cards';
+import SectionCards from './Section_Text_and_Cards';
 import Section_Gallery from './Section_Gallery';
 import Footer from './Footer';
 

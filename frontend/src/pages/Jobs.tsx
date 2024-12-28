@@ -1,7 +1,7 @@
 
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import SectionCards from "../components/Section_Cards"
+import SectionCards from "../components/Section_Text_and_Cards"
 import SectionContact from "../components/Section_Contact"
 import SectionDivider from "../components/Section_Divider"
 import Section_Gallery from "../components/Section_Gallery"

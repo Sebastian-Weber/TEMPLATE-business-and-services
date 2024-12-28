@@ -52,7 +52,7 @@ function SectionHero({ heading, subheading, paragraph, image, logo, background =
 
       <div className="mt-10 min-h-full flex flex-col h-screen w-fit justify-around items-center md:min-w-full md:flex-row">
           
-          <div className="flex flex-col mt-24 p-20  justify-center items-center h-1/2 w-full md:h-fit md:w-11/12 md:items-center">
+          <div className="flex flex-col mt-24 p-20 justify-center items-center h-1/2 w-full md:h-fit md:w-11/12 md:items-center">
             <div className="flex flex-col m-4 h-auto justify-center">
               {logo && (
                 <>
@@ -67,7 +67,7 @@ function SectionHero({ heading, subheading, paragraph, image, logo, background =
               )}
               {subheading && (
                 <>
-                  <h2 style={{ color: cdColors.secondaryFontColor }}>{subheading}</h2>
+                  <h3 style={{ color: cdColors.secondaryFontColor }}>{subheading}</h3>
                   <br />
                 </>
               )}

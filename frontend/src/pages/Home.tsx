@@ -2,13 +2,15 @@
 import React, { useState } from 'react';
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import SectionCards from "../components/Section_Cards"
+import SectionCards from "../components/Section_Text_and_Cards"
 import SectionContact from "../components/Section_Contact"
 import SectionDivider from "../components/Section_Divider"
 import Section_Gallery from "../components/Section_Gallery"
 import SectionHero from "../components/Section_Hero"
 import SectionTextAndImage from "../components/Section_Text_and_Image"
 import { ButtonPrimaryProvider } from "../contexts/ButtonPrimaryContext"
+import Section_Texts_and_Cards from '../components/Section_Texts_and_Cards';
+import SectionTextAndCards from '../components/Section_Text_and_Cards';
 
 
 const cdImages = {
@@ -52,13 +54,16 @@ const cdCopy = {
   sectionHero_Paragraph: '',
 
   sectionIntro_Heading: 'Von der Steckdose bis zur Smart-Home-Lösung',
-  sectionIntro_Paragraph: 'Willkommen bei Peters Elektro GmbH, Ihrem zuverlässigen Partner für professionelle Elektro-Dienstleistungen. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen – von regelmäßiger Wartung bis hin zu modernen Smart-Home-Lösungen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
+  sectionIntro_Paragraph: 'Willkomen bei Peters Elektro GmbH. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
 
   sectionContact_Heading: 'Lust, mit uns die Zukunft zu elektrisieren?',
-  sectionContact_Paragraph: 'Du suchst eine neue Herausforderung in einem modernen Elektroinstallationsunternehmen mit Herz? Bei Peters erwarten dich spannende Projekte im Kölner Raum, ein familiäres Team und echte Entwicklungsmöglichkeiten. Wir legen Wert auf Qualität, Innovation und ein Arbeitsklima, in dem sich jeder wohlfühlt? Das bieten wir dir: Abwechslungsreiche Aufgaben in einem zukunftssicheren Handwerk. Kreativer Freiraum, um eigene Ideen in unsere Projekte einzubringen. Eine Arbeitskultur, die Eigenverantwortung und Teamg-geist fördert. Bewirb dich jetzt und werde Teil unseres Teams! Wir freuen uns auf deine Bewerbung.',
+  sectionContact_Paragraph: 'Du suchst eine neue Herausforderung in einem modernen Elektroinstallationsunternehmen? Bei Peters Elektro GmbH erwarten Dich spannende Projekte im Kölner Raum, ein familiäres Team und echte Entwicklungsmöglichkeiten. Wir legen Wert auf Qualität, Innovation und ein Arbeitsklima, in dem sich jeder wohlfühlt? Das bieten wir: Abwechslungsreiche Aufgaben in einem zukunftssicheren Handwerk. Kreativer Freiraum, um eigene Ideen in unsere Projekte einzubringen. Eine Arbeitskultur, die Eigenverantwortung und Teamg-geist fördert. Bewirb dich jetzt und werde Teil unseres Teams! Wir freuen uns auf deine Bewerbung!',
 
   buttonPrimaryCaption: 'Mehr über uns erfahren -- kommt aus Home.tsx',
   buttonPrimaryURL: 'about',
+
+  sectionTextAndCards_Heading: 'Unsere Leistungen',
+  sectionTextAndCards_Paragraph: 'Entdecken Sie unser Leistungsspektrum. Von klassischen Elektroinstallationen für Privat- und Gewerbekunden über Lichtdesign bis zu modernen Smart-Home-Lösungen.',
   
   // buttonSecondaryCaption: 'Mehr über uns erfahren  -- kommt aus Home.tsx',
   // buttonSecondaryLink: 'about',
@@ -133,8 +138,28 @@ const Home = () => {
           </SectionTextAndImage>
         </ButtonPrimaryProvider>
 
-        <SectionCards></SectionCards>
-        {/* <SectionDivider></SectionDivider> */}
+        <SectionTextAndCards 
+        heading={cdCopy.SectionListAndCards_heading} 
+        paragraph={cdCopy.SectionListAndCards_paragraph}
+        card1Heading={cdCopy.SectionListAndCards_listItem1}
+        card1Paragraph={cdCopy.SectionListAndCards_listItem1}
+        card2Heading={cdCopy.SectionListAndCards_listItem2}
+        card2Paragraph={cdCopy.SectionListAndCards_listItem2}
+        card3Heading={cdCopy.SectionListAndCards_listItem3}
+        card3Paragraph={cdCopy.SectionListAndCards_listItem3}
+        card4Heading={cdCopy.SectionListAndCards_listItem4}
+        card4Paragraph={cdCopy.SectionListAndCards_listItem4}
+        card1Image={cdImages.image1}
+        card2Image={cdImages.image2}
+        card3Image={cdImages.image3}
+        card4Image={cdImages.image4}
+        card1ButtonPrimaryCaption={cdCopy.buttonPrimaryCaption}
+        card2ButtonPrimaryCaption={cdCopy.buttonPrimaryCaption}
+        card3ButtonPrimaryCaption={cdCopy.buttonPrimaryCaption}
+        card4ButtonPrimaryCaption={cdCopy.buttonPrimaryCaption}
+        list={[]}
+        />
+        
         <Section_Gallery 
           image1={cdImages.image1}
           image2={cdImages.image2} 
@@ -170,7 +195,7 @@ const Home = () => {
 
         <SectionContact></SectionContact>
         <Footer></Footer>
-      </div>
+        </div>
     </>
   )
 }

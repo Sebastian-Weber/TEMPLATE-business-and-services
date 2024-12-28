@@ -199,33 +199,78 @@ const Navbar = () => {
         </Link>
 
         <Navbar_xl_dropdown_template 
-          DropdownCaption='Leistungen'
-          caption='Placeholder'
-          DropdownItem1Image={cdImages.image3} 
-          DropdownItem1Heading='Elektro-Dienstleistungen für Privatkunden'
-          DropdownItem1Subheading='Elektroinstallationen für Ihr Zuhause' 
-          DropdownItem1Url='Elektro-Dienstleistungen-Privatkunden'
-          DropdownItem2Image={cdImages.image17} 
-          DropdownItem2Heading='Elektro-Dienstleistungen für Gewerbekunden' 
-          DropdownItem2Subheading='Einbau, Austausch und Wartung' 
-          DropdownItem2Url='Elektro-Dienstleistungen-Gewerbekunden'
-          DropdownItem3Image={cdImages.image30}  
-          DropdownItem3Heading='Smart-Home Lösungen' 
-          DropdownItem3Subheading='Smart-Home Lösungen für Ihr Zuhause' 
-          DropdownItem3Url='Smart-Home-Loesungen'
-          DropdownItem4Image={cdImages.image31} 
-          DropdownItem4Heading='Lichtdesign und -installation' 
-          DropdownItem4Subheading='Lichtdesign und -installation' 
-          DropdownItem4Url='Lichtdesign-und-Installation'
-          DropdownItem5Image={cdImages.image4} 
-          DropdownItem5Heading='Notfallreparaturen' 
-          DropdownItem5Subheading='Notfallreparaturen' 
-          DropdownItem5Url='Notfallreparaturen'  
-
+          dropdownCaption='Leistungen'
+          dropdownItems={[
+            {
+              image: cdImages.image3,
+              heading: 'Elektro-Dienstleistungen für Privatkunden',
+              subheading: 'Elektroinstallationen für Ihr Zuhause',
+              url: 'Elektro-Dienstleistungen-Privatkunden'
+            },
+            {
+              image: cdImages.image17,
+              heading: 'Elektro-Dienstleistungen für Gewerbekunden',
+              subheading: 'Einbau, Austausch und Wartung',
+              url: 'Elektro-Dienstleistungen-Gewerbekunden'
+            },
+            {
+              image: cdImages.image30,
+              heading: 'Smart-Home Lösungen',
+              subheading: 'Smart-Home Lösungen für Ihr Zuhause',
+              url: 'Smart-Home-Loesungen'
+            },
+            {
+              image: cdImages.image31,
+              heading: 'Lichtdesign und -installation',
+              subheading: 'Lichtdesign und -installation',
+              url: 'Lichtdesign-und-Installation'
+            },
+            {
+              image: cdImages.image4,
+              heading: 'Notfallreparaturen',
+              subheading: 'Notfallreparaturen',
+              url: 'Notfallreparaturen'
+            }
+          ]}
         ></Navbar_xl_dropdown_template>
         <Navbar_xl_dropdown_template 
-          DropdownCaption='Nachhaltigkeit & Energielösungen'
-          caption='Placeholder'
+          dropdownCaption='Nachhaltigkeit & Energielösungen'
+          dropdownItems={[
+            {
+              image: cdImages.image25,
+              heading: 'Photovoltaik-Anlagen',
+              subheading: '...',
+              url: 'Elektro-Dienstleistungen-Privatkunden'
+            },
+            {
+              image: cdImages.image24,
+              heading: 'Solaranlagen-Installation',
+              subheading: '...',
+              url: 'Elektro-Dienstleistungen-Gewerbekunden'
+            },
+            {
+              image: cdImages.image18,
+              heading: 'Energieeffiziente Beleuchtung',
+              subheading: '...',
+              url: 'Smart-Home-Loesungen'
+            },
+            {
+              image: cdImages.image28,
+              heading: 'Ladestationen für E-Fahrzeuge',
+              subheading: '...',
+              url: 'Lichtdesign-und-Installation'
+            },
+            // {
+            //   image: cdImages.image4,
+            //   heading: 'Notfallreparaturen',
+            //   subheading: 'Notfallreparaturen',
+            //   url: 'Notfallreparaturen'
+            // }
+          ]}
+        ></Navbar_xl_dropdown_template>
+
+        {/* <Navbar_xl_dropdown_template 
+          dropdownCaption='Nachhaltigkeit & Energielösungen'
           DropdownItem1Heading='Photovoltaik-Anlagen' 
           DropdownItem1Image={cdImages.image25} 
           DropdownItem1Subheading='...' 
@@ -246,7 +291,7 @@ const Navbar = () => {
           DropdownItem5Image={''} 
           DropdownItem5Subheading='' 
           DropdownItem5Url='' 
-        ></Navbar_xl_dropdown_template>
+        ></Navbar_xl_dropdown_template> */}
 
         {/* Offene Stellen */}
         <Link className="flex flex-row items-start" to="/jobs">
