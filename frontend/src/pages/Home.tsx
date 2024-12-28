@@ -65,8 +65,29 @@ const cdCopy = {
   sectionTextAndCards_Heading: 'Unsere Leistungen',
   sectionTextAndCards_Paragraph: 'Entdecken Sie unser Leistungsspektrum. Von klassischen Elektroinstallationen für Privat- und Gewerbekunden über Lichtdesign bis zu modernen Smart-Home-Lösungen.',
   
-  // buttonSecondaryCaption: 'Mehr über uns erfahren  -- kommt aus Home.tsx',
-  // buttonSecondaryLink: 'about',
+  SectionListAndCards_card1Heading:'Elektroinstallationen für Privatkunden',
+  SectionListAndCards_card1Paragraph:'Card 1 Paragraph',
+  SectionListAndCards_card1ListItem1: 'Card 1 Listitem 1',
+  SectionListAndCards_card1listItem2: 'Card 1 Listitem 2',
+  SectionListAndCards_card1listItem3: 'Card 1 Listitem 3',
+
+  SectionListAndCards_card2Heading:'Elektroinstallationen für Geschäftskunden',
+  SectionListAndCards_card2Paragraph:'Card 2 Paragraph',
+  SectionListAndCards_card2ListItem1: 'Card 2 Listitem 1',
+  SectionListAndCards_card2listItem2: 'Card 2 Listitem 2',
+  SectionListAndCards_card2listItem3: 'Card 2 Listitem 3',
+
+  SectionListAndCards_card3Heading:'Smart-Home Lösungen',
+  SectionListAndCards_card3Paragraph:'Card 3 Paragraph',
+  SectionListAndCards_card3ListItem1: 'Card 3 Listitem 1',
+  SectionListAndCards_card3listItem2: 'Card 3 Listitem 2',
+  SectionListAndCards_card3listItem3: 'Card 3 Listitem 3',
+  
+  SectionListAndCards_card4Heading:'Licht-Design und Installation',
+  SectionListAndCards_card4Paragraph:'Card 4 Paragraph',
+  SectionListAndCards_card4ListItem1: 'Card 4 Listitem 1',
+  SectionListAndCards_card4listItem2: 'Card 4 Listitem 2',
+  SectionListAndCards_card4listItem3: 'Card 4 Listitem 3',
 };
 
 const cdColors = {
@@ -139,26 +160,23 @@ const Home = () => {
         </ButtonPrimaryProvider>
 
         <SectionTextAndCards 
-        heading={cdCopy.SectionListAndCards_heading} 
-        paragraph={cdCopy.SectionListAndCards_paragraph}
-        card1Heading={cdCopy.SectionListAndCards_listItem1}
-        card1Paragraph={cdCopy.SectionListAndCards_listItem1}
-        card2Heading={cdCopy.SectionListAndCards_listItem2}
-        card2Paragraph={cdCopy.SectionListAndCards_listItem2}
-        card3Heading={cdCopy.SectionListAndCards_listItem3}
-        card3Paragraph={cdCopy.SectionListAndCards_listItem3}
-        card4Heading={cdCopy.SectionListAndCards_listItem4}
-        card4Paragraph={cdCopy.SectionListAndCards_listItem4}
-        card1Image={cdImages.image1}
+        card1Image={cdImages.image2}
+        card1Heading={cdCopy.SectionListAndCards_card1Heading}
+        card1Paragraph={cdCopy.SectionListAndCards_card1Paragraph}
+        card1ButtonPrimaryCaption="Button 1"
         card2Image={cdImages.image2}
-        card3Image={cdImages.image3}
-        card4Image={cdImages.image4}
-        card1ButtonPrimaryCaption={cdCopy.buttonPrimaryCaption}
-        card2ButtonPrimaryCaption={cdCopy.buttonPrimaryCaption}
-        card3ButtonPrimaryCaption={cdCopy.buttonPrimaryCaption}
-        card4ButtonPrimaryCaption={cdCopy.buttonPrimaryCaption}
-        list={[]}
-        />
+        card2Heading={cdCopy.SectionListAndCards_card2Heading}
+        card2Paragraph={cdCopy.SectionListAndCards_card2Paragraph}
+        card2ButtonPrimaryCaption="Button 2"
+        card3Image={cdImages.image2}
+        card3Heading={cdCopy.SectionListAndCards_card3Heading}
+        card3Paragraph={cdCopy.SectionListAndCards_card3Paragraph}
+        card3ButtonPrimaryCaption="Button 3"
+        card4Image={cdImages.image2}
+        card4Heading={cdCopy.SectionListAndCards_card4Heading}
+        card4Paragraph={cdCopy.SectionListAndCards_card4Paragraph}
+        card4ButtonPrimaryCaption="Button 4"
+      ></SectionTextAndCards>
         
         <Section_Gallery 
           image1={cdImages.image1}

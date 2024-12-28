@@ -55,15 +55,39 @@ const cdImages = {
 const cdCopy = {
   SectionHero_heading: 'Unsere Leistungen für Privatkunden Test',
   SectionHero_paragraph: 'Test Egal, ob Sie eine komplette Elektroinstallation in Ihrem Zuhause planen, einzelne Komponenten modernisieren oder spezielle Anpassungen vornehmen möchten – wir unterstützen Sie bei der Umsetzung Ihrer Wünsche.',
+
   SectionListAndCards_heading: 'Test2 Einbau, Austausch und Reparatur - Alles aus einer Hand',
   SectionListAndCards_paragraph: 'Test2 Wir bieten Ihnen einen umfassenden Service für Elektroinstallationen aller Art von Haushaltstechnik in Ihrem Zuhause. Sir sorgen dafür, dass jede Lösung perfekt auf Ihre Bedürfnisse abgestimmt ist. Vertrauen Sie auf unsere Expertise, um Ihr Zuhause sicher und effizient mit Strom zu versorgen.',
-  SectionListAndCards_listItem1: 'Test 3 Einbau neuer Elektronikgeräte',
-  SectionListAndCards_listItem2: 'Test 4 Austausch alter Installationen',
-  SectionListAndCards_listItem3: 'Test 5 Fachgerechte Reparaturen',
-  SectionListAndCards_listItem4: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
-  SectionListAndCards_listItem5: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.',
+  SectionListAndCards_listItem1: 'Listitem 1',
+  SectionListAndCards_listItem2: 'Listitem 2',
+  SectionListAndCards_listItem3: 'Listitem 3',
 
+  SectionListAndCards_card1Heading:'Elektroanschlüsse für Küchenmodernisierung',
+  SectionListAndCards_card1Paragraph:'Statten Sie Ihre Küche mit den notwendigen Anschlüssen für moderne Geräte aus.',
+  SectionListAndCards_card1ListItem1: '• Card 1 Listitem1',
+  SectionListAndCards_card1listItem2: '• Card 1 Listitem2',
+  SectionListAndCards_card1listItem3: '',
 
+  SectionListAndCards_card2Heading:'Außenbeleuchtung und Gartenstrom',
+  SectionListAndCards_card2Paragraph:'Erwecken Sie Ihren Außenbereich mit durchdachten Elektroinstallationen zum Leben.',
+  SectionListAndCards_card2ListItem1: '• Sicherheitsbeleuchtung für Wege und Eingänge',
+  SectionListAndCards_card2listItem2: '• Stromversorgung für Garten- und Poolanlagen',
+  SectionListAndCards_card2listItem3: '',
+  
+  SectionListAndCards_card3Heading:'...',
+  SectionListAndCards_card3Paragraph:'...',
+  SectionListAndCards_card3ListItem1: '• Card 3 Listitem 1',
+  SectionListAndCards_card3listItem2: '• Card 3 Listitem 2',
+  SectionListAndCards_card3listItem3: '',
+  
+  SectionListAndCards_card4Heading:'Außenbeleuchtung und Gartenstrom',
+  SectionListAndCards_card4Paragraph:'Machen Sie Ihr Zuhause bereit für die Zukunft der Mobilität.',
+  SectionListAndCards_card4ListItem1: '• Wallbox-Installation direkt bei Ihnen zu Hause',
+  SectionListAndCards_card4listItem2: '• Beratung zu passenden Modellen und Fördermöglichkeiten',
+  SectionListAndCards_card4listItem3: '',
+  
+  
+  
 };
 
 
@@ -89,22 +113,34 @@ function ElektroDienstleistungenPrivatkunden() {
         listitem3={cdCopy.SectionListAndCards_listItem3}
       ></SectionListAndImage>
       <SectionTextAndCards 
-        card1Heading={cdCopy.SectionListAndCards_listItem1}
-        card1Paragraph={cdCopy.SectionListAndCards_listItem1}
-        card2Heading={cdCopy.SectionListAndCards_listItem2}
-        card2Paragraph={cdCopy.SectionListAndCards_listItem2}
-        card3Heading={cdCopy.SectionListAndCards_listItem3}
-        card3Paragraph={cdCopy.SectionListAndCards_listItem3}
-        card4Heading={cdCopy.SectionListAndCards_listItem4}
-        card4Paragraph={cdCopy.SectionListAndCards_listItem4}
         card1Image={cdImages.image1}
-        card2Image={cdImages.image2}
-        card3Image={cdImages.image2}
-        card4Image={cdImages.image2}
+        card1Heading={cdCopy.SectionListAndCards_card1Heading}
+        card1Paragraph={cdCopy.SectionListAndCards_card1Paragraph}
         card1ButtonPrimaryCaption="Button 1"
+        card1Listitem1={cdCopy.SectionListAndCards_card1ListItem1}
+        card1Listitem2={cdCopy.SectionListAndCards_card1listItem2}
+        card1Listitem3={cdCopy.SectionListAndCards_card1listItem3}
+        card2Image={cdImages.image1}
+        card2Heading={cdCopy.SectionListAndCards_card2Heading}
+        card2Paragraph={cdCopy.SectionListAndCards_card2Paragraph}
         card2ButtonPrimaryCaption="Button 2"
+        card2Listitem1={cdCopy.SectionListAndCards_card2ListItem1}
+        card2Listitem2={cdCopy.SectionListAndCards_card2listItem2}
+        card2Listitem3={cdCopy.SectionListAndCards_card2listItem3}
+        card3Image={cdImages.image1}
+        card3Heading={cdCopy.SectionListAndCards_card3Heading}
+        card3Paragraph={cdCopy.SectionListAndCards_card3Paragraph}
         card3ButtonPrimaryCaption="Button 3"
+        card3Listitem1={cdCopy.SectionListAndCards_card3ListItem1}
+        card3Listitem2={cdCopy.SectionListAndCards_card3listItem2}
+        card3Listitem3={cdCopy.SectionListAndCards_card3listItem3}
+        card4Image={cdImages.image1}
+        card4Heading={cdCopy.SectionListAndCards_card4Heading}
+        card4Paragraph={cdCopy.SectionListAndCards_card4Paragraph}
         card4ButtonPrimaryCaption="Button 4"
+        card4Listitem1={cdCopy.SectionListAndCards_card4ListItem1}
+        card4Listitem2={cdCopy.SectionListAndCards_card4listItem2}
+        card4Listitem3={cdCopy.SectionListAndCards_card4listItem3}
       ></SectionTextAndCards>
       <SectionDivider></SectionDivider>
       <SectionContact></SectionContact>

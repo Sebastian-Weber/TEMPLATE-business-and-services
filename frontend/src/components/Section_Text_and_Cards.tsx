@@ -71,6 +71,22 @@ type SectionTextAndCardsProps = {
   card1Image: string;
   card1ButtonPrimaryCaption: string;
 
+  card1Listitem1: string;
+  card1Listitem2: string;
+  card1Listitem3: string;
+
+  card2Listitem1: string;
+  card2Listitem2: string;
+  card2Listitem3: string;
+
+  card3Listitem1: string;
+  card3Listitem2: string;
+  card3Listitem3: string;
+
+  card4Listitem1: string;
+  card4Listitem2: string;
+  card4Listitem3: string;
+
   card2Heading: string;
   card2Paragraph: string;
   card2Image: string;
@@ -94,22 +110,25 @@ type SectionTextAndCardsProps = {
 
 
 function SectionTextAndCards({ 
-  card1Heading, card1Paragraph, card1Image, card1ButtonPrimaryCaption,
-  card2Heading, card2Paragraph, card2Image, card2ButtonPrimaryCaption,
-  card3Heading, card3Paragraph, card3Image, card3ButtonPrimaryCaption,
-  card4Heading, card4Paragraph, card4Image, card4ButtonPrimaryCaption
+  card1Heading, card1Paragraph, card1Image, card1ButtonPrimaryCaption, card1Listitem1, card1Listitem2, card1Listitem3,
+  card2Heading, card2Paragraph, card2Image, card2ButtonPrimaryCaption, card2Listitem1, card2Listitem2, card2Listitem3,   
+  card3Heading, card3Paragraph, card3Image, card3ButtonPrimaryCaption, card3Listitem1, card3Listitem2, card3Listitem3, 
+  card4Heading, card4Paragraph, card4Image, card4ButtonPrimaryCaption, card4Listitem1, card4Listitem2, card4Listitem3
 }: SectionTextAndCardsProps) {
   return (
 
   <>
-    <div className='min-h-screen mt-10 bg-red-300'>
+    <div className='min-h-screen'>
       <div className="flex flex-col h-1/2 md:flex-row md:w-full">
         <MultiCard 
           heading={card1Heading} 
           paragraph={card1Paragraph} 
           image={card1Image}
           buttonPrimaryProps={{ buttonPrimaryCaption: card1ButtonPrimaryCaption, buttonPrimaryLink: 'about' }}
-          background={cdColors.primaryBackgroundColorLight} 
+          background={cdColors.primaryBackgroundColorLight}
+          listitem1={card1Listitem1}
+          listitem2={card1Listitem2}
+          listitem3={card1Listitem3}
         />
 
         <MultiCard 
@@ -117,17 +136,23 @@ function SectionTextAndCards({
           paragraph={card2Paragraph} 
           image={card2Image}
           buttonPrimaryProps={{ buttonPrimaryCaption: card2ButtonPrimaryCaption, buttonPrimaryLink: 'about' }}
-          background={cdColors.primaryBackgroundColorLight} 
-        />
-      </div>
+          background={cdColors.secondaryBackgroundColorLight}
+          listitem1={card2Listitem1}
+          listitem2={card2Listitem2}
+          listitem3={card2Listitem3}
+          />
 
-    <div className="flex flex-col h-1/2 md:flex-row md:w-full">
+          </div>
+          <div className="flex flex-col h-1/2 md:flex-row md:w-full">
       <MultiCard 
         heading={card3Heading} 
         paragraph={card3Paragraph} 
         image={card3Image}
         buttonPrimaryProps={{ buttonPrimaryCaption: card3ButtonPrimaryCaption, buttonPrimaryLink: 'about' }}
-        background={cdColors.primaryBackgroundColorLight} 
+        background={cdColors.tertiaryBackgroundColorLight}
+        listitem1={card3Listitem1}
+        listitem2={card3Listitem2}
+        listitem3={card3Listitem3}
       />
 
       <MultiCard 
@@ -135,10 +160,13 @@ function SectionTextAndCards({
         paragraph={card4Paragraph} 
         image={card4Image}
         buttonPrimaryProps={{ buttonPrimaryCaption: card4ButtonPrimaryCaption, buttonPrimaryLink: 'about' }}
-        background={cdColors.primaryBackgroundColorLight} 
+        background={cdColors.quaternaryBackgroundColorLight}
+        listitem1={card4Listitem1}
+        listitem2={card4Listitem2}
+        listitem3={card4Listitem3}
       /> 
     </div>
-  </div>
+    </div>
 </>
   )
 }
