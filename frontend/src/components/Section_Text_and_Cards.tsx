@@ -5,10 +5,10 @@ import MultiCard from "./card/multi_card";
 
 const cdImages = {
   placeholderImage: '/src/assets/images/Placeholder600x400.png',
-  card1Image: '/src/assets/images/outlet.png',
-  card2Image: '/src/assets/images/contacts.png',
-  card3Image: '/src/assets/images/smart-home.png',
-  card4Image: '/src/assets/images/roof-lamp.png',
+  card1Image: '/src/assets/images/1.svg',
+  card2Image: '/src/assets/images/2.svg',
+  card3Image: '/src/assets/images/3.svg',
+  card4Image: '/src/assets/images/4.svg',
   card5Image: '/src/assets/images/power.png',
 
 };
@@ -35,26 +35,27 @@ const cdCopy = {
 
 
 const cdColors = {
-  primaryColor: '#98BB48',
-  secondaryColor: '#FFF1B7',
+  primaryColor: '#262E3C',
+  secondaryColor: '#EFF0C9',
   primaryAccentColor: '',
   secondaryAccentColor: '',
-  primaryBackgroundColorDark: '#165287',
-  primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#E9D9D3',
-  secondaryBackgroundColorDark: '#165287',
-  secondaryBackgroundColorDefault: '#165287',
-  secondaryBackgroundColorLight: '#BBD3C6',
-  tertiaryBackgroundColorDark: '#165287',
-  tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#B5CFE6',
-  quaternaryBackgroundColorDark: '#165287',
-  quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#F3EBC9',
-  primaryFontColor: '#191A1E',
-  secondaryFontColor: '#817E72',
+  primaryBackgroundColorDark: '#D4D654',
+  primaryBackgroundColorDefault: '#EDEF7C',
+  primaryBackgroundColorLight: '#EFF0C9',
+  secondaryBackgroundColorDark: '#43B572',
+  secondaryBackgroundColorDefault: '#6FCF97',
+  secondaryBackgroundColorLight: '#B0DAC1',
+  tertiaryBackgroundColorDark: '#2AB4D3',
+  tertiaryBackgroundColorDefault: '#4CD4F2',
+  tertiaryBackgroundColorLight: '#92E1F2',
+  quaternaryBackgroundColorDark: '#A46126',
+  quaternaryBackgroundColorDefault: '#B57E4D',
+  quaternaryBackgroundColorLight: '#BF9B7A',
+  primaryFontColor: '#262E3C',
+  secondaryFontColor: '#6D6D6D',
   tertiaryFontColor: '#D6D5CB'
 };
+
 
 
 // const cdCopy = {
@@ -118,7 +119,7 @@ function SectionTextAndCards({
   return (
 
   <>
-    <div className='min-h-screen'>
+    <div className='min-h-screen '>
       <div className="flex flex-col h-1/2 md:flex-row md:w-full">
         <MultiCard 
           heading={card1Heading} 

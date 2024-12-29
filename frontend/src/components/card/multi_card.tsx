@@ -113,18 +113,15 @@ function MultiCard({ heading, paragraph, image, background, buttonPrimaryProps, 
 
     return (
   
-      <div className='flex flex-col md:justify-center md:items-start m-4 p-4 rounded-lg' style={{ background }}>
+      <div className='flex flex-col w-full h-full md:justify-start md:items-start m-4 p-4 rounded-lg' style={{ background }}>
   
-       <div className='flex flex-col-reverse items-start md:flex-row md:justify-end md:items-end'>
+       <div className='flex flex-col items-start justify-start md:flex-row-reverse md:justify-between md:w-full'>
           
-
-          <img className="w-1/2" src={image} alt="Card image" />
-
-    
+          <img className="w-1/8 md:w-1/8 text-slate-400" src={image} alt="Card image" />
+          <br></br>
+          <h2 className='w-full'>{heading}</h2>
+        <br></br>
         </div>
-        <br></br>
-        <h2>{heading}</h2>
-        <br></br>
         <p>{paragraph}</p>
         <br></br>
         <ul>

@@ -57,6 +57,7 @@ function SectionHero({ heading, subheading, paragraph, image, logo, background =
               {logo && (
                 <>
                   <img className='-mt-44 object-cover' src={logo} alt="Placeholder"></img>
+                  <br></br>
                 </>
               )}
               {heading && (

@@ -50,6 +50,10 @@ const cdImages = {
   image14: '/src/assets/images/gidlark-d662tNZfe_g-unsplash.jpg',
   image15: '/src/assets/images/tekton-ndJlw4Bz-1Y-unsplash.jpg',
   image16: '/src/assets/images/markus-spiske-kK7uPfb2YWU-unsplash.jpg',
+  card1Image: '/src/assets/images/1.svg',
+  card2Image: '/src/assets/images/2.svg',
+  card3Image: '/src/assets/images/3.svg',
+  card4Image: '/src/assets/images/4.svg',
 };
 
 const cdCopy = {
@@ -64,8 +68,8 @@ const cdCopy = {
 
   SectionListAndCards_card1Heading:'Elektroanschlüsse für Küchenmodernisierung',
   SectionListAndCards_card1Paragraph:'Statten Sie Ihre Küche mit den notwendigen Anschlüssen für moderne Geräte aus.',
-  SectionListAndCards_card1ListItem1: '• Card 1 Listitem1',
-  SectionListAndCards_card1listItem2: '• Card 1 Listitem2',
+  SectionListAndCards_card1ListItem1: '• Stromanschlüsse für energieeffiziente Geräte', 
+  SectionListAndCards_card1ListItem2: '• Planung von Steckdosen an idealen Positionen',
   SectionListAndCards_card1listItem3: '',
 
   SectionListAndCards_card2Heading:'Außenbeleuchtung und Gartenstrom',
@@ -113,28 +117,28 @@ function ElektroDienstleistungenPrivatkunden() {
         listitem3={cdCopy.SectionListAndCards_listItem3}
       ></SectionListAndImage>
       <SectionTextAndCards 
-        card1Image={cdImages.image1}
+        card1Image={cdImages.card1Image}
         card1Heading={cdCopy.SectionListAndCards_card1Heading}
         card1Paragraph={cdCopy.SectionListAndCards_card1Paragraph}
         card1ButtonPrimaryCaption="Button 1"
         card1Listitem1={cdCopy.SectionListAndCards_card1ListItem1}
-        card1Listitem2={cdCopy.SectionListAndCards_card1listItem2}
+        card1Listitem2={cdCopy.SectionListAndCards_card1ListItem2}
         card1Listitem3={cdCopy.SectionListAndCards_card1listItem3}
-        card2Image={cdImages.image1}
+        card2Image={cdImages.card2Image}
         card2Heading={cdCopy.SectionListAndCards_card2Heading}
         card2Paragraph={cdCopy.SectionListAndCards_card2Paragraph}
         card2ButtonPrimaryCaption="Button 2"
         card2Listitem1={cdCopy.SectionListAndCards_card2ListItem1}
         card2Listitem2={cdCopy.SectionListAndCards_card2listItem2}
         card2Listitem3={cdCopy.SectionListAndCards_card2listItem3}
-        card3Image={cdImages.image1}
+        card3Image={cdImages.card3Image}
         card3Heading={cdCopy.SectionListAndCards_card3Heading}
         card3Paragraph={cdCopy.SectionListAndCards_card3Paragraph}
         card3ButtonPrimaryCaption="Button 3"
         card3Listitem1={cdCopy.SectionListAndCards_card3ListItem1}
         card3Listitem2={cdCopy.SectionListAndCards_card3listItem2}
         card3Listitem3={cdCopy.SectionListAndCards_card3listItem3}
-        card4Image={cdImages.image1}
+        card4Image={cdImages.card4Image}
         card4Heading={cdCopy.SectionListAndCards_card4Heading}
         card4Paragraph={cdCopy.SectionListAndCards_card4Paragraph}
         card4ButtonPrimaryCaption="Button 4"

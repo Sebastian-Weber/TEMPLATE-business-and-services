@@ -66,8 +66,8 @@ const cdImages = {
 };
 
 const cdCopy = {
-  heading: 'Heading 1: Lorem Ipsum Home test',
-  paragraph: 'Paragraph 1: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
+  heading: 'Work in Progress',
+  paragraph: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
 };
 
 
@@ -89,8 +89,7 @@ function ElektroDienstleistungenGewerbekunden() {
         paragraph={cdCopy.paragraph}
         image={cdImages.image1}
         ></SectionTextAndImage>
-      <SectionCards></SectionCards>
-      <Section_Gallery 
+      {/* <Section_Gallery 
         image1={cdImages.image1}
         image2={cdImages.image2} 
         image3={cdImages.image3} 
@@ -98,7 +97,7 @@ function ElektroDienstleistungenGewerbekunden() {
         image5={cdImages.image5}
         image6={cdImages.image6}
         image7={cdImages.image7}
-      ></Section_Gallery>
+      ></Section_Gallery> */}
       <SectionDivider></SectionDivider>
       <SectionContact></SectionContact>
       <Footer></Footer>

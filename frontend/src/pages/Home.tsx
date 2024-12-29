@@ -46,6 +46,11 @@ const cdImages = {
   image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
   image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
   image31: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  card1Image: '/src/assets/images/1.svg',
+  card2Image: '/src/assets/images/2.svg',
+  card3Image: '/src/assets/images/3.svg',
+  card4Image: '/src/assets/images/4.svg',
+  
 };
 
 const cdCopy = {
@@ -91,24 +96,24 @@ const cdCopy = {
 };
 
 const cdColors = {
-  primaryColor: '#98BB48',
-  secondaryColor: '#FFF1B7',
+  primaryColor: '#262E3C',
+  secondaryColor: '#EFF0C9',
   primaryAccentColor: '',
   secondaryAccentColor: '',
-  primaryBackgroundColorDark: '#165287',
-  primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#E9D9D3',
-  secondaryBackgroundColorDark: '#165287',
-  secondaryBackgroundColorDefault: '#165287',
-  secondaryBackgroundColorLight: '#BBD3C6',
-  tertiaryBackgroundColorDark: '#165287',
-  tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#B5CFE6',
-  quaternaryBackgroundColorDark: '#165287',
-  quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#F3EBC9',
-  primaryFontColor: '#191A1E',
-  secondaryFontColor: '#817E72',
+  primaryBackgroundColorDark: '#D4D654',
+  primaryBackgroundColorDefault: '#EDEF7C',
+  primaryBackgroundColorLight: '#EFF0C9',
+  secondaryBackgroundColorDark: '#43B572',
+  secondaryBackgroundColorDefault: '#6FCF97',
+  secondaryBackgroundColorLight: '#B0DAC1',
+  tertiaryBackgroundColorDark: '#2AB4D3',
+  tertiaryBackgroundColorDefault: '#4CD4F2',
+  tertiaryBackgroundColorLight: '#92E1F2',
+  quaternaryBackgroundColorDark: '#A46126',
+  quaternaryBackgroundColorDefault: '#B57E4D',
+  quaternaryBackgroundColorLight: '#BF9B7A',
+  primaryFontColor: '#262E3C',
+  secondaryFontColor: '#6D6D6D',
   tertiaryFontColor: '#D6D5CB'
 };
 
@@ -160,22 +165,34 @@ const Home = () => {
         </ButtonPrimaryProvider>
 
         <SectionTextAndCards 
-        card1Image={cdImages.image2}
+        card1Image={cdImages.card1Image}
         card1Heading={cdCopy.SectionListAndCards_card1Heading}
         card1Paragraph={cdCopy.SectionListAndCards_card1Paragraph}
         card1ButtonPrimaryCaption="Button 1"
-        card2Image={cdImages.image2}
+        card1Listitem1={cdCopy.SectionListAndCards_card1ListItem1}
+        card1Listitem2={cdCopy.SectionListAndCards_card1listItem2}
+        card1Listitem3={cdCopy.SectionListAndCards_card1listItem3}
+        card2Image={cdImages.card2Image}
         card2Heading={cdCopy.SectionListAndCards_card2Heading}
         card2Paragraph={cdCopy.SectionListAndCards_card2Paragraph}
         card2ButtonPrimaryCaption="Button 2"
-        card3Image={cdImages.image2}
+        card2Listitem1={cdCopy.SectionListAndCards_card2ListItem1}
+        card2Listitem2={cdCopy.SectionListAndCards_card2listItem2}
+        card2Listitem3={cdCopy.SectionListAndCards_card2listItem3}
+        card3Image={cdImages.card3Image}
         card3Heading={cdCopy.SectionListAndCards_card3Heading}
         card3Paragraph={cdCopy.SectionListAndCards_card3Paragraph}
         card3ButtonPrimaryCaption="Button 3"
-        card4Image={cdImages.image2}
+        card3Listitem1={cdCopy.SectionListAndCards_card3ListItem1}
+        card3Listitem2={cdCopy.SectionListAndCards_card3listItem2}
+        card3Listitem3={cdCopy.SectionListAndCards_card3listItem3}
+        card4Image={cdImages.card4Image}
         card4Heading={cdCopy.SectionListAndCards_card4Heading}
         card4Paragraph={cdCopy.SectionListAndCards_card4Paragraph}
         card4ButtonPrimaryCaption="Button 4"
+        card4Listitem1={cdCopy.SectionListAndCards_card4ListItem1}
+        card4Listitem2={cdCopy.SectionListAndCards_card4listItem2}
+        card4Listitem3={cdCopy.SectionListAndCards_card4listItem3}
       ></SectionTextAndCards>
         
         <Section_Gallery 
