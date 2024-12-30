@@ -3,26 +3,46 @@ import Button_primary from '../buttons/Button_primary'
 import List from '../lists/List'
 
 const cdColors = {
-    primaryColor: '#98BB48',
-    secondaryColor: '#FFF1B7',
-    primaryAccentColor: '',
-    secondaryAccentColor: '',
-    primaryBackgroundColorDark: '#165287',
-    primaryBackgroundColorDefault: '#1D6DB4',
-    primaryBackgroundColorLight: '#ACC6DD',
-    secondaryBackgroundColorDark: '#165287',
-    secondaryBackgroundColorDefault: '#165287',
-    secondaryBackgroundColorLight: '#165287',
-    tertiaryBackgroundColorDark: '#165287',
-    tertiaryBackgroundColorDefault: '#165287',
-    tertiaryBackgroundColorLight: '#165287',
-    quaternaryBackgroundColorDark: '#165287',
-    quaternaryBackgroundColorDefault: '#165287',
-    quaternaryBackgroundColorLight: '#165287',
-    primaryFontColor: '#191A1E',
-    secondaryFontColor: '#817E72',
-    tertiaryFontColor: '#D6D5CB'
-  };
+  primaryColor: '#A8CF4E',
+  secondaryColor: '#F3F4A7',
+  primaryAccentColor: '',
+  secondaryAccentColor: '',
+
+  // yellow
+  primaryBackgroundColorDark: '#9FA053',
+  primaryBackgroundColorDefault: '#EDEF7C',
+  primaryBackgroundColorLight: '#F3F4A7',
+
+  // green
+  secondaryBackgroundColorDark: '#718B34',
+  secondaryBackgroundColorDefault: '#A8CF4E',
+  secondaryBackgroundColorLight: '#C5DF88',
+
+  // teal
+  tertiaryBackgroundColorDark: '#4A8B65',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorLight: '#9EDFB9',
+
+  // blue
+  quaternaryBackgroundColorDark: '#338EA2',
+  quaternaryBackgroundColorDefault: '#4CD4F2',
+  quaternaryBackgroundColorLight: '#87E2F6',
+
+  // brown
+  quinaryBackgroundColorDark: '#795434',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorLight: '#CDA888',
+
+  // white
+  whiteBackground: '#F7F7F7',
+
+  // black
+  blackBackground: '#1A1A1A',
+
+  primaryFontColor: '#262E3C',
+  secondaryFontColor: '#6D6D6D',
+  tertiaryFontColor: '#D6D5CB'
+};
 
   const cdImages = {
     logo: '/src/assets/Peters_Logotype.svg',
@@ -115,11 +135,11 @@ function MultiCard({ heading, paragraph, image, background, buttonPrimaryProps, 
   
       <div className='flex flex-col w-full h-full md:justify-start md:items-start m-4 p-4 rounded-lg' style={{ background }}>
   
-       <div className='flex flex-col items-start justify-start md:flex-row-reverse md:justify-between md:w-full'>
-          
+       <div className='flex flex-col items-start justify-start md:flex-row-reverse md:justify-between md:items-center md:w-full'>
+
           <img className="w-1/8 md:w-1/8 text-slate-400" src={image} alt="Card image" />
           <br></br>
-          <h2 className='w-full'>{heading}</h2>
+          <h3 className='w-full'>{heading}</h3>
         <br></br>
         </div>
         <p>{paragraph}</p>

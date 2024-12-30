@@ -46,10 +46,10 @@ const cdImages = {
   image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
   image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
   image31: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
-  card1Image: '/src/assets/images/1.svg',
-  card2Image: '/src/assets/images/2.svg',
-  card3Image: '/src/assets/images/3.svg',
-  card4Image: '/src/assets/images/4.svg',
+  card1Image: '/src/assets/images/Privatkunden.svg',
+  card2Image: '/src/assets/images/Geschaeftskunden.svg',
+  card3Image: '/src/assets/images/Smart-Home-Loesungen.svg',
+  card4Image: '/src/assets/images/Lichtinstallation.svg',
   
 };
 
@@ -96,22 +96,42 @@ const cdCopy = {
 };
 
 const cdColors = {
-  primaryColor: '#262E3C',
-  secondaryColor: '#EFF0C9',
+  primaryColor: '#98BB48',
+  secondaryColor: '#FFF1B7',
   primaryAccentColor: '',
   secondaryAccentColor: '',
-  primaryBackgroundColorDark: '#D4D654',
+
+  // yellow
+  primaryBackgroundColorDark: '#9FA053',
   primaryBackgroundColorDefault: '#EDEF7C',
-  primaryBackgroundColorLight: '#EFF0C9',
-  secondaryBackgroundColorDark: '#43B572',
-  secondaryBackgroundColorDefault: '#6FCF97',
-  secondaryBackgroundColorLight: '#B0DAC1',
-  tertiaryBackgroundColorDark: '#2AB4D3',
-  tertiaryBackgroundColorDefault: '#4CD4F2',
-  tertiaryBackgroundColorLight: '#92E1F2',
-  quaternaryBackgroundColorDark: '#A46126',
-  quaternaryBackgroundColorDefault: '#B57E4D',
-  quaternaryBackgroundColorLight: '#BF9B7A',
+  primaryBackgroundColorLight: '#F3F4A7',
+
+  // green
+  secondaryBackgroundColorDark: '#718B34',
+  secondaryBackgroundColorDefault: '#A8CF4E',
+  secondaryBackgroundColorLight: '#C5DF88',
+
+  // teal
+  tertiaryBackgroundColorDark: '#4A8B65',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorLight: '#9EDFB9',
+
+  // blue
+  quaternaryBackgroundColorDark: '#338EA2',
+  quaternaryBackgroundColorDefault: '#4CD4F2',
+  quaternaryBackgroundColorLight: '#87E2F6',
+
+  // brown
+  quinaryBackgroundColorDark: '#795434',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorLight: '#CDA888',
+
+  // white
+  whiteBackground: '#F7F7F7',
+
+  // black
+  blackBackground: '#1A1A1A',
+
   primaryFontColor: '#262E3C',
   secondaryFontColor: '#6D6D6D',
   tertiaryFontColor: '#D6D5CB'

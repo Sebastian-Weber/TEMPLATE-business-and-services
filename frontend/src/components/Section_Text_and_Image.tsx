@@ -53,7 +53,7 @@ function SectionTextAndImage({ paragraph, image, heading, background, buttonPrim
         <div className="flex flex-col p-5 justify-center items-center h-1/2 w-full md:m-12 md:h-fit md:w-9/12 md:items-center">
             <br></br>
             <div className="flex flex-col p-8 h-auto w-auto justify-center items-start md:full ">
-              <h2 style={{ color: cdColors.secondaryFontColor }}>{heading}</h2>
+              <h3 style={{ color: cdColors.secondaryFontColor }}>{heading}</h3>
               <br></br>
               <p className="">{paragraph}</p>
               <br />

@@ -19,24 +19,44 @@ const cdImages = {
 };
 
 const cdColors = {
-  primaryColor: '#98BB48',
-  secondaryColor: '#FFF1B7',
+  primaryColor: '#A8CF4E',
+  secondaryColor: '#F3F4A7',
   primaryAccentColor: '',
   secondaryAccentColor: '',
-  primaryBackgroundColorDark: '#165287',
-  primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#E9D9D3',
-  secondaryBackgroundColorDark: '#165287',
-  secondaryBackgroundColorDefaukt: '#165287',
-  secondaryBackgroundColorLight: '#BBD3C6',
-  tertiaryBackgroundColorDark: '#165287',
-  tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#B5CFE6',
-  quaternaryBackgroundColorDark: '#165287',
-  quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#F3EBC9',
-  primaryFontColor: '#191A1E',
-  secondaryFontColor: '#817E72',
+
+  // yellow
+  primaryBackgroundColorDark: '#F6F7BE',
+  primaryBackgroundColorDefault: '#EDEF7C',
+  primaryBackgroundColorLight: '#F3F4A7',
+
+  // green
+  secondaryBackgroundColorDark: '#D4E7A7',
+  secondaryBackgroundColorDefault: '#A8CF4E',
+  secondaryBackgroundColorLight: '#C5DF88',
+
+  // teal
+  tertiaryBackgroundColorDark: '#B7E7CB',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorLight: '#9EDFB9',
+
+  // blue
+  quaternaryBackgroundColorDark: '#A6EAF9',
+  quaternaryBackgroundColorDefault: '#4CD4F2',
+  quaternaryBackgroundColorLight: '#87E2F6',
+
+  // brown
+  quinaryBackgroundColorDark: '#E6D3C2',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorLight: '#CDA888',
+
+  // white
+  whiteBackground: '#F7F7F7',
+
+  // black
+  blackBackground: '#1A1A1A',
+
+  primaryFontColor: '#262E3C',
+  secondaryFontColor: '#6D6D6D',
   tertiaryFontColor: '#D6D5CB'
 };
 
@@ -52,12 +72,12 @@ function SectionContact() {
   return (
     <>
 
-      <div className='min-h-screen flex flex-col justify-center items-center md:justify-center md:items-center' style={{ backgroundColor: cdColors.tertiaryBackgroundColorLight }}>
+      <div className='min-h-screen flex flex-col justify-center items-center md:justify-center md:items-center' style={{ backgroundColor: cdColors.quaternaryBackgroundColorDark }}>
       <a id="kontakt"></a>
       <div className="flex flex-col h-full w-full md:p-12 md:flex-row  ">
   
           {/* left box */}
-          <div className="flex flex-col p-12 justify-center items-center md:items-center h-1/2 w-full md:p-6 md:h-fit  md:justify-normal">
+          <div className="flex flex-col p-12 justify-center items-center md:items-center h-1/2 w-full md:p-6 md:h-fit md:justify-normal">
             <div className="w-full md:w-2/3 ">
             <Text_field caption="Vor- & Nachname*" placeholder="" alt="Ihr Vor- und Nachname"></Text_field>
             <Text_field caption="E-Mail-Adresse*" placeholder="" alt="Ihre E-Mail-Adresse"></Text_field>

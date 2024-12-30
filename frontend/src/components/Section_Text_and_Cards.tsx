@@ -35,27 +35,46 @@ const cdCopy = {
 
 
 const cdColors = {
-  primaryColor: '#262E3C',
-  secondaryColor: '#EFF0C9',
+  primaryColor: '#EDEF7C',
+  secondaryColor: '#A8CF4E',
   primaryAccentColor: '',
   secondaryAccentColor: '',
-  primaryBackgroundColorDark: '#D4D654',
+
+  // yellow
+  primaryBackgroundColorDark: '#9FA053',
   primaryBackgroundColorDefault: '#EDEF7C',
-  primaryBackgroundColorLight: '#EFF0C9',
-  secondaryBackgroundColorDark: '#43B572',
-  secondaryBackgroundColorDefault: '#6FCF97',
-  secondaryBackgroundColorLight: '#B0DAC1',
-  tertiaryBackgroundColorDark: '#2AB4D3',
-  tertiaryBackgroundColorDefault: '#4CD4F2',
-  tertiaryBackgroundColorLight: '#92E1F2',
-  quaternaryBackgroundColorDark: '#A46126',
-  quaternaryBackgroundColorDefault: '#B57E4D',
-  quaternaryBackgroundColorLight: '#BF9B7A',
+  primaryBackgroundColorLight: '#F3F4A7',
+
+  // green
+  secondaryBackgroundColorDark: '#718B34',
+  secondaryBackgroundColorDefault: '#A8CF4E',
+  secondaryBackgroundColorLight: '#C5DF88',
+
+  // teal
+  tertiaryBackgroundColorDark: '#4A8B65',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorLight: '#9EDFB9',
+
+  // blue
+  quaternaryBackgroundColorDark: '#338EA2',
+  quaternaryBackgroundColorDefault: '#4CD4F2',
+  quaternaryBackgroundColorLight: '#87E2F6',
+
+  // brown
+  quinaryBackgroundColorDark: '#795434',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorLight: '#CDA888',
+
+  // white
+  whiteBackground: '#F7F7F7',
+
+  // black
+  blackBackground: '#1A1A1A',
+
   primaryFontColor: '#262E3C',
   secondaryFontColor: '#6D6D6D',
   tertiaryFontColor: '#D6D5CB'
 };
-
 
 
 // const cdCopy = {
@@ -120,7 +139,7 @@ function SectionTextAndCards({
 
   <>
     <div className='min-h-screen '>
-      <div className="flex flex-col h-1/2 md:flex-row md:w-full">
+      <div className="flex flex-col h-1/2 md:flex-row md:w-full bg-red">
         <MultiCard 
           heading={card1Heading} 
           paragraph={card1Paragraph} 

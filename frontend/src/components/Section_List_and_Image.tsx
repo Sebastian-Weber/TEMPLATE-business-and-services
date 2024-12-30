@@ -2,25 +2,46 @@ import Button_primary from "./buttons/button_primary";
 import List from "./lists/List";
 // import Button_secondary from "./buttons/button_secondary";
 
+
 const cdColors = {
   primaryColor: '#98BB48',
   secondaryColor: '#FFF1B7',
   primaryAccentColor: '',
   secondaryAccentColor: '',
-  primaryBackgroundColorDark: '#165287',
-  primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#ACC6DD',
-  secondaryBackgroundColorDark: '#165287',
-  secondaryBackgroundColorDefaukt: '#165287',
-  secondaryBackgroundColorLight: '#165287',
-  tertiaryBackgroundColorDark: '#165287',
-  tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#165287',
-  quaternaryBackgroundColorDark: '#165287',
-  quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#165287',
-  primaryFontColor: '#191A1E',
-  secondaryFontColor: '#817E72',
+
+  // yellow
+  primaryBackgroundColorDark: '#9FA053',
+  primaryBackgroundColorDefault: '#EDEF7C',
+  primaryBackgroundColorLight: '#F3F4A7',
+
+  // green
+  secondaryBackgroundColorDark: '#718B34',
+  secondaryBackgroundColorDefault: '#A8CF4E',
+  secondaryBackgroundColorLight: '#C5DF88',
+
+  // teal
+  tertiaryBackgroundColorDark: '#4A8B65',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorLight: '#9EDFB9',
+
+  // blue
+  quaternaryBackgroundColorDark: '#338EA2',
+  quaternaryBackgroundColorDefault: '#4CD4F2',
+  quaternaryBackgroundColorLight: '#87E2F6',
+
+  // brown
+  quinaryBackgroundColorDark: '#795434',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorLight: '#CDA888',
+
+  // white
+  whiteBackground: '#F7F7F7',
+
+  // black
+  blackBackground: '#1A1A1A',
+
+  primaryFontColor: '#262E3C',
+  secondaryFontColor: '#6D6D6D',
   tertiaryFontColor: '#D6D5CB'
 };
 
@@ -64,7 +85,7 @@ function SectionListAndImage({ heading, paragraph, image, background, buttonPrim
         <div className="flex flex-col p-5 justify-center items-center h-1/2 w-full md:m-12 md:h-fit md:w-9/12 md:items-center">
             <br></br>
             <div className="flex flex-col p-8 h-auto w-auto justify-center items-start md:full ">
-              <h2 style={{ color: cdColors.secondaryFontColor }}>{heading}</h2>
+              <h4 style={{ color: cdColors.secondaryFontColor }}>{heading}</h4>
               <br></br>
               <p className="">{paragraph}</p>
               <br />
