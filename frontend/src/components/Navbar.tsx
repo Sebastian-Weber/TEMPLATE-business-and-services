@@ -45,17 +45,20 @@ const cdImages = {
   image31: '/src/assets/images/alpha-innotec--nbWCvUiFJA-unsplash.jpg',
   image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
   image33: '/src/assets/images/vivint-solar-9CalgkSRZb8-unsplash.jpg',
-  image34: '/src/assets/images/lycs-architecture-U2BI3GMnSSE-unsplash.jpg',
+  image34: '/src/assets/images/austin-distel-wawEfYdpkag-unsplash.jpg',
   image35: '/src/assets/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg',
   image36: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
-  image37: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image37: '/src/assets/images/ben-kolde-FaPxZ88yZrw-unsplash.jpg',
+  image38: '/src/assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg',
+  image39: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image40: '/src/assets/images/thisisengineering-WjOWazUPAss-unsplash.jpg',
+  
 
   card1Image: '/src/assets/images/Privatkunden.svg',
   card2Image: '/src/assets/images/Geschaeftskunden.svg',
   card3Image: '/src/assets/images/Smart-Home-Loesungen.svg',
   card4Image: '/src/assets/images/Lichtinstallation.svg',
 
-  
 };
 
 const cdColors = {
@@ -112,38 +115,38 @@ const Navbar = () => {
     setMenuItem1ExpanderVisible(!isMenuItem1ExpanderVisible);
   };
 
-   const dropdownItems = [
-    {
-      heading: 'Home',
-      subheading: 'Welcome to our homepage',
-      url: 'home',
-      image: '/path/to/home-image.jpg',
-    },
-    {
-      heading: 'About',
-      subheading: 'Learn more about us',
-      url: 'about',
-      image: '/path/to/about-image.jpg',
-    },
-    {
-      heading: 'Services',
-      subheading: 'Discover our services',
-      url: 'services',
-      image: '/path/to/services-image.jpg',
-    },
-    {
-      heading: 'Contact',
-      subheading: 'Get in touch with us',
-      url: 'contact',
-      image: '/path/to/contact-image.jpg',
-    },
-    {
-      heading: 'Blog',
-      subheading: 'Read our latest posts',
-      url: 'blog',
-      image: '/path/to/blog-image.jpg',
-    },
-  ];
+  //  const dropdownItems = [
+  //   {
+  //     heading: 'Home',
+  //     subheading: 'Welcome to our homepage',
+  //     url: 'home',
+  //     image: '/path/to/home-image.jpg',
+  //   },
+  //   {
+  //     heading: 'About',
+  //     subheading: 'Learn more about us',
+  //     url: 'about',
+  //     image: '/path/to/about-image.jpg',
+  //   },
+  //   {
+  //     heading: 'Services',
+  //     subheading: 'Discover our services',
+  //     url: 'services',
+  //     image: '/path/to/services-image.jpg',
+  //   },
+  //   {
+  //     heading: 'Contact',
+  //     subheading: 'Get in touch with us',
+  //     url: 'contact',
+  //     image: '/path/to/contact-image.jpg',
+  //   },
+  //   {
+  //     heading: 'Blog',
+  //     subheading: 'Read our latest posts',
+  //     url: 'blog',
+  //     image: '/path/to/blog-image.jpg',
+  //   },
+  // ];
 
   return (
     <>
@@ -234,13 +237,13 @@ const Navbar = () => {
           dropdownCaption='Leistungen'
           dropdownItems={[
             {
-              image: cdImages.image35,
+              image: cdImages.image33,
               heading: 'Elektro-Dienstleistungen für Privatkunden',
               subheading: 'Elektroinstallationen für Ihr Zuhause',
               url: 'Elektro-Dienstleistungen-Privatkunden'
             },
             {
-              image: cdImages.image34,
+              image: cdImages.image40,
               heading: 'Elektro-Dienstleistungen für Gewerbekunden',
               subheading: 'Einbau, Austausch und Wartung',
               url: 'Elektro-Dienstleistungen-Gewerbekunden'
@@ -271,26 +274,26 @@ const Navbar = () => {
             {
               image: cdImages.image25,
               heading: 'Photovoltaik-Anlagen',
-              subheading: '...',
-              url: 'Elektro-Dienstleistungen-Privatkunden'
+              subheading: 'Einbau, Austausch und Wartung',
+              url: 'Photovoltaik-Anlagen'
             },
             {
               image: cdImages.image24,
               heading: 'Solaranlagen-Installation',
-              subheading: '...',
-              url: 'Elektro-Dienstleistungen-Gewerbekunden'
+              subheading: 'Einbau, Austausch und Wartung',
+              url: 'Solaranlagen-Installation'
             },
             {
               image: cdImages.image18,
               heading: 'Energieeffiziente Beleuchtung',
-              subheading: '...',
-              url: 'Smart-Home-Loesungen'
+              subheading: 'Lichtdesign und -installation',
+              url: 'Energieeffiziente-Beleuchtung'
             },
             {
               image: cdImages.image28,
               heading: 'Ladestationen für E-Fahrzeuge',
-              subheading: '...',
-              url: 'Lichtdesign-und-Installation'
+              subheading: 'Lichtdesign und -installation',
+              url: 'Ladestationen-fuer-E-Fahrzeuge'
             },
             // {
             //   image: cdImages.image4,
@@ -301,29 +304,6 @@ const Navbar = () => {
           ]}
         ></Navbar_xl_dropdown_template>
 
-        {/* <Navbar_xl_dropdown_template 
-          dropdownCaption='Nachhaltigkeit & Energielösungen'
-          DropdownItem1Heading='Photovoltaik-Anlagen' 
-          DropdownItem1Image={cdImages.image25} 
-          DropdownItem1Subheading='...' 
-          DropdownItem1Url='Elektro-Dienstleistungen-Privatkunden'
-          DropdownItem2Heading='Solaranlagen-Installation' 
-          DropdownItem2Image={cdImages.image24} 
-          DropdownItem2Subheading='...' 
-          DropdownItem2Url=''  
-          DropdownItem3Heading='Energieeffiziente Beleuchtung' 
-          DropdownItem3Image={cdImages.image18} 
-          DropdownItem3Subheading='...' 
-          DropdownItem3Url=''
-          DropdownItem4Heading='Ladestationen für E-Fahrzeuge' 
-          DropdownItem4Image={cdImages.image28} 
-          DropdownItem4Subheading='...' 
-          DropdownItem4Url=''
-          DropdownItem5Heading='' 
-          DropdownItem5Image={''} 
-          DropdownItem5Subheading='' 
-          DropdownItem5Url='' 
-        ></Navbar_xl_dropdown_template> */}
 
         {/* Offene Stellen */}
         <Link className="flex flex-row items-start" to="/jobs">
@@ -337,9 +317,6 @@ const Navbar = () => {
         </div>        
 
         <div className="flex flex-row justify-end items-center ">
-
-        
-
 
         <Button_secondary buttonSecondaryCaption="Kontakt" buttonSecondaryLink="#kontakt"></Button_secondary>
 

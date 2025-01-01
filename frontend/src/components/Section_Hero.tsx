@@ -1,9 +1,9 @@
 
-const cdImages = {
-  heroImage: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
-  heroLogotype: '/src/assets/Peters_Logotype.svg',
+// const cdImages = {
+//   heroImage: '/src/assets/images/thisisengineering-ovWUKV1btXk-unsplash.png',
+//   heroLogotype: '/src/assets/Peters_Logotype.svg',
 
-};
+// };
 
 // const cdCopy = {
 //   heroHeading1: 'Heading 1: ...',

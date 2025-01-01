@@ -47,16 +47,16 @@ const cdColors = {
   interface NavbarSMDropdownTemplateProps {
     DropdownCaption: string;
 
-    DropdownItem1Heading: string;
-    DropdownItem1Link: string;
-    DropdownItem2Heading: string;
-    DropdownItem2Link: string;
-    DropdownItem3Heading: string;
-    DropdownItem3Link: string;
-    DropdownItem4Heading: string;
-    DropdownItem4Link: string;
-    DropdownItem5Heading: string;
-    DropdownItem5Link: string;
+    DropdownItem1Heading?: string;
+    DropdownItem1Link?: string;
+    DropdownItem2Heading?: string;
+    DropdownItem2Link?: string;
+    DropdownItem3Heading?: string;
+    DropdownItem3Link?: string;
+    DropdownItem4Heading?: string;
+    DropdownItem4Link?: string;
+    DropdownItem5Heading?: string;
+    DropdownItem5Link?: string;
 }
 
 

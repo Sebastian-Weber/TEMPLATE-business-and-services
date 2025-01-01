@@ -46,20 +46,20 @@ const cdImages = {
   image31: '/src/assets/images/alpha-innotec--nbWCvUiFJA-unsplash.jpg',
   image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
   image33: '/src/assets/images/vivint-solar-9CalgkSRZb8-unsplash.jpg',
-  image34: '/src/assets/images/lycs-architecture-U2BI3GMnSSE-unsplash.jpg',
+  image34: '/src/assets/images/austin-distel-wawEfYdpkag-unsplash.jpg',
   image35: '/src/assets/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg',
   image36: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
   image37: '/src/assets/images/ben-kolde-FaPxZ88yZrw-unsplash.jpg',
   image38: '/src/assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg',
   image39: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
-
+  image40: '/src/assets/images/thisisengineering-WjOWazUPAss-unsplash.jpg',
+  
 
   card1Image: '/src/assets/images/Privatkunden.svg',
   card2Image: '/src/assets/images/Geschaeftskunden.svg',
   card3Image: '/src/assets/images/Smart-Home-Loesungen.svg',
   card4Image: '/src/assets/images/Lichtinstallation.svg',
 
-  
 };
 
 const cdCopy = {

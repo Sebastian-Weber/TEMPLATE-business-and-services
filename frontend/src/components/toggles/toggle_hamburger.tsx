@@ -70,7 +70,7 @@ const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease
         </div>
 
         {/* Small overlay menu */}
-        <div className={`absolute left-0 top-18 w-full items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
+        <div className={`absolute left-0 top-16 w-full items-center justify-start ${isOverlayVisible ? 'visible' : 'invisible'}`}>
         <div className="flex flex-col justify-normal h-screen items-start" style={{ backgroundColor: cdColors.primaryColor }}>
             <ul className="py-6 px-6 w-full mt-12">
 
@@ -99,16 +99,16 @@ const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease
             </li>
                 <Expander_sm 
                     DropdownCaption="Energielösungen" 
-                    DropdownItem1Heading="Item 1 Heading" 
-                    DropdownItem1Link="/item1" 
-                    DropdownItem2Heading="Item 2 Heading" 
-                    DropdownItem2Link="/item2" 
-                    DropdownItem3Heading="Item 3 Heading" 
-                    DropdownItem3Link="/item3" 
-                    DropdownItem4Heading="Item 4 Heading" 
-                    DropdownItem4Link="/item4" 
-                    DropdownItem5Heading="Item 5 Heading" 
-                    DropdownItem5Link="/item5" 
+                    DropdownItem1Heading="Photovoltaik-Anlagen" 
+                    DropdownItem1Link="/Photovoltaik-Anlagen" 
+                    DropdownItem2Heading="Solaranlagen-Installation" 
+                    DropdownItem2Link="/Solaranlagen-Installation" 
+                    DropdownItem3Heading="Energieeffiziente-Beleuchtung" 
+                    DropdownItem3Link="/Energieeffiziente-Beleuchtung" 
+                    DropdownItem4Heading="Ladestationen für E-Fahrzeug" 
+                    DropdownItem4Link="/Ladestationen-fuer-E-Fahrzeuge" 
+                    DropdownItem5Heading="" 
+                    DropdownItem5Link="/..." 
                 />
             <li>
             <Link className="" to="/jobs">

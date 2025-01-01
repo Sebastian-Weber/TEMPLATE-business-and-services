@@ -30,7 +30,30 @@ const cdImages = {
   image19: '/src/assets/images/alex-wolowiecki-uXgoasNqYqw-unsplash.jpg',
   image20: '/src/assets/images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg',
   image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
-  image22: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
+  image22: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
+  image23: '/src/assets/images/frames-for-your-heart-iOLHAIaxpDA-unsplash.jpg',
+  image24: '/src/assets/images/jimmy-nilsson-masth-hrIpsXkrAO0-unsplash.png',
+  image25: '/src/assets/images/markus-spiske-rNn_TU8dvoY-unsplash.png',
+  image26: '/src/assets/images/kumpan-electric-AjNgSvEt-v4-unsplash.jpg',
+  image27: '/src/assets/images/smart-me-ag-j2E-2YQe_c8-unsplash.jpg',
+  image28: '/src/assets/images/waldemar-rHfTdK9YU2Q-unsplash.jpg',
+  image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
+  image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image31: '/src/assets/images/alpha-innotec--nbWCvUiFJA-unsplash.jpg',
+  image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image33: '/src/assets/images/vivint-solar-9CalgkSRZb8-unsplash.jpg',
+  image34: '/src/assets/images/austin-distel-wawEfYdpkag-unsplash.jpg',
+  image35: '/src/assets/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg',
+  image36: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image37: '/src/assets/images/ben-kolde-FaPxZ88yZrw-unsplash.jpg',
+  image38: '/src/assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg',
+  image39: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+
+  card1Image: '/src/assets/images/Privatkunden.svg',
+  card2Image: '/src/assets/images/Geschaeftskunden.svg',
+  card3Image: '/src/assets/images/Smart-Home-Loesungen.svg',
+  card4Image: '/src/assets/images/Lichtinstallation.svg',
+
 };
 
 const cdColors = {
@@ -140,7 +163,7 @@ const About = () => {
         />
         <SectionDivider></SectionDivider>
         <SectionContact 
-        imageSrc={cdImages.image10}
+        imageSrc={cdImages.image38}
         style={{backgroundColor: cdColors.quaternaryBackgroundColorLight}}>
         </SectionContact>
         <Footer></Footer>

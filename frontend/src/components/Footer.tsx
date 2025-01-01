@@ -107,7 +107,7 @@ function Footer() {
              {/* Firmenlogo */}
               <li className="">
                 <Link to="/">
-                  <img className="w-18 -mt-8" src={Firmenlogo} alt="Firmenlogo" />
+                  <img className="w-18 -mt-7" src={Firmenlogo} alt="Firmenlogo" />
                </Link>
               </li>
 

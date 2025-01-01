@@ -38,7 +38,7 @@ function MultiCard({ heading, paragraph, image, background, buttonPrimaryProps, 
   
        <div className='flex flex-col items-start justify-start md:flex-row-reverse md:justify-between md:items-center md:w-full'>
 
-          <img className="w-1/4 md:w-3/6 text-slate-400" src={image} alt="Card image" />
+       {image && <img className='h-fit p-12 md:p-18' src={image} alt="Placeholder" />}
           <br></br>
           <h3 className='w-full'>{heading}</h3>
 

@@ -49,6 +49,7 @@ const cdColors = {
   tertiaryFontColor: ''
 };
 
+
 const cdImages = {
   logo: '/src/assets/Peters_Logotype.svg',
   image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
@@ -82,18 +83,21 @@ const cdImages = {
   image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
   image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
   image31: '/src/assets/images/alpha-innotec--nbWCvUiFJA-unsplash.jpg',
-  image32: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
-  image33: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image33: '/src/assets/images/vivint-solar-9CalgkSRZb8-unsplash.jpg',
+  image34: '/src/assets/images/lycs-architecture-U2BI3GMnSSE-unsplash.jpg',
+  image35: '/src/assets/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg',
+  image36: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image37: '/src/assets/images/ben-kolde-FaPxZ88yZrw-unsplash.jpg',
+  image38: '/src/assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg',
+  image39: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+
 
   card1Image: '/src/assets/images/Privatkunden.svg',
   card2Image: '/src/assets/images/Geschaeftskunden.svg',
   card3Image: '/src/assets/images/Smart-Home-Loesungen.svg',
   card4Image: '/src/assets/images/Lichtinstallation.svg',
 
-  imageNumber1: '/src/assets/images/1.svg',
-  imageNumber2: '/src/assets/images/2.svg',
-  imageNumber3: '/src/assets/images/3.svg',
-  imageNumber4: '/src/assets/images/4.svg',
   
 };
 
@@ -145,7 +149,7 @@ function ElektroDienstleistungenPrivatkunden() {
       <SectionHero 
       heading={cdCopy.SectionHero_heading} 
       paragraph={cdCopy.SectionHero_paragraph} 
-      image={cdImages.image31}
+      image={cdImages.image33}
       logo={''}
       background={cdColors.primaryBackgroundColorLight}>
       </SectionHero>
@@ -161,43 +165,48 @@ function ElektroDienstleistungenPrivatkunden() {
       <SectionTextAndCards 
         heading="Lorem Ipsum dolor sit amet"
         paragraph="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-        
-        card1Image={cdImages.imageNumber1}
+        image={cdImages.image31}
+
+        // card1Image={cdImages.imageNumber1}
         card1Heading={cdCopy.SectionListAndCards_card1Heading}
         card1Paragraph={cdCopy.SectionListAndCards_card1Paragraph}
         card1Listitem1={cdCopy.SectionListAndCards_card1ListItem1}
         card1Listitem2={cdCopy.SectionListAndCards_card1ListItem2}
         card1Listitem3={cdCopy.SectionListAndCards_card1listItem3}
         card1ButtonPrimaryCaption="Button 1"
+        card1ButtonPrimaryLink="/link1"
 
-        card2Image={cdImages.imageNumber2}
+        // card2Image={cdImages.imageNumber2}
         card2Heading={cdCopy.SectionListAndCards_card2Heading}
         card2Paragraph={cdCopy.SectionListAndCards_card2Paragraph}
         card2Listitem1={cdCopy.SectionListAndCards_card2ListItem1}
         card2Listitem2={cdCopy.SectionListAndCards_card2listItem2}
-        card2Listitem3={cdCopy.SectionListAndCards_card2listItem3}
         card2ButtonPrimaryCaption="Button 2"
+        card2ButtonPrimaryLink="/link2"
+        card2Listitem3={cdCopy.SectionListAndCards_card2listItem3}
 
-        card3Image={cdImages.imageNumber3}
+        // card3Image={cdImages.imageNumber3}
         card3Heading={cdCopy.SectionListAndCards_card3Heading}
         card3Paragraph={cdCopy.SectionListAndCards_card3Paragraph}
         card3Listitem1={cdCopy.SectionListAndCards_card3ListItem1}
         card3Listitem2={cdCopy.SectionListAndCards_card3listItem2}
         card3Listitem3={cdCopy.SectionListAndCards_card3listItem3}
         card3ButtonPrimaryCaption="Button 3"
+        card3ButtonPrimaryLink="/link3"
 
-        card4Image={cdImages.imageNumber4}
+        // card4Image={cdImages.imageNumber4}
         card4Heading={cdCopy.SectionListAndCards_card4Heading}
         card4Paragraph={cdCopy.SectionListAndCards_card4Paragraph}
         card4Listitem1={cdCopy.SectionListAndCards_card4ListItem1}
         card4Listitem2={cdCopy.SectionListAndCards_card4listItem2}
         card4Listitem3={cdCopy.SectionListAndCards_card4listItem3}
         card4ButtonPrimaryCaption="Button 4"
+        card4ButtonPrimaryLink="/link4"
 
       ></SectionTextAndCards>
       <SectionDivider></SectionDivider>
       <SectionContact 
-        imageSrc={cdImages.image10}
+        imageSrc={cdImages.image37}
         style={{backgroundColor: cdColors.quaternaryBackgroundColorLight}}>
         </SectionContact>
       <Footer></Footer>
