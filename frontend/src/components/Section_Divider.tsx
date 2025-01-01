@@ -2,34 +2,34 @@
 
 const cdColors = {
   primaryColor: '#A8CF4E',
-  secondaryColor: '#F3F4A7',
+  secondaryColor: '#FBF179',
   primaryAccentColor: '',
   secondaryAccentColor: '',
 
-  // yellow
-  primaryBackgroundColorDark: '#9FA053',
-  primaryBackgroundColorDefault: '#EDEF7C',
-  primaryBackgroundColorLight: '#F3F4A7',
-
   // green
-  secondaryBackgroundColorDark: '#718B34',
-  secondaryBackgroundColorDefault: '#A8CF4E',
-  secondaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorDefault: '#A8CF4E',
+  primaryBackgroundColorDark: '#8FB042',
+
+  // yellow   
+  secondaryBackgroundColorLight: '#FCF6A5',
+  secondaryBackgroundColorDefault: '#FBF179',
+  secondaryBackgroundColorDark: '#DBD269',
 
   // teal
-  tertiaryBackgroundColorDark: '#4A8B65',
-  tertiaryBackgroundColorDefault: '#6FCF97',
   tertiaryBackgroundColorLight: '#9EDFB9',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorDark: '#5EB080',
 
   // blue
-  quaternaryBackgroundColorDark: '#338EA2',
-  quaternaryBackgroundColorDefault: '#4CD4F2',
-  quaternaryBackgroundColorLight: '#87E2F6',
+  quaternaryBackgroundColorLight: '#80CDDE',
+  quaternaryBackgroundColorDefault: '#41B4CE',
+  quaternaryBackgroundColorDark: '#41B4CE',
 
   // brown
-  quinaryBackgroundColorDark: '#795434',
-  quinaryBackgroundColorDefault: '#B57E4D',
   quinaryBackgroundColorLight: '#CDA888',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorDark: '#9A6B42',
 
   // white
   whiteBackground: '#F7F7F7',
@@ -37,9 +37,9 @@ const cdColors = {
   // black
   blackBackground: '#1A1A1A',
 
-  primaryFontColor: '#262E3C',
+  primaryFontColor: '#212121',
   secondaryFontColor: '#6D6D6D',
-  tertiaryFontColor: '#D6D5CB'
+  tertiaryFontColor: ''
 };
 
 function SectionDivider() {
@@ -74,7 +74,7 @@ backgroundColor: '#4017ce'}}>
     <div className="h-80 w-full" style={{background: 
         'radial-gradient(circle at top left,transparent 25%, #EDEF7C 25.5%, #EDEF7C 36%, transparent 37%, transparent 100%),radial-gradient(circle at bottom right,transparent 34%,#1D6DB4 34.5%, #1D6DB4 45.5%, transparent 46%, transparent 100%)',
         backgroundSize: '6em 6em',
-        backgroundColor: cdColors.quaternaryBackgroundColorDefault,
+        backgroundColor: cdColors.quaternaryBackgroundColorLight,
         }}>  
     </div>
 

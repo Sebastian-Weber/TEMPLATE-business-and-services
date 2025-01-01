@@ -4,34 +4,34 @@ import { Link } from 'react-router-dom';
 
 const cdColors = {
     primaryColor: '#A8CF4E',
-    secondaryColor: '#F3F4A7',
+    secondaryColor: '#FBF179',
     primaryAccentColor: '',
     secondaryAccentColor: '',
   
-    // yellow
-    primaryBackgroundColorDark: '#9FA053',
-    primaryBackgroundColorDefault: '#EDEF7C',
-    primaryBackgroundColorLight: '#F3F4A7',
-  
     // green
-    secondaryBackgroundColorDark: '#718B34',
-    secondaryBackgroundColorDefault: '#A8CF4E',
-    secondaryBackgroundColorLight: '#C5DF88',
+    primaryBackgroundColorLight: '#C5DF88',
+    primaryBackgroundColorDefault: '#A8CF4E',
+    primaryBackgroundColorDark: '#8FB042',
+  
+    // yellow   
+    secondaryBackgroundColorLight: '#FCF6A5',
+    secondaryBackgroundColorDefault: '#FBF179',
+    secondaryBackgroundColorDark: '#DBD269',
   
     // teal
-    tertiaryBackgroundColorDark: '#4A8B65',
-    tertiaryBackgroundColorDefault: '#6FCF97',
     tertiaryBackgroundColorLight: '#9EDFB9',
+    tertiaryBackgroundColorDefault: '#6FCF97',
+    tertiaryBackgroundColorDark: '#5EB080',
   
     // blue
-    quaternaryBackgroundColorDark: '#338EA2',
-    quaternaryBackgroundColorDefault: '#4CD4F2',
-    quaternaryBackgroundColorLight: '#87E2F6',
+    quaternaryBackgroundColorLight: '#80CDDE',
+    quaternaryBackgroundColorDefault: '#41B4CE',
+    quaternaryBackgroundColorDark: '#41B4CE',
   
     // brown
-    quinaryBackgroundColorDark: '#795434',
-    quinaryBackgroundColorDefault: '#B57E4D',
     quinaryBackgroundColorLight: '#CDA888',
+    quinaryBackgroundColorDefault: '#B57E4D',
+    quinaryBackgroundColorDark: '#9A6B42',
   
     // white
     whiteBackground: '#F7F7F7',
@@ -39,9 +39,9 @@ const cdColors = {
     // black
     blackBackground: '#1A1A1A',
   
-    primaryFontColor: '#262E3C',
+    primaryFontColor: '#212121',
     secondaryFontColor: '#6D6D6D',
-    tertiaryFontColor: '#D6D5CB'
+    tertiaryFontColor: ''
   };
 
   
@@ -59,13 +59,13 @@ const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease
         <div className="cursor-pointer" onClick={() => { setIsOpen(!isOpen); setOverlayVisible(!isOverlayVisible); }}>
             <div className={`${genericHamburgerLine} ${isOpen 
                 ? "rotate-45 translate-y-1 group-hover:opacity-100"
-                : "opacity-100 group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryColor }}/>
+                : "opacity-100 group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryBackgroundColorLight }}/>
             <div className={`${genericHamburgerLine} ${isOpen 
                 ? "opacity-0" 
-                : "group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryColor }}/>
+                : "group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryBackgroundColorLight }}/>
             <div className={`${genericHamburgerLine} ${ isOpen
                 ? "-rotate-45 -translate-y-3 opacity-100 group-hover:opacity-100"
-                : "opacity-100 group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryColor }}/>
+                : "opacity-100 group-hover:opacity-100"}`} style={{ backgroundColor: cdColors.secondaryBackgroundColorLight}}/>
             </div>
         </div>
 
@@ -76,7 +76,7 @@ const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease
 
             <li>
             <Link className="" to="/about">
-                <div className="cursor-pointer" onClick={() => setOverlayVisible(!isOverlayVisible)} style={{ color:cdColors.secondaryColor}}>
+                <div className="cursor-pointer font-semibold" onClick={() => setOverlayVisible(!isOverlayVisible)} style={{ color:cdColors.secondaryBackgroundColorLight}}>
                 Über uns
                 </div>
             </Link>               
@@ -112,7 +112,7 @@ const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease
                 />
             <li>
             <Link className="" to="/jobs">
-                <div className="cursor-pointer" onClick={() => setOverlayVisible(!isOverlayVisible)} style={{ color:cdColors.secondaryColor}}>
+                <div className="cursor-pointer font-semibold" onClick={() => setOverlayVisible(!isOverlayVisible)} style={{ color:cdColors.secondaryBackgroundColorLight}}>
                 Offene Stellen
                 </div>
             </Link>               

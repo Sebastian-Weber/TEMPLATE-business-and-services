@@ -1,69 +1,36 @@
-import Button_primary from "./buttons/button_primary";
-import Button_secondary from "./buttons/button_secondary";
 import MultiCard from "./card/multi_card";
 
 
-const cdImages = {
-  placeholderImage: '/src/assets/images/Placeholder600x400.png',
-  card1Image: '/src/assets/images/1.svg',
-  card2Image: '/src/assets/images/2.svg',
-  card3Image: '/src/assets/images/3.svg',
-  card4Image: '/src/assets/images/4.svg',
-  card5Image: '/src/assets/images/power.png',
-
-};
-
-const cdCopy = {
-  sectionTextAndCards_Heading: '',
-  sectionTextAndCards_Paragraph: '',
-  card1Heading1: 'Elektroinstallationen für Privatkunden',
-  card1Paragraph1: 'Planen Sie einen Neubau, eine Renovierung oder Modernisierung? Wir bieten maßgeschneiderte Elektroinstallationen für ein komfortables und sicheres Zuhause. Von Beleuchtung über Steckdosen bis hin zu Netzwerktechnik – unsere Experten setzen Ihre Wünsche zuverlässig um. Qualität und Kundenzufriedenheit stehen für uns an erster Stelle. Kontaktieren Sie uns und lassen Sie sich individuell beraten. Gemeinsam machen wir Ihr Zuhause zukunftssicher!',
-  card2Heading1: 'Elektroinstallationen für Geschäftskunden',
-  card2Paragraph1: 'Effiziente und zuverlässige Elektroinstallationen für Ihr Unternehmen: Wir planen, installieren und warten maßgeschneiderte Lösungen für Büros, Gewerbe und Industrie. Von Beleuchtungssystemen bis zur Netzwerktechnik sorgen wir für reibungslose Abläufe und maximale Sicherheit. Mit modernster Technik und professionellem Service unterstützen wir Ihre Geschäftserfolge. Kontaktieren Sie uns – wir entwickeln die optimale Lösung für Ihre Anforderungen!',
-  card3Heading1: 'Smart-Home-Lösungen',
-  card3Paragraph1: 'Erleben Sie modernen Wohnkomfort mit unseren Smart-Home-Lösungen! Steuern Sie Beleuchtung, Heizung, Sicherheitssysteme und mehr bequem per App oder Sprachbefehl. Wir planen und installieren individuelle Systeme, die Ihr Zuhause effizient, sicher und zukunftsfähig machen. Entdecken Sie, wie Technologie Ihren Alltag erleichtert und Ihre Lebensqualität steigert. Kontaktieren Sie uns für eine persönliche Beratung – wir machen Ihr Zuhause smarter!',
-  card4Heading1: 'Licht-Design und Installation',
-  card4Paragraph1: 'Bringen Sie Licht in Ihr Zuhause oder Ihr Geschäft! Wir bieten individuelle Beleuchtungsdesigns, die Funktionalität und Ästhetik perfekt vereinen. Ob stilvolle Wohnraumbeleuchtung, effiziente Bürobeleuchtung oder stimmungsvolle Akzente – unsere Experten planen und installieren Lösungen, die begeistern. Mit modernster Technik und kreativem Design setzen wir Ihre Vision um. Kontaktieren Sie uns für eine persönliche Beratung und lassen Sie sich inspirieren!',
-  card5Heading1: 'Notfallreparaturen',
-  card5Paragraph1: 'Stromausfall oder elektrische Störungen? Wir sind rund um die Uhr für Sie da! Unser zuverlässiger Notfallservice behebt schnell und professionell jede Art von Problem – ob bei Ihnen zu Hause oder in Ihrem Unternehmen. Mit modernster Ausrüstung und erfahrenen Technikern sorgen wir dafür, dass alles schnell wieder läuft. Zögern Sie nicht, uns im Notfall zu kontaktieren – wir helfen sofort!',
-  buttonPrimaryCaption: 'test123',
-  buttonPrimaryLink: 'about',
-  buttonSecondaryCaption: 'test456',
-  buttonSecondaryLink: 'about',
-};
-
-
-
 const cdColors = {
-  primaryColor: '#EDEF7C',
-  secondaryColor: '#A8CF4E',
+  primaryColor: '#A8CF4E',
+  secondaryColor: '#FBF179',
   primaryAccentColor: '',
   secondaryAccentColor: '',
 
-  // yellow
-  primaryBackgroundColorDark: '#9FA053',
-  primaryBackgroundColorDefault: '#EDEF7C',
-  primaryBackgroundColorLight: '#F3F4A7',
-
   // green
-  secondaryBackgroundColorDark: '#718B34',
-  secondaryBackgroundColorDefault: '#A8CF4E',
-  secondaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorDefault: '#A8CF4E',
+  primaryBackgroundColorDark: '#8FB042',
+
+  // yellow   
+  secondaryBackgroundColorLight: '#FCF6A5',
+  secondaryBackgroundColorDefault: '#FBF179',
+  secondaryBackgroundColorDark: '#DBD269',
 
   // teal
-  tertiaryBackgroundColorDark: '#4A8B65',
-  tertiaryBackgroundColorDefault: '#6FCF97',
   tertiaryBackgroundColorLight: '#9EDFB9',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorDark: '#5EB080',
 
   // blue
-  quaternaryBackgroundColorDark: '#338EA2',
-  quaternaryBackgroundColorDefault: '#4CD4F2',
-  quaternaryBackgroundColorLight: '#87E2F6',
+  quaternaryBackgroundColorLight: '#80CDDE',
+  quaternaryBackgroundColorDefault: '#41B4CE',
+  quaternaryBackgroundColorDark: '#41B4CE',
 
   // brown
-  quinaryBackgroundColorDark: '#795434',
-  quinaryBackgroundColorDefault: '#B57E4D',
   quinaryBackgroundColorLight: '#CDA888',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorDark: '#9A6B42',
 
   // white
   whiteBackground: '#F7F7F7',
@@ -71,9 +38,9 @@ const cdColors = {
   // black
   blackBackground: '#1A1A1A',
 
-  primaryFontColor: '#262E3C',
+  primaryFontColor: '#212121',
   secondaryFontColor: '#6D6D6D',
-  tertiaryFontColor: '#D6D5CB'
+  tertiaryFontColor: ''
 };
 
 
@@ -90,6 +57,10 @@ type SectionTextAndCardsProps = {
   card1Paragraph: string;
   card1Image: string;
   card1ButtonPrimaryCaption: string;
+
+  heading: string;
+  paragraph: string;
+  image?: string;
 
   card1Listitem1: string;
   card1Listitem2: string;
@@ -126,19 +97,40 @@ type SectionTextAndCardsProps = {
 
 };
 
-
-
-
-function SectionTextAndCards({ 
-  card1Heading, card1Paragraph, card1Image, card1ButtonPrimaryCaption, card1Listitem1, card1Listitem2, card1Listitem3,
-  card2Heading, card2Paragraph, card2Image, card2ButtonPrimaryCaption, card2Listitem1, card2Listitem2, card2Listitem3,   
-  card3Heading, card3Paragraph, card3Image, card3ButtonPrimaryCaption, card3Listitem1, card3Listitem2, card3Listitem3, 
-  card4Heading, card4Paragraph, card4Image, card4ButtonPrimaryCaption, card4Listitem1, card4Listitem2, card4Listitem3
-}: SectionTextAndCardsProps) {
+const SectionTextAndCards: React.FC<SectionTextAndCardsProps> = (props) => {
+  const {
+    card1Heading, card1Paragraph, card1Image, card1ButtonPrimaryCaption, card1Listitem1, card1Listitem2, card1Listitem3,
+    card2Heading, card2Paragraph, card2Image, card2ButtonPrimaryCaption, card2Listitem1, card2Listitem2, card2Listitem3,   
+    card3Heading, card3Paragraph, card3Image, card3ButtonPrimaryCaption, card3Listitem1, card3Listitem2, card3Listitem3, 
+    card4Heading, card4Paragraph, card4Image, card4ButtonPrimaryCaption, card4Listitem1, card4Listitem2, card4Listitem3,
+    heading, paragraph, image
+  } = props;
   return (
 
   <>
     <div className='min-h-screen '>
+
+    <div className="flex flex-col h-full justify-start items-start md:flex-row">
+
+      {/* left box */}
+      <div className="flex flex-col px-5 justify-center  h-1/2 w-full md:m-12 md:h-fit md:w-7/12 items-start">
+          <br></br>
+          <div className="flex flex-col p-8 h-auto w-auto justify-center items-start md:full ">
+            <h3 style={{ color: cdColors.secondaryFontColor }}>{heading}</h3>
+            <br></br>
+            <p className="">{paragraph}</p>
+        </div>
+      </div> 
+  
+      {/* right box */}
+      {image && (
+        <div className="flex flex-col h-fit m-6 w-auto justify-around items-center md:h-fit md:w-7/12">
+          <img className='h-fit p-12 md:p-18' src={image} alt="Placeholder" />
+        </div>
+      )}
+
+</div>
+
       <div className="flex flex-col h-1/2 md:flex-row md:w-full bg-red">
         <MultiCard 
           heading={card1Heading} 

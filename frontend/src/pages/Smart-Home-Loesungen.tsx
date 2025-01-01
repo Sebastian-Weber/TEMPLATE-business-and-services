@@ -9,25 +9,45 @@ import Footer from "../components/Footer"
 import SectionContact from "../components/Section_Contact"
 
 const cdColors = {
-  primaryColor: '#98BB48',
-  secondaryColor: '#FFF1B7',
+  primaryColor: '#A8CF4E',
+  secondaryColor: '#FBF179',
   primaryAccentColor: '',
   secondaryAccentColor: '',
-  primaryBackgroundColorDark: '#165287',
-  primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#E9D9D3',
-  secondaryBackgroundColorDark: '#165287',
-  secondaryBackgroundColorDefault: '#165287',
-  secondaryBackgroundColorLight: '#BBD3C6',
-  tertiaryBackgroundColorDark: '#165287',
-  tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#B5CFE6',
-  quaternaryBackgroundColorDark: '#165287',
-  quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#F3EBC9',
-  primaryFontColor: '#191A1E',
-  secondaryFontColor: '#817E72',
-  tertiaryFontColor: '#D6D5CB'
+
+  // green
+  primaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorDefault: '#A8CF4E',
+  primaryBackgroundColorDark: '#8FB042',
+
+  // yellow   
+  secondaryBackgroundColorLight: '#FCF6A5',
+  secondaryBackgroundColorDefault: '#FBF179',
+  secondaryBackgroundColorDark: '#DBD269',
+
+  // teal
+  tertiaryBackgroundColorLight: '#9EDFB9',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorDark: '#5EB080',
+
+  // blue
+  quaternaryBackgroundColorLight: '#80CDDE',
+  quaternaryBackgroundColorDefault: '#41B4CE',
+  quaternaryBackgroundColorDark: '#41B4CE',
+
+  // brown
+  quinaryBackgroundColorLight: '#CDA888',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorDark: '#9A6B42',
+
+  // white
+  whiteBackground: '#F7F7F7',
+
+  // black
+  blackBackground: '#1A1A1A',
+
+  primaryFontColor: '#212121',
+  secondaryFontColor: '#6D6D6D',
+  tertiaryFontColor: ''
 };
 
 const cdImages = {
@@ -89,7 +109,38 @@ function SmartHomeLoesungen() {
         paragraph={cdCopy.paragraph}
         image={cdImages.image1}
         ></SectionTextAndImage>
-      <SectionCards></SectionCards>
+      <SectionCards
+        heading="Section Heading"
+        paragraph="Section Paragraph"
+        card1Heading="Card 1 Heading"
+        card1Paragraph="Card 1 Paragraph"
+        card1Image={cdImages.image1}
+        card1ButtonPrimaryCaption="Button 1"
+        card1Listitem1="Item 1"
+        card1Listitem2="Item 2"
+        card1Listitem3="Item 3"
+        card2Heading="Card 2 Heading"
+        card2Paragraph="Card 2 Paragraph"
+        card2Image={cdImages.image2}
+        card2ButtonPrimaryCaption="Button 2"
+        card2Listitem1="Item 1"
+        card2Listitem2="Item 2"
+        card2Listitem3="Item 3"
+        card3Heading="Card 3 Heading"
+        card3Paragraph="Card 3 Paragraph"
+        card3Image={cdImages.image3}
+        card3ButtonPrimaryCaption="Button 3"
+        card3Listitem1="Item 1"
+        card3Listitem2="Item 2"
+        card3Listitem3="Item 3"
+        card4Heading="Card 4 Heading"
+        card4Paragraph="Card 4 Paragraph"
+        card4Image={cdImages.image4}
+        card4ButtonPrimaryCaption="Button 4"
+        card4Listitem1="Item 1"
+        card4Listitem2="Item 2"
+        card4Listitem3="Item 3"
+      ></SectionCards>
       <Section_Gallery 
         image1={cdImages.image1}
         image2={cdImages.image2} 
@@ -100,7 +151,10 @@ function SmartHomeLoesungen() {
         image7={cdImages.image7}
       ></Section_Gallery>
       <SectionDivider></SectionDivider>
-      <SectionContact></SectionContact>
+      <SectionContact 
+        imageSrc={cdImages.image10}
+        style={{backgroundColor: cdColors.quaternaryBackgroundColorLight}}>
+        </SectionContact>
       <Footer></Footer>
   </>
   )

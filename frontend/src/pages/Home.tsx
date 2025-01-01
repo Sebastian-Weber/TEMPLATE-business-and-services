@@ -1,15 +1,13 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import SectionCards from "../components/Section_Text_and_Cards"
 import SectionContact from "../components/Section_Contact"
 import SectionDivider from "../components/Section_Divider"
 import Section_Gallery from "../components/Section_Gallery"
 import SectionHero from "../components/Section_Hero"
 import SectionTextAndImage from "../components/Section_Text_and_Image"
 import { ButtonPrimaryProvider } from "../contexts/ButtonPrimaryContext"
-import Section_Texts_and_Cards from '../components/Section_Texts_and_Cards';
 import SectionTextAndCards from '../components/Section_Text_and_Cards';
 
 
@@ -45,11 +43,15 @@ const cdImages = {
   image28: '/src/assets/images/waldemar-rHfTdK9YU2Q-unsplash.jpg',
   image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
   image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
-  image31: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image31: '/src/assets/images/alpha-innotec--nbWCvUiFJA-unsplash.jpg',
+  image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+
+
   card1Image: '/src/assets/images/Privatkunden.svg',
   card2Image: '/src/assets/images/Geschaeftskunden.svg',
   card3Image: '/src/assets/images/Smart-Home-Loesungen.svg',
   card4Image: '/src/assets/images/Lichtinstallation.svg',
+
   
 };
 
@@ -96,35 +98,35 @@ const cdCopy = {
 };
 
 const cdColors = {
-  primaryColor: '#98BB48',
-  secondaryColor: '#FFF1B7',
+  primaryColor: '#A8CF4E',
+  secondaryColor: '#FBF179',
   primaryAccentColor: '',
   secondaryAccentColor: '',
 
-  // yellow
-  primaryBackgroundColorDark: '#9FA053',
-  primaryBackgroundColorDefault: '#EDEF7C',
-  primaryBackgroundColorLight: '#F3F4A7',
-
   // green
-  secondaryBackgroundColorDark: '#718B34',
-  secondaryBackgroundColorDefault: '#A8CF4E',
-  secondaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorDefault: '#A8CF4E',
+  primaryBackgroundColorDark: '#8FB042',
+
+  // yellow   
+  secondaryBackgroundColorLight: '#FCF6A5',
+  secondaryBackgroundColorDefault: '#FBF179',
+  secondaryBackgroundColorDark: '#DBD269',
 
   // teal
-  tertiaryBackgroundColorDark: '#4A8B65',
-  tertiaryBackgroundColorDefault: '#6FCF97',
   tertiaryBackgroundColorLight: '#9EDFB9',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorDark: '#5EB080',
 
   // blue
-  quaternaryBackgroundColorDark: '#338EA2',
-  quaternaryBackgroundColorDefault: '#4CD4F2',
-  quaternaryBackgroundColorLight: '#87E2F6',
+  quaternaryBackgroundColorLight: '#80CDDE',
+  quaternaryBackgroundColorDefault: '#41B4CE',
+  quaternaryBackgroundColorDark: '#41B4CE',
 
   // brown
-  quinaryBackgroundColorDark: '#795434',
-  quinaryBackgroundColorDefault: '#B57E4D',
   quinaryBackgroundColorLight: '#CDA888',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorDark: '#9A6B42',
 
   // white
   whiteBackground: '#F7F7F7',
@@ -132,9 +134,9 @@ const cdColors = {
   // black
   blackBackground: '#1A1A1A',
 
-  primaryFontColor: '#262E3C',
+  primaryFontColor: '#212121',
   secondaryFontColor: '#6D6D6D',
-  tertiaryFontColor: '#D6D5CB'
+  tertiaryFontColor: ''
 };
 
 
@@ -171,7 +173,7 @@ const Home = () => {
         paragraph={cdCopy.sectionHero_Paragraph} 
         image={cdImages.image9}
         logo={cdImages.logo}
-        background={cdColors.secondaryColor}>
+        background={cdColors.secondaryBackgroundColorLight}>
         </SectionHero>
 
         <ButtonPrimaryProvider value={buttonPrimaryProps1}>
@@ -185,6 +187,8 @@ const Home = () => {
         </ButtonPrimaryProvider>
 
         <SectionTextAndCards 
+        heading={cdCopy.sectionTextAndCards_Heading}
+        paragraph={cdCopy.sectionTextAndCards_Paragraph}
         card1Image={cdImages.card1Image}
         card1Heading={cdCopy.SectionListAndCards_card1Heading}
         card1Paragraph={cdCopy.SectionListAndCards_card1Paragraph}
@@ -248,7 +252,10 @@ const Home = () => {
           </SectionTextAndImage> */}
         <SectionDivider></SectionDivider>
 
-        <SectionContact></SectionContact>
+        <SectionContact 
+        imageSrc={cdImages.image10}
+        style={{backgroundColor: cdColors.quaternaryBackgroundColorLight}}>
+        </SectionContact>
         <Footer></Footer>
         </div>
     </>

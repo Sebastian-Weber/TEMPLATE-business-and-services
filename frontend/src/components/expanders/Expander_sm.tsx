@@ -3,34 +3,34 @@ import { Link } from 'react-router-dom';
 
 const cdColors = {
   primaryColor: '#A8CF4E',
-  secondaryColor: '#F3F4A7',
+  secondaryColor: '#FBF179',
   primaryAccentColor: '',
   secondaryAccentColor: '',
 
-  // yellow
-  primaryBackgroundColorDark: '#9FA053',
-  primaryBackgroundColorDefault: '#EDEF7C',
-  primaryBackgroundColorLight: '#F3F4A7',
-
   // green
-  secondaryBackgroundColorDark: '#718B34',
-  secondaryBackgroundColorDefault: '#A8CF4E',
-  secondaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorDefault: '#A8CF4E',
+  primaryBackgroundColorDark: '#8FB042',
+
+  // yellow   
+  secondaryBackgroundColorLight: '#FCF6A5',
+  secondaryBackgroundColorDefault: '#FBF179',
+  secondaryBackgroundColorDark: '#DBD269',
 
   // teal
-  tertiaryBackgroundColorDark: '#4A8B65',
-  tertiaryBackgroundColorDefault: '#6FCF97',
   tertiaryBackgroundColorLight: '#9EDFB9',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorDark: '#5EB080',
 
   // blue
-  quaternaryBackgroundColorDark: '#338EA2',
-  quaternaryBackgroundColorDefault: '#4CD4F2',
-  quaternaryBackgroundColorLight: '#87E2F6',
+  quaternaryBackgroundColorLight: '#80CDDE',
+  quaternaryBackgroundColorDefault: '#41B4CE',
+  quaternaryBackgroundColorDark: '#41B4CE',
 
   // brown
-  quinaryBackgroundColorDark: '#795434',
-  quinaryBackgroundColorDefault: '#B57E4D',
   quinaryBackgroundColorLight: '#CDA888',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorDark: '#9A6B42',
 
   // white
   whiteBackground: '#F7F7F7',
@@ -38,9 +38,9 @@ const cdColors = {
   // black
   blackBackground: '#1A1A1A',
 
-  primaryFontColor: '#262E3C',
+  primaryFontColor: '#212121',
   secondaryFontColor: '#6D6D6D',
-  tertiaryFontColor: '#D6D5CB'
+  tertiaryFontColor: ''
 };
 
 
@@ -91,42 +91,14 @@ function Expander_sm({
   const [isOverlayVisible, setOverlayVisible] = useState(false);
 
 
-  // const navbarSmallDropdownItems = [
-  //   // Item 1
-  //   {
-  //   DropdownItem1Heading: 'Elektro-Dienstleistungen für Privatkunden',
-  //   DropdownItem1Link: 'Elektro-Dienstleistungen-Privatkunden',
-  //   },
-  //   // Item 2
-  //   {
-  //   DropdownItem2Heading: 'Elektro-Dienstleistungen für Privatkunden',
-  //   DropdownItem2Link: 'Elektro-Dienstleistungen-Privatkunden',
-  //   },
-  //   // Item 3
-  //   {
-  //   DropdownItem3Heading: 'Elektro-Dienstleistungen für Privatkunden',
-  //   DropdownItem3Link: 'Elektro-Dienstleistungen-Privatkunden',
-  //   },
-  //   // Item 4
-  //   {
-  //   DropdownItem4Heading: 'Elektro-Dienstleistungen für Privatkunden',
-  //   DropdownItem4Link: 'Elektro-Dienstleistungen-Privatkunden',
-  //   },
-  //   // Item 5
-  //   {
-  //   DropdownItem5Heading: 'Elektro-Dienstleistungen für Privatkunden',
-  //   DropdownItem5Link: 'Elektro-Dienstleistungen-Privatkunden',
-
-  //    },
-  // ];
 
   return (
       <>
         {/* Expander */}
-        <div className="flex flex-row menu-hover cursor-pointer" onClick={toggleMenuItem1Expander}>
-          <div className="" style={{ color:cdColors.secondaryColor}}>{DropdownCaption}</div>
+        <div className="flex flex-row menu-hover cursor-pointer " onClick={toggleMenuItem1Expander}>
+          <div className="font-semibold" style={{ color:cdColors.secondaryBackgroundColorLight}}>{DropdownCaption}</div>
             <div className="ml-2">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 scale-75 pt-1 -ml-2 hover:rotate-180"  viewBox="0 0 24 24" strokeWidth="3" fill="none" style={{ stroke: cdColors.secondaryColor }} >
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 scale-75 pt-1 -ml-2 hover:rotate-180"  viewBox="0 0 24 24" strokeWidth="3" fill="none" style={{ stroke: cdColors.secondaryBackgroundColorLight }} >
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
               </svg>
           </div>
@@ -135,19 +107,19 @@ function Expander_sm({
           <div className="flex flex-col ">
               <ul>
                 <Link to={`${DropdownItem1Link}`}>
-                  <li className="-py-6 px-4 cursor-pointer" onClick={() => { setIsOpen(isOpen); setOverlayVisible(!isOverlayVisible); }} style={{ color:cdColors.secondaryColor}}>{DropdownItem1Heading}</li>
+                  <li className="-py-6 px-4 font-semibold cursor-pointer" onClick={() => { setIsOpen(isOpen); setOverlayVisible(!isOverlayVisible); }} style={{ color:cdColors.secondaryBackgroundColorLight}}>{DropdownItem1Heading}</li>
                 </Link>
                 <Link to={`${DropdownItem2Link}`}>
-                  <li className="-py-6 px-4 cursor-pointer" onClick={() => { setIsOpen(isOpen); setOverlayVisible(!isOverlayVisible); }} style={{ color:cdColors.secondaryColor}}>{DropdownItem2Heading}</li>
+                  <li className="-py-6 px-4 font-semibold cursor-pointer" onClick={() => { setIsOpen(isOpen); setOverlayVisible(!isOverlayVisible); }} style={{ color:cdColors.secondaryBackgroundColorLight}}>{DropdownItem2Heading}</li>
                 </Link>
                 <Link to={`${DropdownItem3Link}`}>
-                  <li className="-py-6 px-4 cursor-pointer" onClick={() => { setIsOpen(isOpen); setOverlayVisible(!isOverlayVisible); }} style={{ color:cdColors.secondaryColor}}>{DropdownItem3Heading}</li>
+                  <li className="-py-6 px-4 font-semibold cursor-pointer" onClick={() => { setIsOpen(isOpen); setOverlayVisible(!isOverlayVisible); }} style={{ color:cdColors.secondaryBackgroundColorLight}}>{DropdownItem3Heading}</li>
                 </Link>
                 <Link to={`${DropdownItem4Link}`}>
-                  <li className="-py-6 px-4 cursor-pointer" onClick={() => { setIsOpen(isOpen); setOverlayVisible(!isOverlayVisible); }} style={{ color:cdColors.secondaryColor}}>{DropdownItem4Heading}</li>
+                  <li className="-py-6 px-4 font-semibold cursor-pointer" onClick={() => { setIsOpen(isOpen); setOverlayVisible(!isOverlayVisible); }} style={{ color:cdColors.secondaryBackgroundColorLight}}>{DropdownItem4Heading}</li>
                 </Link>
                 <Link to={`${DropdownItem5Link}`}>
-                  <li className="-py-6 px-4 cursor-pointer" onClick={() => { setIsOpen(isOpen); setOverlayVisible(!isOverlayVisible); }} style={{ color:cdColors.secondaryColor}}>{DropdownItem5Heading}</li>
+                  <li className="-py-6 px-4 font-semibold cursor-pointer" onClick={() => { setIsOpen(isOpen); setOverlayVisible(!isOverlayVisible); }} style={{ color:cdColors.secondaryBackgroundColorLight}}>{DropdownItem5Heading}</li>
                 </Link>
               </ul>
             </div>

@@ -48,34 +48,34 @@ const cdImages = {
 
 const cdColors = {
   primaryColor: '#A8CF4E',
-  secondaryColor: '#F3F4A7',
+  secondaryColor: '#FBF179',
   primaryAccentColor: '',
   secondaryAccentColor: '',
 
-  // yellow
-  primaryBackgroundColorDark: '#9FA053',
-  primaryBackgroundColorDefault: '#EDEF7C',
-  primaryBackgroundColorLight: '#F3F4A7',
-
   // green
-  secondaryBackgroundColorDark: '#718B34',
-  secondaryBackgroundColorDefault: '#A8CF4E',
-  secondaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorDefault: '#A8CF4E',
+  primaryBackgroundColorDark: '#8FB042',
+
+  // yellow   
+  secondaryBackgroundColorLight: '#FCF6A5',
+  secondaryBackgroundColorDefault: '#FBF179',
+  secondaryBackgroundColorDark: '#DBD269',
 
   // teal
-  tertiaryBackgroundColorDark: '#4A8B65',
-  tertiaryBackgroundColorDefault: '#6FCF97',
   tertiaryBackgroundColorLight: '#9EDFB9',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorDark: '#5EB080',
 
   // blue
-  quaternaryBackgroundColorDark: '#338EA2',
-  quaternaryBackgroundColorDefault: '#4CD4F2',
-  quaternaryBackgroundColorLight: '#87E2F6',
+  quaternaryBackgroundColorLight: '#80CDDE',
+  quaternaryBackgroundColorDefault: '#41B4CE',
+  quaternaryBackgroundColorDark: '#41B4CE',
 
   // brown
-  quinaryBackgroundColorDark: '#795434',
-  quinaryBackgroundColorDefault: '#B57E4D',
   quinaryBackgroundColorLight: '#CDA888',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorDark: '#9A6B42',
 
   // white
   whiteBackground: '#F7F7F7',
@@ -83,9 +83,9 @@ const cdColors = {
   // black
   blackBackground: '#1A1A1A',
 
-  primaryFontColor: '#262E3C',
+  primaryFontColor: '#212121',
   secondaryFontColor: '#6D6D6D',
-  tertiaryFontColor: '#D6D5CB'
+  tertiaryFontColor: ''
 };
 
 
@@ -140,7 +140,7 @@ const Navbar = () => {
         
         {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-2" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>
       
           <div className="">
@@ -154,14 +154,14 @@ const Navbar = () => {
 
         {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-2" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>   
 
         <div className="flex flex-row justify-end items-center ">
 
           <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
               <img className="" src={Phone}></img>
-            <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
+            <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryBackgroundColorLight}} >+49 12345 6789</div>
           </div>
           {/* <Button_secondary caption="Kontakt" buttonSecondaryUrl="About"></Button_secondary> */}
 
@@ -177,7 +177,7 @@ const Navbar = () => {
 
         {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-2" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          <img className="w-18 -mt-8" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>   
 
         <div className="flex flex-row justify-end items-center ">
@@ -188,7 +188,7 @@ const Navbar = () => {
 
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
               <img className="" src={Phone}></img>
-              <div className="text-xl cursor-default" style={{ color: cdColors.secondaryColor}}>+49 12345 6789</div>
+              <div className="text-xl cursor-default" style={{ color: cdColors.secondaryBackgroundColorLight}}>+49 12345 6789</div>
             </div>
 
             <div className="">
@@ -206,14 +206,14 @@ const Navbar = () => {
 
         {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-2"  src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          <img className="w-18 -mt-8"  src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>
 
         <div className="flex flex-row justify-start items-center mx-4">
 
         {/* Ueber uns  */}
         <Link className="" to="/about">
-          <div className="text-xl font-medium menu-hover mx-2 px-2" style={{ color: cdColors.secondaryColor }}>
+          <div className="text-xl font-medium menu-hover mx-2 px-2" style={{ color: cdColors.secondaryBackgroundColorLight }}>
             Über uns
           </div>
         </Link>
@@ -315,7 +315,7 @@ const Navbar = () => {
 
         {/* Offene Stellen */}
         <Link className="flex flex-row items-start" to="/jobs">
-          <div className="font-fredoka text-xl font-medium menu-hover" style={{ color: cdColors.secondaryColor }}>
+          <div className="font-fredoka text-xl font-medium menu-hover" style={{ color: cdColors.secondaryBackgroundColorLight }}>
             Offene Stellen
           </div>
         </Link>
@@ -334,7 +334,7 @@ const Navbar = () => {
           <div className="flex flex-row items-center justify-end">
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
               <img className="" src={Phone}></img>
-              <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
+              <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryBackgroundColorLight}} >+49 12345 6789</div>
             </div>
 
             <div className="md:hidden">
