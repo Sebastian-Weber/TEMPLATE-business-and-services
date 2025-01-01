@@ -38,9 +38,9 @@ function MultiCard({ heading, paragraph, image, background, buttonPrimaryProps, 
   
        <div className='flex flex-col items-start justify-start md:flex-row-reverse md:justify-between md:items-center md:w-full'>
 
-       {image && <img className='h-fit p-12 md:p-18' src={image} alt="Placeholder" />}
+         {image && <img className='h-fit w-fit md:w-24 lg:w-36 xl:w-48 2xl:w-64' src={image} alt="Placeholder" />}
           <br></br>
-          <h3 className='w-full'>{heading}</h3>
+          <h2 className='w-auto break-normal'>{heading}</h2>
 
         </div>
         <br></br>
