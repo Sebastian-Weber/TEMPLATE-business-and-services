@@ -9,6 +9,7 @@ import Button_secondary from './buttons/button_secondary';
 import Navbar_xl_dropdown_template from './dropdowns/Navbar_xl_dropdown_template';
 
 
+
 const cdImages = {
   logo: '/src/assets/Peters_Logotype.svg',
   image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
@@ -41,10 +42,21 @@ const cdImages = {
   image28: '/src/assets/images/waldemar-rHfTdK9YU2Q-unsplash.jpg',
   image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
   image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
-  image31: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image31: '/src/assets/images/alpha-innotec--nbWCvUiFJA-unsplash.jpg',
   image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
-};
+  image33: '/src/assets/images/vivint-solar-9CalgkSRZb8-unsplash.jpg',
+  image34: '/src/assets/images/lycs-architecture-U2BI3GMnSSE-unsplash.jpg',
+  image35: '/src/assets/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg',
+  image36: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image37: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
 
+  card1Image: '/src/assets/images/Privatkunden.svg',
+  card2Image: '/src/assets/images/Geschaeftskunden.svg',
+  card3Image: '/src/assets/images/Smart-Home-Loesungen.svg',
+  card4Image: '/src/assets/images/Lichtinstallation.svg',
+
+  
+};
 
 const cdColors = {
   primaryColor: '#A8CF4E',
@@ -222,13 +234,13 @@ const Navbar = () => {
           dropdownCaption='Leistungen'
           dropdownItems={[
             {
-              image: cdImages.image3,
+              image: cdImages.image35,
               heading: 'Elektro-Dienstleistungen für Privatkunden',
               subheading: 'Elektroinstallationen für Ihr Zuhause',
               url: 'Elektro-Dienstleistungen-Privatkunden'
             },
             {
-              image: cdImages.image17,
+              image: cdImages.image34,
               heading: 'Elektro-Dienstleistungen für Gewerbekunden',
               subheading: 'Einbau, Austausch und Wartung',
               url: 'Elektro-Dienstleistungen-Gewerbekunden'
@@ -240,7 +252,7 @@ const Navbar = () => {
               url: 'Smart-Home-Loesungen'
             },
             {
-              image: cdImages.image31,
+              image: cdImages.image36,
               heading: 'Lichtdesign und -installation',
               subheading: 'Lichtdesign und -installation',
               url: 'Lichtdesign-und-Installation'

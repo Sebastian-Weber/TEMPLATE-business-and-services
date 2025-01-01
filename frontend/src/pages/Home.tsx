@@ -45,6 +45,13 @@ const cdImages = {
   image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
   image31: '/src/assets/images/alpha-innotec--nbWCvUiFJA-unsplash.jpg',
   image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image33: '/src/assets/images/vivint-solar-9CalgkSRZb8-unsplash.jpg',
+  image34: '/src/assets/images/lycs-architecture-U2BI3GMnSSE-unsplash.jpg',
+  image35: '/src/assets/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg',
+  image36: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image37: '/src/assets/images/ben-kolde-FaPxZ88yZrw-unsplash.jpg',
+  image38: '/src/assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg',
+  image39: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
 
 
   card1Image: '/src/assets/images/Privatkunden.svg',
@@ -186,38 +193,44 @@ const Home = () => {
           </SectionTextAndImage>
         </ButtonPrimaryProvider>
 
-        <SectionTextAndCards 
-        heading={cdCopy.sectionTextAndCards_Heading}
-        paragraph={cdCopy.sectionTextAndCards_Paragraph}
-        card1Image={cdImages.card1Image}
-        card1Heading={cdCopy.SectionListAndCards_card1Heading}
-        card1Paragraph={cdCopy.SectionListAndCards_card1Paragraph}
-        card1ButtonPrimaryCaption="Button 1"
-        card1Listitem1={cdCopy.SectionListAndCards_card1ListItem1}
-        card1Listitem2={cdCopy.SectionListAndCards_card1listItem2}
-        card1Listitem3={cdCopy.SectionListAndCards_card1listItem3}
-        card2Image={cdImages.card2Image}
-        card2Heading={cdCopy.SectionListAndCards_card2Heading}
-        card2Paragraph={cdCopy.SectionListAndCards_card2Paragraph}
-        card2ButtonPrimaryCaption="Button 2"
-        card2Listitem1={cdCopy.SectionListAndCards_card2ListItem1}
-        card2Listitem2={cdCopy.SectionListAndCards_card2listItem2}
-        card2Listitem3={cdCopy.SectionListAndCards_card2listItem3}
-        card3Image={cdImages.card3Image}
-        card3Heading={cdCopy.SectionListAndCards_card3Heading}
-        card3Paragraph={cdCopy.SectionListAndCards_card3Paragraph}
-        card3ButtonPrimaryCaption="Button 3"
-        card3Listitem1={cdCopy.SectionListAndCards_card3ListItem1}
-        card3Listitem2={cdCopy.SectionListAndCards_card3listItem2}
-        card3Listitem3={cdCopy.SectionListAndCards_card3listItem3}
-        card4Image={cdImages.card4Image}
-        card4Heading={cdCopy.SectionListAndCards_card4Heading}
-        card4Paragraph={cdCopy.SectionListAndCards_card4Paragraph}
-        card4ButtonPrimaryCaption="Button 4"
-        card4Listitem1={cdCopy.SectionListAndCards_card4ListItem1}
-        card4Listitem2={cdCopy.SectionListAndCards_card4listItem2}
-        card4Listitem3={cdCopy.SectionListAndCards_card4listItem3}
-      ></SectionTextAndCards>
+        <ButtonPrimaryProvider value={buttonPrimaryProps1}>
+          <SectionTextAndCards 
+          heading={cdCopy.sectionTextAndCards_Heading}
+          paragraph={cdCopy.sectionTextAndCards_Paragraph}
+          card1Image={cdImages.card1Image}
+          card1Heading={cdCopy.SectionListAndCards_card1Heading}
+          card1Paragraph={cdCopy.SectionListAndCards_card1Paragraph}
+          card1ButtonPrimaryCaption={buttonPrimaryProps1.buttonPrimaryCaption}
+          card1ButtonPrimaryLink={buttonPrimaryProps1.buttonPrimaryLink}
+          card1Listitem1={cdCopy.SectionListAndCards_card1ListItem1}
+          card1Listitem2={cdCopy.SectionListAndCards_card1listItem2}
+          card1Listitem3={cdCopy.SectionListAndCards_card1listItem3}
+          card2Image={cdImages.card2Image}
+          card2Heading={cdCopy.SectionListAndCards_card2Heading}
+          card2Paragraph={cdCopy.SectionListAndCards_card2Paragraph}
+          card2ButtonPrimaryCaption="Button 2"
+          card2Listitem1={cdCopy.SectionListAndCards_card2ListItem1}
+          card2Listitem2={cdCopy.SectionListAndCards_card2listItem2}
+          card2Listitem3={cdCopy.SectionListAndCards_card2listItem3}
+          card2ButtonPrimaryLink={buttonPrimaryProps1.buttonPrimaryLink}
+          card3Image={cdImages.card3Image}
+          card3Heading={cdCopy.SectionListAndCards_card3Heading}
+          card3Paragraph={cdCopy.SectionListAndCards_card3Paragraph}
+          card3ButtonPrimaryCaption="Button 3"
+          card3ButtonPrimaryLink={buttonPrimaryProps1.buttonPrimaryLink}
+          card3Listitem1={cdCopy.SectionListAndCards_card3ListItem1}
+          card3Listitem2={cdCopy.SectionListAndCards_card3listItem2}
+          card3Listitem3={cdCopy.SectionListAndCards_card3listItem3}
+          card4Image={cdImages.card4Image}
+          card4Heading={cdCopy.SectionListAndCards_card4Heading}
+          card4Paragraph={cdCopy.SectionListAndCards_card4Paragraph}
+          card4ButtonPrimaryCaption="Button 4"
+          card4ButtonPrimaryLink="Lichtdesign-und-Installation"
+          card4Listitem1={cdCopy.SectionListAndCards_card4ListItem1}
+          card4Listitem2={cdCopy.SectionListAndCards_card4listItem2}
+          card4Listitem3={cdCopy.SectionListAndCards_card4listItem3}
+          ></SectionTextAndCards>
+        </ButtonPrimaryProvider>
         
         <Section_Gallery 
           image1={cdImages.image1}
@@ -253,7 +266,7 @@ const Home = () => {
         <SectionDivider></SectionDivider>
 
         <SectionContact 
-        imageSrc={cdImages.image10}
+        imageSrc={cdImages.image38}
         style={{backgroundColor: cdColors.quaternaryBackgroundColorLight}}>
         </SectionContact>
         <Footer></Footer>

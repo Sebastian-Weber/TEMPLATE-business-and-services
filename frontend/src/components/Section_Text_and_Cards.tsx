@@ -53,11 +53,6 @@ const cdColors = {
 
 type SectionTextAndCardsProps = {
 
-  card1Heading: string;
-  card1Paragraph: string;
-  card1Image: string;
-  card1ButtonPrimaryCaption: string;
-
   heading: string;
   paragraph: string;
   image?: string;
@@ -78,20 +73,29 @@ type SectionTextAndCardsProps = {
   card4Listitem2: string;
   card4Listitem3: string;
 
+  card1Heading: string;
+  card1Paragraph: string;
+  card1Image: string;
+  card1ButtonPrimaryCaption: string;
+  card1ButtonPrimaryLink: string;
+
   card2Heading: string;
   card2Paragraph: string;
   card2Image: string;
   card2ButtonPrimaryCaption: string;
+  card2ButtonPrimaryLink: string;
   
   card3Heading: string;
   card3Paragraph: string;
   card3Image: string;
   card3ButtonPrimaryCaption: string;
+  card3ButtonPrimaryLink: string;
 
   card4Heading: string;
   card4Paragraph: string;
   card4Image: string;
   card4ButtonPrimaryCaption: string;
+  card4ButtonPrimaryLink: string;
 
   // other properties
 
@@ -99,10 +103,10 @@ type SectionTextAndCardsProps = {
 
 const SectionTextAndCards: React.FC<SectionTextAndCardsProps> = (props) => {
   const {
-    card1Heading, card1Paragraph, card1Image, card1ButtonPrimaryCaption, card1Listitem1, card1Listitem2, card1Listitem3,
-    card2Heading, card2Paragraph, card2Image, card2ButtonPrimaryCaption, card2Listitem1, card2Listitem2, card2Listitem3,   
-    card3Heading, card3Paragraph, card3Image, card3ButtonPrimaryCaption, card3Listitem1, card3Listitem2, card3Listitem3, 
-    card4Heading, card4Paragraph, card4Image, card4ButtonPrimaryCaption, card4Listitem1, card4Listitem2, card4Listitem3,
+    card1Heading, card1Paragraph, card1Image, card1ButtonPrimaryCaption, card1ButtonPrimaryLink, card1Listitem1, card1Listitem2, card1Listitem3,
+    card2Heading, card2Paragraph, card2Image, card2ButtonPrimaryCaption, card2ButtonPrimaryLink, card2Listitem1, card2Listitem2, card2Listitem3,   
+    card3Heading, card3Paragraph, card3Image, card3ButtonPrimaryCaption, card3ButtonPrimaryLink, card3Listitem1, card3Listitem2, card3Listitem3, 
+    card4Heading, card4Paragraph, card4Image, card4ButtonPrimaryCaption, card4ButtonPrimaryLink, card4Listitem1, card4Listitem2, card4Listitem3,
     heading, paragraph, image
   } = props;
   return (
@@ -136,7 +140,7 @@ const SectionTextAndCards: React.FC<SectionTextAndCardsProps> = (props) => {
           heading={card1Heading} 
           paragraph={card1Paragraph} 
           image={card1Image}
-          buttonPrimaryProps={{ buttonPrimaryCaption: card1ButtonPrimaryCaption, buttonPrimaryLink: 'about' }}
+          buttonPrimaryProps={{ buttonPrimaryCaption: card1ButtonPrimaryCaption, buttonPrimaryLink: card1ButtonPrimaryLink }}
           background={cdColors.primaryBackgroundColorLight}
           listitem1={card1Listitem1}
           listitem2={card1Listitem2}
@@ -147,7 +151,7 @@ const SectionTextAndCards: React.FC<SectionTextAndCardsProps> = (props) => {
           heading={card2Heading} 
           paragraph={card2Paragraph} 
           image={card2Image}
-          buttonPrimaryProps={{ buttonPrimaryCaption: card2ButtonPrimaryCaption, buttonPrimaryLink: 'about' }}
+          buttonPrimaryProps={{ buttonPrimaryCaption: card2ButtonPrimaryCaption, buttonPrimaryLink: card2ButtonPrimaryLink }}
           background={cdColors.secondaryBackgroundColorLight}
           listitem1={card2Listitem1}
           listitem2={card2Listitem2}
@@ -160,7 +164,7 @@ const SectionTextAndCards: React.FC<SectionTextAndCardsProps> = (props) => {
         heading={card3Heading} 
         paragraph={card3Paragraph} 
         image={card3Image}
-        buttonPrimaryProps={{ buttonPrimaryCaption: card3ButtonPrimaryCaption, buttonPrimaryLink: 'about' }}
+        buttonPrimaryProps={{ buttonPrimaryCaption: card3ButtonPrimaryCaption, buttonPrimaryLink: card3ButtonPrimaryLink }}
         background={cdColors.tertiaryBackgroundColorLight}
         listitem1={card3Listitem1}
         listitem2={card3Listitem2}
@@ -171,7 +175,7 @@ const SectionTextAndCards: React.FC<SectionTextAndCardsProps> = (props) => {
         heading={card4Heading} 
         paragraph={card4Paragraph} 
         image={card4Image}
-        buttonPrimaryProps={{ buttonPrimaryCaption: card4ButtonPrimaryCaption, buttonPrimaryLink: 'about' }}
+        buttonPrimaryProps={{ buttonPrimaryCaption: card4ButtonPrimaryCaption, buttonPrimaryLink: card4ButtonPrimaryLink }}
         background={cdColors.quaternaryBackgroundColorLight}
         listitem1={card4Listitem1}
         listitem2={card4Listitem2}
