@@ -7,7 +7,7 @@ import Phone from '/src/assets/icons/Phone.svg'
 
 import ToggleHamburger from './toggles/toggle_hamburger';
 import Button_secondary from './buttons/button_secondary';
-import Navbar_xl_dropdown_template from './dropdowns/Navbar_xl_dropdown_template';
+import Navbar_xl_dropdown_template from './dropdowns/navbar_xl_dropdown_template';
 
 
 const cdImages = {
