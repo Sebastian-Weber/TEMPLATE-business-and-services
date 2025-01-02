@@ -1,5 +1,6 @@
-import { useState } from 'react';
+
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 import Firmenlogo from '/src/assets/Firmenlogo.svg'
 import Phone from '/src/assets/icons/Phone.svg'
@@ -104,15 +105,10 @@ const cdColors = {
 
 
 const Navbar = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const [isOverlayVisible, setOverlayVisible] = useState(false);
-  const [isMenuItem1ExpanderVisible, setMenuItem1ExpanderVisible] = useState(false);
+  const setOverlayVisible = useState(false)[1];
 
   
 
-  const toggleMenuItem1Expander = () => {
-    setMenuItem1ExpanderVisible(!isMenuItem1ExpanderVisible);
-  };
 
   //  const dropdownItems = [
   //   {
@@ -154,7 +150,6 @@ const Navbar = () => {
         
         {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>
       
           <div className="">
@@ -166,7 +161,6 @@ const Navbar = () => {
       {/* Medium */}
       <div className="fixed hidden md:flex flex-row justify-between items-center w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
 
-        {/* Firmenlogo */}
         <Link to="/" >
           <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>   
@@ -191,8 +185,7 @@ const Navbar = () => {
 
         {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-8" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
-        </Link>   
+        </Link>
 
         <div className="flex flex-row justify-end items-center ">
 
@@ -218,7 +211,6 @@ const Navbar = () => {
       <div className="fixed hidden xl:flex flex-row justify-between items-center w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
       <div className="flex flex-row justify-start items-center">
 
-        {/* Firmenlogo */}
         <Link to="/" >
           <img className="w-18 -mt-8"  src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>
