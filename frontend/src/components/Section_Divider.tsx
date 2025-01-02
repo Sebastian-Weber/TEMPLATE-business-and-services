@@ -1,5 +1,47 @@
 
 
+const cdColors = {
+  primaryColor: '#A8CF4E',
+  secondaryColor: '#FBF179',
+  primaryAccentColor: '',
+  secondaryAccentColor: '',
+
+  // green
+  primaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorDefault: '#A8CF4E',
+  primaryBackgroundColorDark: '#8FB042',
+
+  // yellow   
+  secondaryBackgroundColorLight: '#FCF6A5',
+  secondaryBackgroundColorDefault: '#FBF179',
+  secondaryBackgroundColorDark: '#DBD269',
+
+  // teal
+  tertiaryBackgroundColorLight: '#9EDFB9',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorDark: '#5EB080',
+
+  // blue
+  quaternaryBackgroundColorLight: '#80CDDE',
+  quaternaryBackgroundColorDefault: '#41B4CE',
+  quaternaryBackgroundColorDark: '#41B4CE',
+
+  // brown
+  quinaryBackgroundColorLight: '#CDA888',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorDark: '#9A6B42',
+
+  // white
+  whiteBackground: '#F7F7F7',
+
+  // black
+  blackBackground: '#1A1A1A',
+
+  primaryFontColor: '#212121',
+  secondaryFontColor: '#6D6D6D',
+  tertiaryFontColor: ''
+};
+
 function SectionDivider() {
   return (
     <>
@@ -30,9 +72,9 @@ backgroundColor: '#4017ce'}}>
         opacity: 0.55}}>  
     </div> */}
     <div className="h-80 w-full" style={{background: 
-        'radial-gradient(circle at top left,transparent 25%,#1D6DB4 25.5%, #1D6DB4 36%, transparent 37%, transparent 100%),radial-gradient(circle at bottom right,transparent 34%,#1D6DB4 34.5%, #1D6DB4 45.5%, transparent 46%, transparent 100%)',
+        'radial-gradient(circle at top left,transparent 25%, #EDEF7C 25.5%, #EDEF7C 36%, transparent 37%, transparent 100%),radial-gradient(circle at bottom right,transparent 34%,#1D6DB4 34.5%, #1D6DB4 45.5%, transparent 46%, transparent 100%)',
         backgroundSize: '6em 6em',
-        backgroundColor: '#D9C25C',
+        backgroundColor: cdColors.quaternaryBackgroundColorLight,
         }}>  
     </div>
 

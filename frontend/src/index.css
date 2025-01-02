@@ -19,97 +19,85 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #9f9f9f;
+  background: #f1f1f1; /* Light grey background */
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #2E2936;
+  background: #888; /* Dark grey handle */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #444;
+  background: #555; /* Darker grey on hover */
 }
 
 h1 {
-  font-weight: normal;
-  color: #707070;
-  font-size: 24px;
+  font-family: 'Unica One', sans-serif;
+  font-size: 32px;
+  line-height: 1.2;
+  color: #212121;
+  font-weight: 300;
 }
 
+/* Example Usage */
 h2 {
-  font-weight: normal;
-  color: #707070;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #212121;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: 'Unica One', sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  color: #6D6D6D;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: 'Lato', sans-serif;
   font-size: 20px;
+  line-height: 1.2;
+  color: #6D6D6D;
+  font-weight: 300;
 }
 
-
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-} */
-
-/* a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+h5 {
+  font-family: 'Unica One', sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #6D6D6D;
+  font-weight: 300;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+h5 {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #6D6D6D;
+  font-weight: 300;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; /* Normal weight for paragraphs and lists */
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+li {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400; /* Normal weight for paragraphs and lists */
+  font-size: 16px;
+  line-height: 1.6;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+label {
+  font-family: 'Unica', sans-serif;
+  font-weight: 400; /* Normal weight for paragraphs and lists */
+  font-size: 12px;
+  line-height: 1.6;
+}

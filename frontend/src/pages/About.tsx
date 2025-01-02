@@ -1,7 +1,7 @@
 
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import List from "../components/lists/List";
+// import List from "../components/lists/List";
 import SectionHero from "../components/Section_Hero"
 import SectionTextAndImage from "../components/Section_Text_and_Image"
 import SectionContact from "../components/Section_Contact"
@@ -30,36 +30,79 @@ const cdImages = {
   image19: '/src/assets/images/alex-wolowiecki-uXgoasNqYqw-unsplash.jpg',
   image20: '/src/assets/images/jimmy-nilsson-masth-CskQi7DDUuY-unsplash.jpg',
   image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
-  image22: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
+  image22: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
+  image23: '/src/assets/images/frames-for-your-heart-iOLHAIaxpDA-unsplash.jpg',
+  image24: '/src/assets/images/jimmy-nilsson-masth-hrIpsXkrAO0-unsplash.png',
+  image25: '/src/assets/images/markus-spiske-rNn_TU8dvoY-unsplash.png',
+  image26: '/src/assets/images/kumpan-electric-AjNgSvEt-v4-unsplash.jpg',
+  image27: '/src/assets/images/smart-me-ag-j2E-2YQe_c8-unsplash.jpg',
+  image28: '/src/assets/images/waldemar-rHfTdK9YU2Q-unsplash.jpg',
+  image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
+  image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image31: '/src/assets/images/alpha-innotec--nbWCvUiFJA-unsplash.jpg',
+  image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image33: '/src/assets/images/vivint-solar-9CalgkSRZb8-unsplash.jpg',
+  image34: '/src/assets/images/austin-distel-wawEfYdpkag-unsplash.jpg',
+  image35: '/src/assets/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg',
+  image36: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image37: '/src/assets/images/ben-kolde-FaPxZ88yZrw-unsplash.jpg',
+  image38: '/src/assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg',
+  image39: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+
+  card1Image: '/src/assets/images/Privatkunden.svg',
+  card2Image: '/src/assets/images/Geschaeftskunden.svg',
+  card3Image: '/src/assets/images/Smart-Home-Loesungen.svg',
+  card4Image: '/src/assets/images/Lichtinstallation.svg',
+
 };
 
 const cdColors = {
-  primaryColor: '#98BB48',
-  secondaryColor: '#FFF1B7',
+  primaryColor: '#A8CF4E',
+  secondaryColor: '#FBF179',
   primaryAccentColor: '',
   secondaryAccentColor: '',
-  primaryBackgroundColorDark: '#165287',
-  primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#E9D9D3',
-  secondaryBackgroundColorDark: '#165287',
-  secondaryBackgroundColorDefault: '#165287',
-  secondaryBackgroundColorLight: '#BBD3C6',
-  tertiaryBackgroundColorDark: '#165287',
-  tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#B5CFE6',
-  quaternaryBackgroundColorDark: '#165287',
-  quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#F3EBC9',
-  primaryFontColor: '#191A1E',
-  secondaryFontColor: '#817E72',
-  tertiaryFontColor: '#D6D5CB'
+
+  // green
+  primaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorDefault: '#A8CF4E',
+  primaryBackgroundColorDark: '#8FB042',
+
+  // yellow   
+  secondaryBackgroundColorLight: '#FCF6A5',
+  secondaryBackgroundColorDefault: '#FBF179',
+  secondaryBackgroundColorDark: '#DBD269',
+
+  // teal
+  tertiaryBackgroundColorLight: '#9EDFB9',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorDark: '#5EB080',
+
+  // blue
+  quaternaryBackgroundColorLight: '#80CDDE',
+  quaternaryBackgroundColorDefault: '#41B4CE',
+  quaternaryBackgroundColorDark: '#41B4CE',
+
+  // brown
+  quinaryBackgroundColorLight: '#CDA888',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorDark: '#9A6B42',
+
+  // white
+  whiteBackground: '#F7F7F7',
+
+  // black
+  blackBackground: '#1A1A1A',
+
+  primaryFontColor: '#212121',
+  secondaryFontColor: '#6D6D6D',
+  tertiaryFontColor: ''
 };
 
 
 const cdCopy = {
-  sectionHero_Heading: 'Über uns - Elektro Peters',
+  sectionHero_Heading: 'Über uns - Elektro Peters GmbH',
   sectionHero_Subheading: '',
-  sectionHero_Paragraph: 'Unser Erfolg basiert auf nachhaltigen Lösungen und einem verantwortungsvollen Umgang mit Ressourcen.',
+  sectionHero_Paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 
   sectionTextAndImage_Heading: 'Unser Leistungsangebot',
   sectionTextAndImage_Paragraph: 'Unser Leistungsspektrum umfasst:',
@@ -119,7 +162,10 @@ const About = () => {
           listItems={listItems}
         />
         <SectionDivider></SectionDivider>
-        <SectionContact></SectionContact>
+        <SectionContact 
+        imageSrc={cdImages.image38}
+        style={{backgroundColor: cdColors.quaternaryBackgroundColorLight}}>
+        </SectionContact>
         <Footer></Footer>
       </div>
     </>

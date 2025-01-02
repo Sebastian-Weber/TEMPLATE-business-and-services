@@ -1,5 +1,6 @@
-import { useState } from 'react';
+
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
 import Firmenlogo from '/src/assets/Firmenlogo.svg'
 import Phone from '/src/assets/icons/Phone.svg'
@@ -41,47 +42,106 @@ const cdImages = {
   image28: '/src/assets/images/waldemar-rHfTdK9YU2Q-unsplash.jpg',
   image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
   image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
-  image31: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image31: '/src/assets/images/alpha-innotec--nbWCvUiFJA-unsplash.jpg',
   image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image33: '/src/assets/images/vivint-solar-9CalgkSRZb8-unsplash.jpg',
+  image34: '/src/assets/images/austin-distel-wawEfYdpkag-unsplash.jpg',
+  image35: '/src/assets/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg',
+  image36: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image37: '/src/assets/images/ben-kolde-FaPxZ88yZrw-unsplash.jpg',
+  image38: '/src/assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg',
+  image39: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image40: '/src/assets/images/thisisengineering-WjOWazUPAss-unsplash.jpg',
+  
+
+  card1Image: '/src/assets/images/Privatkunden.svg',
+  card2Image: '/src/assets/images/Geschaeftskunden.svg',
+  card3Image: '/src/assets/images/Smart-Home-Loesungen.svg',
+  card4Image: '/src/assets/images/Lichtinstallation.svg',
+
 };
 
-
 const cdColors = {
-  primaryColor: '#98BB48',
-  secondaryColor: '#FFF1B7',
+  primaryColor: '#A8CF4E',
+  secondaryColor: '#FBF179',
   primaryAccentColor: '',
   secondaryAccentColor: '',
-  primaryBackgroundColorDark: '#165287',
-  primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#ACC6DD',
-  secondaryBackgroundColorDark: '#165287',
-  secondaryBackgroundColorDefaukt: '#165287',
-  secondaryBackgroundColorLight: '#165287',
-  tertiaryBackgroundColorDark: '#165287',
-  tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#165287',
-  quaternaryBackgroundColorDark: '#165287',
-  quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#165287',
-  primaryFontColor: '#191A1E',
-  secondaryFontColor: '#817E72',
-  tertiaryFontColor: '#D6D5CB'
+
+  // green
+  primaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorDefault: '#A8CF4E',
+  primaryBackgroundColorDark: '#8FB042',
+
+  // yellow   
+  secondaryBackgroundColorLight: '#FCF6A5',
+  secondaryBackgroundColorDefault: '#FBF179',
+  secondaryBackgroundColorDark: '#DBD269',
+
+  // teal
+  tertiaryBackgroundColorLight: '#9EDFB9',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorDark: '#5EB080',
+
+  // blue
+  quaternaryBackgroundColorLight: '#80CDDE',
+  quaternaryBackgroundColorDefault: '#41B4CE',
+  quaternaryBackgroundColorDark: '#41B4CE',
+
+  // brown
+  quinaryBackgroundColorLight: '#CDA888',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorDark: '#9A6B42',
+
+  // white
+  whiteBackground: '#F7F7F7',
+
+  // black
+  blackBackground: '#1A1A1A',
+
+  primaryFontColor: '#212121',
+  secondaryFontColor: '#6D6D6D',
+  tertiaryFontColor: ''
 };
 
 
 const Navbar = () => {
-  // const [isOpen, setIsOpen] = useState(false);
-  // const [isOverlayVisible, setOverlayVisible] = useState(false);
-  const [isMenuItem1ExpanderVisible, setMenuItem1ExpanderVisible] = useState(false);
+  const setOverlayVisible = useState(false)[1];
 
   
 
-  const toggleMenuItem1Expander = () => {
-    setMenuItem1ExpanderVisible(!isMenuItem1ExpanderVisible);
-  };
 
-  // const genericHamburgerLine = 'h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300'
-
+  //  const dropdownItems = [
+  //   {
+  //     heading: 'Home',
+  //     subheading: 'Welcome to our homepage',
+  //     url: 'home',
+  //     image: '/path/to/home-image.jpg',
+  //   },
+  //   {
+  //     heading: 'About',
+  //     subheading: 'Learn more about us',
+  //     url: 'about',
+  //     image: '/path/to/about-image.jpg',
+  //   },
+  //   {
+  //     heading: 'Services',
+  //     subheading: 'Discover our services',
+  //     url: 'services',
+  //     image: '/path/to/services-image.jpg',
+  //   },
+  //   {
+  //     heading: 'Contact',
+  //     subheading: 'Get in touch with us',
+  //     url: 'contact',
+  //     image: '/path/to/contact-image.jpg',
+  //   },
+  //   {
+  //     heading: 'Blog',
+  //     subheading: 'Read our latest posts',
+  //     url: 'blog',
+  //     image: '/path/to/blog-image.jpg',
+  //   },
+  // ];
 
   return (
     <>
@@ -90,7 +150,6 @@ const Navbar = () => {
         
         {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>
       
           <div className="">
@@ -102,7 +161,6 @@ const Navbar = () => {
       {/* Medium */}
       <div className="fixed hidden md:flex flex-row justify-between items-center w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
 
-        {/* Firmenlogo */}
         <Link to="/" >
           <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>   
@@ -111,7 +169,7 @@ const Navbar = () => {
 
           <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
               <img className="" src={Phone}></img>
-            <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
+            <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryBackgroundColorLight}} >+49 12345 6789</div>
           </div>
           {/* <Button_secondary caption="Kontakt" buttonSecondaryUrl="About"></Button_secondary> */}
 
@@ -127,8 +185,7 @@ const Navbar = () => {
 
         {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
-        </Link>   
+        </Link>
 
         <div className="flex flex-row justify-end items-center ">
 
@@ -138,7 +195,7 @@ const Navbar = () => {
 
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
               <img className="" src={Phone}></img>
-              <div className="text-xl cursor-default" style={{ color: cdColors.secondaryColor}}>+49 12345 6789</div>
+              <div className="text-xl cursor-default" style={{ color: cdColors.secondaryBackgroundColorLight}}>+49 12345 6789</div>
             </div>
 
             <div className="">
@@ -154,73 +211,94 @@ const Navbar = () => {
       <div className="fixed hidden xl:flex flex-row justify-between items-center w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
       <div className="flex flex-row justify-start items-center">
 
-        {/* Firmenlogo */}
         <Link to="/" >
-          <img className="w-18 -mt-6"  src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          <img className="w-18 -mt-8"  src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>
 
         <div className="flex flex-row justify-start items-center mx-4">
 
         {/* Ueber uns  */}
         <Link className="" to="/about">
-          <div className="text-xl font-medium menu-hover mx-2 px-2" style={{ color: cdColors.secondaryColor }}>
+          <div className="text-xl font-medium menu-hover mx-2 px-2" style={{ color: cdColors.secondaryBackgroundColorLight }}>
             Über uns
           </div>
         </Link>
 
         <Navbar_xl_dropdown_template 
-          DropdownCaption='Leistungen'
-          caption='Placeholder'
-          DropdownItem1Image={cdImages.image3} 
-          DropdownItem1Heading='Elektro-Dienstleistungen für Privatkunden'
-          DropdownItem1Subheading='Elektroinstallationen für Ihr Zuhause' 
-          DropdownItem1Url='Elektro-Dienstleistungen-Privatkunden'
-          DropdownItem2Image={cdImages.image17} 
-          DropdownItem2Heading='Elektro-Dienstleistungen für Gewerbekunden' 
-          DropdownItem2Subheading='Einbau, Austausch und Wartung' 
-          DropdownItem2Url='Elektro-Dienstleistungen-Gewerbekunden'
-          DropdownItem3Image={cdImages.image30}  
-          DropdownItem3Heading='Smart-Home Lösungen' 
-          DropdownItem3Subheading='Smart-Home Lösungen für Ihr Zuhause' 
-          DropdownItem3Url=''
-          DropdownItem4Image={cdImages.image31} 
-          DropdownItem4Heading='Beleuchtungsdesign und -installation' 
-          DropdownItem4Subheading='Beleuchtungsdesign und -installation' 
-          DropdownItem4Url=''
-          DropdownItem5Image={cdImages.image4} 
-          DropdownItem5Heading='Notfallreparaturen' 
-          DropdownItem5Subheading='Notfallreparaturen' 
-          DropdownItem5Url='Elektro-Dienstleistungen-Privatkunden'  
-
+          dropdownCaption='Leistungen'
+          dropdownItems={[
+            {
+              image: cdImages.image33,
+              heading: 'Elektro-Dienstleistungen für Privatkunden',
+              subheading: 'Elektroinstallationen für Ihr Zuhause',
+              url: 'Elektro-Dienstleistungen-Privatkunden'
+            },
+            {
+              image: cdImages.image40,
+              heading: 'Elektro-Dienstleistungen für Gewerbekunden',
+              subheading: 'Einbau, Austausch und Wartung',
+              url: 'Elektro-Dienstleistungen-Gewerbekunden'
+            },
+            {
+              image: cdImages.image32,
+              heading: 'Smart-Home Lösungen',
+              subheading: 'Smart-Home Lösungen für Ihr Zuhause',
+              url: 'Smart-Home-Loesungen'
+            },
+            {
+              image: cdImages.image36,
+              heading: 'Lichtdesign und -installation',
+              subheading: 'Lichtdesign und -installation',
+              url: 'Lichtdesign-und-Installation'
+            },
+            {
+              image: cdImages.image4,
+              heading: 'Notfallreparaturen',
+              subheading: 'Notfallreparaturen',
+              url: 'Notfallreparaturen'
+            }
+          ]}
         ></Navbar_xl_dropdown_template>
         <Navbar_xl_dropdown_template 
-          DropdownCaption='Nachhaltigkeit & Energielösungen'
-          caption='Placeholder'
-          DropdownItem1Heading='Photovoltaik-Anlagen' 
-          DropdownItem1Image={cdImages.image25} 
-          DropdownItem1Subheading='...' 
-          DropdownItem1Url='Elektro-Dienstleistungen-Privatkunden'
-          DropdownItem2Heading='Solaranlagen-Installation' 
-          DropdownItem2Image={cdImages.image24} 
-          DropdownItem2Subheading='...' 
-          DropdownItem2Url=''  
-          DropdownItem3Heading='Energieeffiziente Beleuchtung' 
-          DropdownItem3Image={cdImages.image18} 
-          DropdownItem3Subheading='...' 
-          DropdownItem3Url=''
-          DropdownItem4Heading='Ladestationen für E-Fahrzeuge' 
-          DropdownItem4Image={cdImages.image28} 
-          DropdownItem4Subheading='...' 
-          DropdownItem4Url=''
-          DropdownItem5Heading='' 
-          DropdownItem5Image={''} 
-          DropdownItem5Subheading='' 
-          DropdownItem5Url='' 
+          dropdownCaption='Nachhaltigkeit & Energielösungen'
+          dropdownItems={[
+            {
+              image: cdImages.image25,
+              heading: 'Photovoltaik-Anlagen',
+              subheading: 'Einbau, Austausch und Wartung',
+              url: 'Photovoltaik-Anlagen'
+            },
+            {
+              image: cdImages.image24,
+              heading: 'Solaranlagen-Installation',
+              subheading: 'Einbau, Austausch und Wartung',
+              url: 'Solaranlagen-Installation'
+            },
+            {
+              image: cdImages.image18,
+              heading: 'Energieeffiziente Beleuchtung',
+              subheading: 'Lichtdesign und -installation',
+              url: 'Energieeffiziente-Beleuchtung'
+            },
+            {
+              image: cdImages.image28,
+              heading: 'Ladestationen für E-Fahrzeuge',
+              subheading: 'Lichtdesign und -installation',
+              url: 'Ladestationen-fuer-E-Fahrzeuge'
+            },
+            // {
+            //   image: cdImages.image4,
+            //   heading: 'Notfallreparaturen',
+            //   subheading: 'Notfallreparaturen',
+            //   url: 'Notfallreparaturen'
+            // }
+          ]}
         ></Navbar_xl_dropdown_template>
+
 
         {/* Offene Stellen */}
         <Link className="flex flex-row items-start" to="/jobs">
-          <div className="font-fredoka text-xl font-medium menu-hover" style={{ color: cdColors.secondaryColor }}>
+          <div className="font-fredoka text-xl font-medium menu-hover" style={{ color: cdColors.secondaryBackgroundColorLight }}>
             Offene Stellen
           </div>
         </Link>
@@ -231,15 +309,12 @@ const Navbar = () => {
 
         <div className="flex flex-row justify-end items-center ">
 
-        
-
-
         <Button_secondary buttonSecondaryCaption="Kontakt" buttonSecondaryLink="#kontakt"></Button_secondary>
 
           <div className="flex flex-row items-center justify-end">
             <div className="flex flex-row mx-4 text-nowrap items-center justify-end">
               <img className="" src={Phone}></img>
-              <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryColor}} >+49 12345 6789</div>
+              <div className="text-xl nav-text-color cursor-default" style={{ color: cdColors.secondaryBackgroundColorLight}} >+49 12345 6789</div>
             </div>
 
             <div className="md:hidden">

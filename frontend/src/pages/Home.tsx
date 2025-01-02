@@ -1,14 +1,14 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import SectionCards from "../components/Section_Cards"
 import SectionContact from "../components/Section_Contact"
 import SectionDivider from "../components/Section_Divider"
 import Section_Gallery from "../components/Section_Gallery"
 import SectionHero from "../components/Section_Hero"
 import SectionTextAndImage from "../components/Section_Text_and_Image"
 import { ButtonPrimaryProvider } from "../contexts/ButtonPrimaryContext"
+import SectionTextAndCards from '../components/Section_Text_and_Cards';
 
 
 const cdImages = {
@@ -43,7 +43,23 @@ const cdImages = {
   image28: '/src/assets/images/waldemar-rHfTdK9YU2Q-unsplash.jpg',
   image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
   image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
-  image31: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image31: '/src/assets/images/alpha-innotec--nbWCvUiFJA-unsplash.jpg',
+  image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image33: '/src/assets/images/vivint-solar-9CalgkSRZb8-unsplash.jpg',
+  image34: '/src/assets/images/austin-distel-wawEfYdpkag-unsplash.jpg',
+  image35: '/src/assets/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg',
+  image36: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image37: '/src/assets/images/ben-kolde-FaPxZ88yZrw-unsplash.jpg',
+  image38: '/src/assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg',
+  image39: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image40: '/src/assets/images/thisisengineering-WjOWazUPAss-unsplash.jpg',
+  
+
+  card1Image: '/src/assets/images/Privatkunden.svg',
+  card2Image: '/src/assets/images/Geschaeftskunden.svg',
+  card3Image: '/src/assets/images/Smart-Home-Loesungen.svg',
+  card4Image: '/src/assets/images/Lichtinstallation.svg',
+
 };
 
 const cdCopy = {
@@ -52,41 +68,83 @@ const cdCopy = {
   sectionHero_Paragraph: '',
 
   sectionIntro_Heading: 'Von der Steckdose bis zur Smart-Home-Lösung',
-  sectionIntro_Paragraph: 'Willkommen bei Peters Elektro GmbH, Ihrem zuverlässigen Partner für professionelle Elektro-Dienstleistungen. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen – von regelmäßiger Wartung bis hin zu modernen Smart-Home-Lösungen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
+  sectionIntro_Paragraph: 'Willkomen bei Peters Elektro GmbH. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
 
   sectionContact_Heading: 'Lust, mit uns die Zukunft zu elektrisieren?',
-  sectionContact_Paragraph: 'Du suchst eine neue Herausforderung in einem modernen Elektroinstallationsunternehmen mit Herz? Bei Peters erwarten dich spannende Projekte im Kölner Raum, ein familiäres Team und echte Entwicklungsmöglichkeiten. Wir legen Wert auf Qualität, Innovation und ein Arbeitsklima, in dem sich jeder wohlfühlt? Das bieten wir dir: Abwechslungsreiche Aufgaben in einem zukunftssicheren Handwerk. Kreativer Freiraum, um eigene Ideen in unsere Projekte einzubringen. Eine Arbeitskultur, die Eigenverantwortung und Teamg-geist fördert. Bewirb dich jetzt und werde Teil unseres Teams! Wir freuen uns auf deine Bewerbung.',
+  sectionContact_Paragraph: 'Du suchst eine neue Herausforderung in einem modernen Elektroinstallationsunternehmen? Bei Peters Elektro GmbH erwarten Dich spannende Projekte im Kölner Raum, ein familiäres Team und echte Entwicklungsmöglichkeiten. Wir legen Wert auf Qualität, Innovation und ein Arbeitsklima, in dem sich jeder wohlfühlt? Das bieten wir: Abwechslungsreiche Aufgaben in einem zukunftssicheren Handwerk. Kreativer Freiraum, um eigene Ideen in unsere Projekte einzubringen. Eine Arbeitskultur, die Eigenverantwortung und Teamg-geist fördert. Bewirb dich jetzt und werde Teil unseres Teams! Wir freuen uns auf deine Bewerbung!',
 
   buttonPrimaryCaption: 'Mehr über uns erfahren -- kommt aus Home.tsx',
   buttonPrimaryURL: 'about',
+
+  sectionTextAndCards_Heading: 'Unsere Leistungen',
+  sectionTextAndCards_Paragraph: 'Entdecken Sie unser Leistungsspektrum. Von klassischen Elektroinstallationen für Privat- und Gewerbekunden über Lichtdesign bis zu modernen Smart-Home-Lösungen.',
   
-  // buttonSecondaryCaption: 'Mehr über uns erfahren  -- kommt aus Home.tsx',
-  // buttonSecondaryLink: 'about',
+  SectionListAndCards_card1Heading:'Elektroinstallationen für Privatkunden',
+  SectionListAndCards_card1Paragraph:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus',
+  SectionListAndCards_card1ListItem1: '• Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus',
+  SectionListAndCards_card1listItem2: '• Ipsum dolor sit amet.',
+  SectionListAndCards_card1listItem3: '• Consectetur adipiscing elit.',
+
+  SectionListAndCards_card2Heading:'Elektroinstallationen für Geschäftskunden',
+  SectionListAndCards_card2Paragraph:'Nullam nec purus.',
+  SectionListAndCards_card2ListItem1: '• Lorem adipiscing elit. Nullam nec purus.',
+  SectionListAndCards_card2listItem2: '• Ipsum dolor sit amet, consectetur adipiscing elit.',
+  SectionListAndCards_card2listItem3: '• Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+
+  SectionListAndCards_card3Heading:'Smart-Home Lösungen',
+  SectionListAndCards_card3Paragraph:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus.',
+  SectionListAndCards_card3ListItem1: '• Lorem adipiscing elit. Nullam nec purus',
+  SectionListAndCards_card3listItem2: '• Nullam nec purus',
+  SectionListAndCards_card3listItem3: '• Lorem adipiscing elit.',
+  
+  SectionListAndCards_card4Heading:'Licht-Design und Installation',
+  SectionListAndCards_card4Paragraph:'Nullam nec purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus.',
+  SectionListAndCards_card4ListItem1: '• Lorem',
+  SectionListAndCards_card4listItem2: '• Ipsum',
+  SectionListAndCards_card4listItem3: '• Dolor',
 };
 
 const cdColors = {
-  primaryColor: '#98BB48',
-  secondaryColor: '#FFF1B7',
+  primaryColor: '#A8CF4E',
+  secondaryColor: '#FBF179',
   primaryAccentColor: '',
   secondaryAccentColor: '',
-  primaryBackgroundColorDark: '#165287',
-  primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#E9D9D3',
-  secondaryBackgroundColorDark: '#165287',
-  secondaryBackgroundColorDefault: '#165287',
-  secondaryBackgroundColorLight: '#BBD3C6',
-  tertiaryBackgroundColorDark: '#165287',
-  tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#B5CFE6',
-  quaternaryBackgroundColorDark: '#165287',
-  quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#F3EBC9',
-  primaryFontColor: '#191A1E',
-  secondaryFontColor: '#817E72',
-  tertiaryFontColor: '#D6D5CB'
+
+  // green
+  primaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorDefault: '#A8CF4E',
+  primaryBackgroundColorDark: '#8FB042',
+
+  // yellow   
+  secondaryBackgroundColorLight: '#FCF6A5',
+  secondaryBackgroundColorDefault: '#FBF179',
+  secondaryBackgroundColorDark: '#DBD269',
+
+  // teal
+  tertiaryBackgroundColorLight: '#9EDFB9',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorDark: '#5EB080',
+
+  // blue
+  quaternaryBackgroundColorLight: '#80CDDE',
+  quaternaryBackgroundColorDefault: '#41B4CE',
+  quaternaryBackgroundColorDark: '#41B4CE',
+
+  // brown
+  quinaryBackgroundColorLight: '#CDA888',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorDark: '#9A6B42',
+
+  // white
+  whiteBackground: '#F7F7F7',
+
+  // black
+  blackBackground: '#1A1A1A',
+
+  primaryFontColor: '#212121',
+  secondaryFontColor: '#6D6D6D',
+  tertiaryFontColor: ''
 };
-
-
 
 
 const Home = () => {
@@ -110,10 +168,7 @@ const Home = () => {
     setButtonPrimaryLink: setButtonPrimaryLink2,
   };
 
-  // const buttonSecondaryProps = {
-  //   buttonSecondaryCaption: 'Home from Home.tsx',
-  //   buttonSecondaryLink: 'about',
-  // };
+
 
   return (
     <>
@@ -125,7 +180,7 @@ const Home = () => {
         paragraph={cdCopy.sectionHero_Paragraph} 
         image={cdImages.image9}
         logo={cdImages.logo}
-        background={cdColors.secondaryColor}>
+        background={cdColors.secondaryBackgroundColorLight}>
         </SectionHero>
 
         <ButtonPrimaryProvider value={buttonPrimaryProps1}>
@@ -138,7 +193,45 @@ const Home = () => {
           </SectionTextAndImage>
         </ButtonPrimaryProvider>
 
-        <SectionCards></SectionCards>
+        <ButtonPrimaryProvider value={buttonPrimaryProps1}>
+          <SectionTextAndCards 
+          heading={cdCopy.sectionTextAndCards_Heading}
+          paragraph={cdCopy.sectionTextAndCards_Paragraph}
+          card1Image={cdImages.card1Image}
+          card1Heading={cdCopy.SectionListAndCards_card1Heading}
+          card1Paragraph={cdCopy.SectionListAndCards_card1Paragraph}
+          card1ButtonPrimaryCaption={buttonPrimaryProps1.buttonPrimaryCaption}
+          card1ButtonPrimaryLink={buttonPrimaryProps1.buttonPrimaryLink}
+          card1Listitem1={cdCopy.SectionListAndCards_card1ListItem1}
+          card1Listitem2={cdCopy.SectionListAndCards_card1listItem2}
+          card1Listitem3={cdCopy.SectionListAndCards_card1listItem3}
+          card2Image={cdImages.card2Image}
+          card2Heading={cdCopy.SectionListAndCards_card2Heading}
+          card2Paragraph={cdCopy.SectionListAndCards_card2Paragraph}
+          card2ButtonPrimaryCaption="Button 2"
+          card2Listitem1={cdCopy.SectionListAndCards_card2ListItem1}
+          card2Listitem2={cdCopy.SectionListAndCards_card2listItem2}
+          card2Listitem3={cdCopy.SectionListAndCards_card2listItem3}
+          card2ButtonPrimaryLink={buttonPrimaryProps1.buttonPrimaryLink}
+          card3Image={cdImages.card3Image}
+          card3Heading={cdCopy.SectionListAndCards_card3Heading}
+          card3Paragraph={cdCopy.SectionListAndCards_card3Paragraph}
+          card3ButtonPrimaryCaption="Button 3"
+          card3ButtonPrimaryLink={buttonPrimaryProps1.buttonPrimaryLink}
+          card3Listitem1={cdCopy.SectionListAndCards_card3ListItem1}
+          card3Listitem2={cdCopy.SectionListAndCards_card3listItem2}
+          card3Listitem3={cdCopy.SectionListAndCards_card3listItem3}
+          card4Image={cdImages.card4Image}
+          card4Heading={cdCopy.SectionListAndCards_card4Heading}
+          card4Paragraph={cdCopy.SectionListAndCards_card4Paragraph}
+          card4ButtonPrimaryCaption="Button 4"
+          card4ButtonPrimaryLink="Lichtdesign-und-Installation"
+          card4Listitem1={cdCopy.SectionListAndCards_card4ListItem1}
+          card4Listitem2={cdCopy.SectionListAndCards_card4listItem2}
+          card4Listitem3={cdCopy.SectionListAndCards_card4listItem3}
+          ></SectionTextAndCards>
+        </ButtonPrimaryProvider>
+        
         <Section_Gallery 
           image1={cdImages.image1}
           image2={cdImages.image2} 
@@ -172,9 +265,12 @@ const Home = () => {
           </SectionTextAndImage> */}
         <SectionDivider></SectionDivider>
 
-        <SectionContact></SectionContact>
+        <SectionContact 
+        imageSrc={cdImages.image38}
+        style={{backgroundColor: cdColors.quaternaryBackgroundColorLight}}>
+        </SectionContact>
         <Footer></Footer>
-      </div>
+        </div>
     </>
   )
 }

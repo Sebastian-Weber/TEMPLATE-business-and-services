@@ -1,10 +1,10 @@
 
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import SectionCards from "../components/Section_Cards"
+// import SectionCards from "../components/Section_Text_and_Cards"
 import SectionContact from "../components/Section_Contact"
 import SectionDivider from "../components/Section_Divider"
-import Section_Gallery from "../components/Section_Gallery"
+// import Section_Gallery from "../components/Section_Gallery"
 import SectionHero from "../components/Section_Hero"
 import SectionTextAndImage from "../components/Section_Text_and_Image"
 
@@ -33,7 +33,28 @@ const cdImages = {
   image21: '/src/assets/images/thisisengineering-q9yJE97A44Q-unsplash.jpg',
   image22: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
   image23: '/src/assets/images/frames-for-your-heart-iOLHAIaxpDA-unsplash.jpg',
-  image24: '/src/assets/images/sol-tZw3fcjUIpM-unsplash.png',
+  image24: '/src/assets/images/jimmy-nilsson-masth-hrIpsXkrAO0-unsplash.png',
+  image25: '/src/assets/images/markus-spiske-rNn_TU8dvoY-unsplash.png',
+  image26: '/src/assets/images/kumpan-electric-AjNgSvEt-v4-unsplash.jpg',
+  image27: '/src/assets/images/smart-me-ag-j2E-2YQe_c8-unsplash.jpg',
+  image28: '/src/assets/images/waldemar-rHfTdK9YU2Q-unsplash.jpg',
+  image29: '/src/assets/images/markus-spiske-LIi9tSIKoYQ-unsplash.jpg',
+  image30: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image31: '/src/assets/images/alpha-innotec--nbWCvUiFJA-unsplash.jpg',
+  image32: '/src/assets/images/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg',
+  image33: '/src/assets/images/vivint-solar-9CalgkSRZb8-unsplash.jpg',
+  image34: '/src/assets/images/austin-distel-wawEfYdpkag-unsplash.jpg',
+  image35: '/src/assets/images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg',
+  image36: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+  image37: '/src/assets/images/ben-kolde-FaPxZ88yZrw-unsplash.jpg',
+  image38: '/src/assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg',
+  image39: '/src/assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg',
+
+  card1Image: '/src/assets/images/Privatkunden.svg',
+  card2Image: '/src/assets/images/Geschaeftskunden.svg',
+  card3Image: '/src/assets/images/Smart-Home-Loesungen.svg',
+  card4Image: '/src/assets/images/Lichtinstallation.svg',
+
 };
 
 const cdCopy = {
@@ -41,35 +62,55 @@ const cdCopy = {
   sectionHero_Subheading: '',
   sectionHero_Paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 
-  sectionTextAndImage_Heading: 'Von der Steckdose bis zur Smart-Home-Lösung',
-  sectionTextAndImage_Paragraph: 'Willkommen bei Peters Elektro GmbH, Ihrem zuverlässigen Partner für professionelle Elektro-Dienstleistungen. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen – von regelmäßiger Wartung bis hin zu modernen Smart-Home-Lösungen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
+  sectionTextAndImage_Heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  sectionTextAndImage_Paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   
-  buttonPrimaryCaption: 'Mehr über uns erfahren -- kommt aus Home.tsx',
+  buttonPrimaryCaption: 'Mehr über uns erfahren',
   buttonPrimaryURL: 'about',
-  buttonSecondaryCaption: 'Mehr über uns erfahren  -- kommt aus Home.tsx',
+  buttonSecondaryCaption: 'Mehr über uns erfahren',
   buttonSecondaryLink: 'about',
 };
 
 const cdColors = {
-  primaryColor: '#98BB48',
-  secondaryColor: '#FFF1B7',
+  primaryColor: '#A8CF4E',
+  secondaryColor: '#FBF179',
   primaryAccentColor: '',
   secondaryAccentColor: '',
-  primaryBackgroundColorDark: '#165287',
-  primaryBackgroundColorDefault: '#1D6DB4',
-  primaryBackgroundColorLight: '#E9D9D3',
-  secondaryBackgroundColorDark: '#165287',
-  secondaryBackgroundColorDefault: '#165287',
-  secondaryBackgroundColorLight: '#BBD3C6',
-  tertiaryBackgroundColorDark: '#165287',
-  tertiaryBackgroundColorDefault: '#165287',
-  tertiaryBackgroundColorLight: '#B5CFE6',
-  quaternaryBackgroundColorDark: '#165287',
-  quaternaryBackgroundColorDefault: '#165287',
-  quaternaryBackgroundColorLight: '#F3EBC9',
-  primaryFontColor: '#191A1E',
-  secondaryFontColor: '#817E72',
-  tertiaryFontColor: '#D6D5CB'
+
+  // green
+  primaryBackgroundColorLight: '#C5DF88',
+  primaryBackgroundColorDefault: '#A8CF4E',
+  primaryBackgroundColorDark: '#8FB042',
+
+  // yellow   
+  secondaryBackgroundColorLight: '#FCF6A5',
+  secondaryBackgroundColorDefault: '#FBF179',
+  secondaryBackgroundColorDark: '#DBD269',
+
+  // teal
+  tertiaryBackgroundColorLight: '#9EDFB9',
+  tertiaryBackgroundColorDefault: '#6FCF97',
+  tertiaryBackgroundColorDark: '#5EB080',
+
+  // blue
+  quaternaryBackgroundColorLight: '#80CDDE',
+  quaternaryBackgroundColorDefault: '#41B4CE',
+  quaternaryBackgroundColorDark: '#41B4CE',
+
+  // brown
+  quinaryBackgroundColorLight: '#CDA888',
+  quinaryBackgroundColorDefault: '#B57E4D',
+  quinaryBackgroundColorDark: '#9A6B42',
+
+  // white
+  whiteBackground: '#F7F7F7',
+
+  // black
+  blackBackground: '#1A1A1A',
+
+  primaryFontColor: '#212121',
+  secondaryFontColor: '#6D6D6D',
+  tertiaryFontColor: ''
 };
 
 
@@ -80,10 +121,10 @@ function Jobs() {
     buttonPrimaryLink: 'home',
   };
 
-  const buttonSecondaryProps = {
-    buttonSecondaryCaption: 'About from about.tsx',
-    buttonSecondaryLink: 'home',
-  };
+  // const buttonSecondaryProps = {
+  //   buttonSecondaryCaption: 'About from about.tsx',
+  //   buttonSecondaryLink: 'home',
+  // };
 
   return (
     <>
@@ -100,9 +141,12 @@ function Jobs() {
           paragraph={cdCopy.sectionTextAndImage_Paragraph}
           image={cdImages.image10}
           buttonPrimaryProps={buttonPrimaryProps}
-          buttonSecondaryProps={buttonSecondaryProps}></SectionTextAndImage>
+          ></SectionTextAndImage>
           <SectionDivider></SectionDivider>
-          <SectionContact></SectionContact>
+          <SectionContact 
+        imageSrc={cdImages.image38}
+        style={{backgroundColor: cdColors.quaternaryBackgroundColorLight}}>
+        </SectionContact>
         <Footer></Footer>
     </>
   )
