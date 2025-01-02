@@ -100,9 +100,9 @@ const cdColors = {
 
 
 const cdCopy = {
-  sectionHero_Heading: 'Über uns - Elektro Peters',
+  sectionHero_Heading: 'Über uns - Elektro Peters GmbH',
   sectionHero_Subheading: '',
-  sectionHero_Paragraph: 'Unser Erfolg basiert auf nachhaltigen Lösungen und einem verantwortungsvollen Umgang mit Ressourcen.',
+  sectionHero_Paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 
   sectionTextAndImage_Heading: 'Unser Leistungsangebot',
   sectionTextAndImage_Paragraph: 'Unser Leistungsspektrum umfasst:',

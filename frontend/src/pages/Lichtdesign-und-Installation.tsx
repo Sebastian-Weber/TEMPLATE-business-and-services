@@ -102,25 +102,25 @@ const cdImages = {
 };
 
 const cdCopy = {
-  SectionHero_heading: 'Unsere Leistungen für Gewerbekunden',
-  SectionHero_paragraph: 'Ob Sie eine komplette Elektroinstallation in Ihrem Zuhause planen, einzelne Komponenten modernisieren oder spezielle Anpassungen vornehmen möchten – wir unterstützen Sie bei der Umsetzung Ihrer Wünsche.',
+  SectionHero_heading: 'Lichtdesign und -installation',
+  SectionHero_paragraph: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.',	
 
-  SectionListAndCards_heading: 'Einbau, Austausch und Reparatur - Alles aus einer Hand',
-  SectionListAndCards_paragraph: 'Wir bieten Ihnen einen umfassenden Service für Elektroinstallationen aller Art von Haushaltstechnik in Ihrem Zuhause. Sir sorgen dafür, dass jede Lösung perfekt auf Ihre Bedürfnisse abgestimmt ist. Vertrauen Sie auf unsere Expertise, um Ihr Zuhause sicher und effizient mit Strom zu versorgen.',
+  SectionListAndCards_heading: 'Lorem Ipsum dolor sit amet',
+  SectionListAndCards_paragraph: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.',
   SectionListAndCards_listItem1: 'Lorem',
   SectionListAndCards_listItem2: 'Ipsum',
   SectionListAndCards_listItem3: 'Dolor',
 
-  SectionListAndCards_card1Heading:'Elektroanschlüsse für Küchenmodernisierung',
-  SectionListAndCards_card1Paragraph:'Statten Sie Ihre Küche mit den notwendigen Anschlüssen für moderne Geräte aus.',
-  SectionListAndCards_card1ListItem1: '• Stromanschlüsse für energieeffiziente Geräte', 
-  SectionListAndCards_card1ListItem2: '• Planung von Steckdosen an idealen Positionen',
+  SectionListAndCards_card1Heading:'Lorem Ipsum dolor sit amet',
+  SectionListAndCards_card1Paragraph:'Lorem Ipsum dolor sit amet consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.',
+  SectionListAndCards_card1ListItem1: '• Lorem', 
+  SectionListAndCards_card1ListItem2: '• Sed diam',
   SectionListAndCards_card1listItem3: '',
 
   SectionListAndCards_card2Heading:'Lorem Ipsum dolor sit amet',
-  SectionListAndCards_card2Paragraph:'Erwecken Sie Ihren Außenbereich mit durchdachten Elektroinstallationen zum Leben.',
-  SectionListAndCards_card2ListItem1: '• Sicherheitsbeleuchtung für Wege und Eingänge',
-  SectionListAndCards_card2listItem2: '• Stromversorgung für Garten- und Poolanlagen',
+  SectionListAndCards_card2Paragraph:'Cons etetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.',
+  SectionListAndCards_card2ListItem1: '• Elitir, sed diam nonumy eirmod tempor invidunt',
+  SectionListAndCards_card2listItem2: '• Setetur sadipscing elitr, sed diam nonumy',
   SectionListAndCards_card2listItem3: '',
   
   SectionListAndCards_card3Heading:'Lorem Ipsum dolor sit amet',
@@ -129,10 +129,10 @@ const cdCopy = {
   SectionListAndCards_card3listItem2: '• Dolor Sit',
   SectionListAndCards_card3listItem3: '',
   
-  SectionListAndCards_card4Heading:'Außenbeleuchtung und Gartenstrom',
-  SectionListAndCards_card4Paragraph:'Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet. Machen Sie Ihr Zuhause bereit für die Zukunft der Mobilität.',
-  SectionListAndCards_card4ListItem1: '• Wallbox-Installation direkt bei Ihnen zu Hause',
-  SectionListAndCards_card4listItem2: '• Beratung zu passenden Modellen und Fördermöglichkeiten',
+  SectionListAndCards_card4Heading:'Lorem Ipsum dolor sit amet',
+  SectionListAndCards_card4Paragraph:'Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet. Lorem Ipsum dolor sit amet. Machen Sie Ihr Zuhause bereit für die Zukunft der Mobilität.',
+  SectionListAndCards_card4ListItem1: '• Lorem Ipsum dolor sit amet.',
+  SectionListAndCards_card4listItem2: '• Lorem Ipsum dolor sit amet.',
   SectionListAndCards_card4listItem3: '',
   
   
@@ -149,7 +149,7 @@ function LichtdesignundInstallation() {
       <SectionHero 
       heading={cdCopy.SectionHero_heading} 
       paragraph={cdCopy.SectionHero_paragraph} 
-      image={cdImages.image34}
+      image={cdImages.image36}
       logo={''}
       background={cdColors.secondaryBackgroundColorLight}>
       </SectionHero>

@@ -62,12 +62,12 @@ const cdCopy = {
   sectionHero_Subheading: '',
   sectionHero_Paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
 
-  sectionTextAndImage_Heading: 'Von der Steckdose bis zur Smart-Home-Lösung',
-  sectionTextAndImage_Paragraph: 'Willkommen bei Peters Elektro GmbH, Ihrem zuverlässigen Partner für professionelle Elektro-Dienstleistungen. Mit jahrelanger Erfahrung sind wir spezialisiert auf Wohn-, Gewerbe- und Industrieelektroinstallationen – von regelmäßiger Wartung bis hin zu modernen Smart-Home-Lösungen. Unser Team steht für Sicherheit, Innovation und eine schnelle, professionelle Arbeitsweise. Wir bedienen die Region Köln und sorgen für eine zuverlässige, kundenorientierte und effiziente Umsetzung Ihrer elektrischen Anforderungen.',
+  sectionTextAndImage_Heading: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  sectionTextAndImage_Paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
   
-  buttonPrimaryCaption: 'Mehr über uns erfahren -- kommt aus Home.tsx',
+  buttonPrimaryCaption: 'Mehr über uns erfahren',
   buttonPrimaryURL: 'about',
-  buttonSecondaryCaption: 'Mehr über uns erfahren  -- kommt aus Home.tsx',
+  buttonSecondaryCaption: 'Mehr über uns erfahren',
   buttonSecondaryLink: 'about',
 };
 

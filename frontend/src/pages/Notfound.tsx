@@ -59,8 +59,8 @@ const NotFound: React.FC = () => {
       <Link to="/" className="">
         <img className="w-fit h-auto mr-12"  src={cdImages.image404} alt="Firmenlogo"></img>
       </Link>
-      <h1 className="text-4xl cursor-pointer pt-48 font-bold text-slate-400 -mt-36">404 - Page Not Found</h1>
-      <p className="mt-4 cursor-pointer text-slate-400">Sorry, the page you are looking for does not exist.</p>
+      <h1 className="text-4xl cursor-pointer pt-48 font-bold text-slate-400 -mt-36">404 - Seite nicht gefunden</h1>
+      <p className="mt-4 cursor-pointer text-slate-400">Die Seite, die Sie versuchen aufzurufen existiert nicht.</p>
 
     </div>
   );

@@ -9,7 +9,6 @@ import Button_secondary from './buttons/button_secondary';
 import Navbar_xl_dropdown_template from './dropdowns/Navbar_xl_dropdown_template';
 
 
-
 const cdImages = {
   logo: '/src/assets/Peters_Logotype.svg',
   image1: '/src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
@@ -249,7 +248,7 @@ const Navbar = () => {
               url: 'Elektro-Dienstleistungen-Gewerbekunden'
             },
             {
-              image: cdImages.image30,
+              image: cdImages.image32,
               heading: 'Smart-Home Lösungen',
               subheading: 'Smart-Home Lösungen für Ihr Zuhause',
               url: 'Smart-Home-Loesungen'
