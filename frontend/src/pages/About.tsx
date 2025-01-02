@@ -1,7 +1,7 @@
 
 import Footer from "../components/Footer"
 import Header from "../components/Header"
-import List from "../components/lists/List";
+// import List from "../components/lists/List";
 import SectionHero from "../components/Section_Hero"
 import SectionTextAndImage from "../components/Section_Text_and_Image"
 import SectionContact from "../components/Section_Contact"

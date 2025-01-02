@@ -1,48 +1,48 @@
-const cdImages = {
-  placeholderImage: '/src/assets/images/Placeholder600x400.png'
-};
+// const cdImages = {
+//   placeholderImage: '/src/assets/images/Placeholder600x400.png'
+// };
 
-const cdColors = {
-  primaryColor: '#A8CF4E',
-  secondaryColor: '#FBF179',
-  primaryAccentColor: '',
-  secondaryAccentColor: '',
+// const cdColors = {
+//   primaryColor: '#A8CF4E',
+//   secondaryColor: '#FBF179',
+//   primaryAccentColor: '',
+//   secondaryAccentColor: '',
 
-  // green
-  primaryBackgroundColorLight: '#C5DF88',
-  primaryBackgroundColorDefault: '#A8CF4E',
-  primaryBackgroundColorDark: '#8FB042',
+//   // green
+//   primaryBackgroundColorLight: '#C5DF88',
+//   primaryBackgroundColorDefault: '#A8CF4E',
+//   primaryBackgroundColorDark: '#8FB042',
 
-  // yellow   
-  secondaryBackgroundColorLight: '#FCF6A5',
-  secondaryBackgroundColorDefault: '#FBF179',
-  secondaryBackgroundColorDark: '#DBD269',
+//   // yellow   
+//   secondaryBackgroundColorLight: '#FCF6A5',
+//   secondaryBackgroundColorDefault: '#FBF179',
+//   secondaryBackgroundColorDark: '#DBD269',
 
-  // teal
-  tertiaryBackgroundColorLight: '#9EDFB9',
-  tertiaryBackgroundColorDefault: '#6FCF97',
-  tertiaryBackgroundColorDark: '#5EB080',
+//   // teal
+//   tertiaryBackgroundColorLight: '#9EDFB9',
+//   tertiaryBackgroundColorDefault: '#6FCF97',
+//   tertiaryBackgroundColorDark: '#5EB080',
 
-  // blue
-  quaternaryBackgroundColorLight: '#80CDDE',
-  quaternaryBackgroundColorDefault: '#41B4CE',
-  quaternaryBackgroundColorDark: '#41B4CE',
+//   // blue
+//   quaternaryBackgroundColorLight: '#80CDDE',
+//   quaternaryBackgroundColorDefault: '#41B4CE',
+//   quaternaryBackgroundColorDark: '#41B4CE',
 
-  // brown
-  quinaryBackgroundColorLight: '#CDA888',
-  quinaryBackgroundColorDefault: '#B57E4D',
-  quinaryBackgroundColorDark: '#9A6B42',
+//   // brown
+//   quinaryBackgroundColorLight: '#CDA888',
+//   quinaryBackgroundColorDefault: '#B57E4D',
+//   quinaryBackgroundColorDark: '#9A6B42',
 
-  // white
-  whiteBackground: '#F7F7F7',
+//   // white
+//   whiteBackground: '#F7F7F7',
 
-  // black
-  blackBackground: '#1A1A1A',
+//   // black
+//   blackBackground: '#1A1A1A',
 
-  primaryFontColor: '#212121',
-  secondaryFontColor: '#6D6D6D',
-  tertiaryFontColor: ''
-};
+//   primaryFontColor: '#212121',
+//   secondaryFontColor: '#6D6D6D',
+//   tertiaryFontColor: ''
+// };
 
 interface SectionGalleryProps {
   image1: string;

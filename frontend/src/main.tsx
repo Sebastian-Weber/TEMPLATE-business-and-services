@@ -25,7 +25,7 @@ import ElektroDienstleistungenGewerbekunden from './pages/Elektro-Dienstleistung
 import SmartHomeLoesungen from './pages/Smart-Home-Loesungen';
 import Notfallreparaturen from './pages/Notfallreparaturen';
 import LichtdesignundInstallation from './pages/Lichtdesign-und-Installation';
-import NotFound from './pages/NotFound';
+import NotFound from './pages/Notfound';
 
 
 
