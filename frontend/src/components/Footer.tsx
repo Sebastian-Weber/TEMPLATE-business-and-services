@@ -46,19 +46,22 @@ const cdColors = {
   tertiaryFontColor: ''
 };
 
+import { useState } from 'react';
+
 function Footer() {
+  const [overlayVisible, setOverlayVisible] = useState(false);
   return (
     <>
       {/* small */} 
       <div className="xl:hidden flex flex-row justify-center items-center bottom-0 w-screen py-4" style={{ backgroundColor: cdColors.primaryColor }}>
         <ul className="flex flex-col nav-text-color justify-center items-center">
-
+            <img className="w-18 -mt-4" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!overlayVisible)}></img>
           {/* Firmenlogo */}
           <Link to="/" >
             <img className="w-18 -mt-4" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
           </Link>
 
-          {/* Über uns  */}
+            <img className="w-18 -mt-4" src={Firmenlogo} alt="Firmenlogo"></img>
           <Link className="" to="/about">
             <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryBackgroundColorLight }}>
               Über uns
