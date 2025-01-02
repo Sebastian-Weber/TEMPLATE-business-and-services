@@ -1,16 +1,20 @@
 
 import './App.css'
 
+import { Outlet } from 'react-router-dom';
+
+
+
+
 function App() {
-
-
 
   return (
     <>
-      <h1>TEMPLATE-business-and-services</h1>
-      <h1 className="text-3xl font-bold underline">
-      Hello TailwindCSS world!
-    </h1>
+      <div className="w-full max-w-screen-2xl mx-auto">
+      {/* <Header /> */}
+      <Outlet />
+      {/* <Footer /> */}
+    </div>
     </>
   )
 }

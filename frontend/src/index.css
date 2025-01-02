@@ -2,6 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Hide horizontal scrollbar */
+body {
+  overflow-x: hidden;
+}
+
+/* Optional: Hide horizontal scrollbar for specific elements */
+.some-element {
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #9f9f9f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2E2936;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+h1 {
+  font-weight: normal;
+  color: #707070;
+  font-size: 24px;
+}
+
+h2 {
+  font-weight: normal;
+  color: #707070;
+  font-size: 20px;
+}
+
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
