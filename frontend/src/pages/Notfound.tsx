@@ -55,20 +55,31 @@ import cdImages from '../utils/cdImages';
   
 
   
-    
+
 
 
 const NotFound: React.FC = () => {
   return (
-    <div className="flex flex-col left-0 w-screen fixed h-screen justify-center items-center bg-slate-950">
+    <div className="flex flex-col left-0 w-screen fixed h-screen justify-center items-center bg-slate-600">
       
       
       <Link to="/" className="">
         <img className="w-fit h-auto mr-12"  src={cdImages.image404} alt="Firmenlogo"></img>
       </Link>
-      <h1 className="text-4xl cursor-pointer pt-48 font-bold text-slate-400 -mt-36">404 - Seite nicht gefunden</h1>
-      <p className="mt-4 cursor-pointer text-slate-400">Die Seite, die Sie versuchen aufzurufen existiert nicht.</p>
-
+      <div className='flex flex-col w-full px-4 md:w-1/2 justfify-center items-start'>
+      <h1 className="text-4xl cursor-pointer pt-48 font-bold -mt-36">404</h1>
+      <br></br>
+      <h2 className='text-slate-400'>Die angeforderte Seite konnte nicht gefunden werden.</h2>
+      <br></br>
+      {/* <p className='text-slate-400'>Dieser Fehler tritt auf, weil der Server Ihre Anfrage erfolgreich erhalten hat, jedoch die spezifische Ressource (z. B. eine Webseite oder Datei), die mit der angegebenen URL verknüpft ist, nicht finden konnte.</p>
+      <br></br> */}
+      <p className='text-slate-400'>
+        Überprüfen Sie die URL auf Tippfehler.
+        Gehen Sie zur vorherigen Seite zurück und versuchen Sie es erneut.
+        Kehren Sie zur Startseite zurück und nutzen Sie das Navigationsmenü oder die Suchfunktion, um die gewünschte Seite zu finden.
+        Kontaktieren Sie uns, wenn Sie glauben, dass ein Fehler vorliegt und Sie Unterstützung benötigen.</p>
+        <br></br>
+    </div>
     </div>
   );
 };
