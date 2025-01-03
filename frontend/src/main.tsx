@@ -28,9 +28,6 @@ import LichtdesignundInstallation from './pages/Lichtdesign-und-Installation';
 import NotFound from './pages/Notfound';
 
 
-
-
-
 const router = createBrowserRouter([
     {
         path: '/',
