@@ -10,10 +10,11 @@ import SectionTextAndImage from "../components/Section_Text_and_Image"
 import { ButtonPrimaryProvider } from "../contexts/ButtonPrimaryContext"
 import SectionTextAndCards from '../components/Section_Text_and_Cards';
 
+import image1 from '../assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg';
 
 const cdImages = {
-  logo: './src/assets/Peters_Logotype.svg',
-  image1: './src/assets/images/vishnu-mohanan-qso4MyFvhNc-unsplash.jpg',
+  logo: '../assets/Peters_Logotype.svg',
+  image1,
   image2: './src/assets/images/mohamed-marey-M9mRKGW9L30-unsplash.jpg',
   image3: './src/assets/images/james-sandbrook-h0-lwHj7heI-unsplash.jpg',
   image4: './src/assets/images/mika-baumeister-dp9AxaKHdVg-unsplash.png',
