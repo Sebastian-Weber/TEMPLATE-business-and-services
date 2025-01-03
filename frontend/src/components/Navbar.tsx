@@ -148,9 +148,10 @@ const Navbar = () => {
       {/* small */}
       <div className="fixed md:hidden flex flex-row justify-between items-center w-full py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
         
-        {/* Firmenlogo */}
-        <Link to="/" >
-        </Link>
+          {/* Firmenlogo */}
+          <Link to="/" >
+            <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          </Link>
       
           <div className="">
             <ToggleHamburger></ToggleHamburger>
@@ -159,11 +160,12 @@ const Navbar = () => {
       </div>
 
       {/* Medium */}
-      <div className="fixed hidden md:flex flex-row justify-between items-center w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
+      <div className="fixed hidden md:flex flex-row justify-between items-center w-full py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
 
-        <Link to="/" >
-          <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
-        </Link>   
+          {/* Firmenlogo */}
+          <Link to="/" >
+            <img className="w-18 -mt-6" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          </Link> 
 
         <div className="flex flex-row justify-end items-center ">
 
@@ -183,9 +185,10 @@ const Navbar = () => {
       {/* large */}
       <div className="fixed hidden lg:flex flex-row justify-between items-center w-screen py-5 px-10" style={{ backgroundColor: cdColors.primaryColor }}>
 
-        {/* Firmenlogo */}
-        <Link to="/" >
-        </Link>
+          {/* Firmenlogo */}
+          <Link to="/" >
+            <img className="w-18 -mt-8" src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
+          </Link>
 
         <div className="flex flex-row justify-end items-center ">
 
@@ -215,7 +218,7 @@ const Navbar = () => {
           <img className="w-18 -mt-8"  src={Firmenlogo} alt="Firmenlogo" onClick={() => setOverlayVisible(!setOverlayVisible)}></img>
         </Link>
 
-        <div className="flex flex-row justify-start items-center mx-4">
+        <div className="flex flex-row mx-4 justify-start items-center ">
 
         {/* Ueber uns  */}
         <Link className="" to="/about">
