@@ -224,7 +224,7 @@ const Home = () => {
         heading={cdCopy.sectionHero_Heading}
         subheading={cdCopy.sectionHero_Subheading}
         paragraph={cdCopy.sectionHero_Paragraph} 
-        image={cdImages.image9}
+        image={cdImages.image41}
         logo={cdImages.logo}
         background={cdColors.secondaryBackgroundColorLight}>
         </SectionHero>
