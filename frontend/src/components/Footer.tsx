@@ -8,7 +8,7 @@ const cdColors = {
   primaryColor: '#A8CF4E',
   secondaryColor: '#FBF179',
   primaryAccentColor: '',
-  secondaryAccentColor: '',
+  secondaryAccentColor: '', 
 
   // green
   primaryBackgroundColorLight: '#C5DF88',
