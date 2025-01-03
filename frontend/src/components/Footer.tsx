@@ -55,6 +55,13 @@ function Footer() {
         <ul className="flex flex-col nav-text-color justify-center items-center">
             <img className="w-18 -mt-4" src={Firmenlogo} alt="Firmenlogo"></img>
 
+          {/* Firmenlogo */}
+          <div className="">
+            <Link to="/">
+              <img className="w-18 -mt-7" src={Firmenlogo} alt="Firmenlogo" />
+            </Link>
+          </div>
+         
           <Link className="" to="/about">
             <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryBackgroundColorLight }}>
               Über uns
@@ -101,18 +108,16 @@ function Footer() {
             <ul className="flex flex-row justify-center items-center w-screen ">
 
              {/* Firmenlogo */}
-              <li className="">
                 <Link to="/">
                   <img className="w-18 -mt-7" src={Firmenlogo} alt="Firmenlogo" />
                </Link>
-              </li>
-
-              {/* Über uns  */}
-              {/* <Link className="" to="/about">
-                <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryColor }}>
+{/* 
+              Über uns  */}
+              <Link className="" to="/about">
+                <div className="text-xl font-medium menu-hover my-2 py-2 mx-2 p-2" style={{ color: cdColors.secondaryBackgroundColorLight }}>
                   Über uns
                 </div>
-              </Link> */}
+              </Link>
 
               {/* Offene Stellen */}
               <Link className="" to="/jobs">

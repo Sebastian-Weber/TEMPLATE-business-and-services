@@ -39,6 +39,8 @@ import image37 from '../assets/images/ben-kolde-FaPxZ88yZrw-unsplash.jpg';
 import image38 from '../assets/images/andrew-neel-cckf4TsHAuw-unsplash.jpg';
 import image39 from '../assets/images/claudio-schwarz-sLfUA03zaOk-unsplash.jpg';
 import image40 from '../assets/images/thisisengineering-WjOWazUPAss-unsplash.jpg';
+import image41 from '../assets/images/high-angle-delivery-service-car.jpg';
+
 import card1Image from '../assets/images/Privatkunden.svg';
 import card2Image from '../assets/images/Geschaeftskunden.svg';
 import card3Image from '../assets/images/Smart-Home-Loesungen.svg';
@@ -87,6 +89,7 @@ const cdImages = {
   image38,
   image39,
   image40,
+  image41,
   card1Image,
   card2Image,
   card3Image,
