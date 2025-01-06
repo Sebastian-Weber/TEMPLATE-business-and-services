@@ -135,7 +135,7 @@ const SectionTextAndCards: React.FC<SectionTextAndCardsProps> = ({
 }) => {
   return (
   <>
-    <div className='min-h-screen '>
+    <div className='min-h-screen p-4'>
 
     <div className="flex flex-col h-full justify-start items-start md:flex-row">
 
@@ -158,7 +158,7 @@ const SectionTextAndCards: React.FC<SectionTextAndCardsProps> = ({
 
 </div>
 
-      <div className="flex flex-col h-1/2 md:flex-row md:w-full">
+      <div className="flex flex-col h-1/2 p-2 w-auto md:flex-row md:w-full">
         <MultiCard 
           heading={card1Heading} 
           paragraph={card1Paragraph} 
