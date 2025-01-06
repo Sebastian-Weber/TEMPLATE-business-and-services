@@ -34,7 +34,7 @@ function MultiCard({ heading, paragraph, image, background, buttonPrimaryProps, 
 
     return (
   
-      <div className='flex flex-col w-full h-full md:justify-start md:items-start m-2 p-12 rounded-lg hover:scale-105 transition-transform ease-in-out delay-150' style={{ background }}>
+      <div className='flex flex-col w-full h-full md:justify-start md:items-start m-1 p-12 rounded-lg hover:scale-105 transition-transform ease-in-out delay-150' style={{ background }}>
   
        <div className='flex flex-col items-start justify-start md:flex-row-reverse md:justify-between md:items-center md:w-full'>
 
