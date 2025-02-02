@@ -7,27 +7,27 @@ const cdColors = {
     secondaryAccentColor: '',
   
     // green
-    primaryBackgroundColorLight: '#C5DF88',
-    primaryBackgroundColorDefault: '#A8CF4E',
-    primaryBackgroundColorDark: '#8FB042',
+    primaryBackgroundColorLight: '#9EDFB9',
+    primaryBackgroundColorDefault: '#9EDFB9',
+    primaryBackgroundColorDark: '#9EDFB9',
   
     // yellow   
-    secondaryBackgroundColorLight: '#FCF6A5',
+    secondaryBackgroundColorLight: '#FFF1B7',
     secondaryBackgroundColorDefault: '#FBF179',
     secondaryBackgroundColorDark: '#DBD269',
   
-    // teal
-    tertiaryBackgroundColorLight: '#9EDFB9',
-    tertiaryBackgroundColorDefault: '#6FCF97',
-    tertiaryBackgroundColorDark: '#5EB080',
+    // red
+    tertiaryBackgroundColorLight: '#FBCAAE',
+    tertiaryBackgroundColorDefault: '#FBCAAE',
+    tertiaryBackgroundColorDark: '#FBCAAE',
   
     // blue
     quaternaryBackgroundColorLight: '#80CDDE',
-    quaternaryBackgroundColorDefault: '#41B4CE',
-    quaternaryBackgroundColorDark: '#41B4CE',
+    quaternaryBackgroundColorDefault: '#80CDDE',
+    quaternaryBackgroundColorDark: '#80CDDE',
   
-    // brown
-    quinaryBackgroundColorLight: '#CDA888',
+    // red
+    quinaryBackgroundColorLight: '#FBCAAE',
     quinaryBackgroundColorDefault: '#B57E4D',
     quinaryBackgroundColorDark: '#9A6B42',
   
