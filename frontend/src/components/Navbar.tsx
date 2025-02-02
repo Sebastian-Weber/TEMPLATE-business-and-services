@@ -111,7 +111,7 @@ const Navbar = () => {
               url: 'Elektro-Dienstleistungen-Privatkunden'
             },
             {
-              image: cdImages.image40,
+              image: cdImages.image34,
               heading: 'Elektro-Dienstleistungen für Gewerbekunden',
               subheading: 'Einbau, Austausch und Wartung',
               url: 'Elektro-Dienstleistungen-Gewerbekunden'

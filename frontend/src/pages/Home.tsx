@@ -88,8 +88,6 @@ const Home = () => {
     setButtonPrimaryLink: setButtonPrimaryLink2,
   };
 
-
-
   return (
     <>
       <div className="container">
