@@ -91,13 +91,13 @@ h4 {
 
 @media (min-width: 1280px) { /* xl */
   h4 {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
 @media (min-width: 1536px) { /* 2xl */
   h4 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
