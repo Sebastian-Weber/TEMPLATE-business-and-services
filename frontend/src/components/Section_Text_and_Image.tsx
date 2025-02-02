@@ -1,54 +1,7 @@
 import Button_primary from "./buttons/button_primary";
-// import Button_secondary from "./buttons/button_secondary";
 
-const cdColors = {
-  primaryColor: '#A8CF4E',
-  secondaryColor: '#FBF179',
-  primaryAccentColor: '',
-  secondaryAccentColor: '',
+import cdColors from '../utils/cdColors';
 
-  // green
-  primaryBackgroundColorLight: '#C5DF88',
-  primaryBackgroundColorDefault: '#A8CF4E',
-  primaryBackgroundColorDark: '#8FB042',
-
-  // yellow   
-  secondaryBackgroundColorLight: '#FCF6A5',
-  secondaryBackgroundColorDefault: '#FBF179',
-  secondaryBackgroundColorDark: '#DBD269',
-
-  // teal
-  tertiaryBackgroundColorLight: '#9EDFB9',
-  tertiaryBackgroundColorDefault: '#6FCF97',
-  tertiaryBackgroundColorDark: '#5EB080',
-
-  // blue
-  quaternaryBackgroundColorLight: '#80CDDE',
-  quaternaryBackgroundColorDefault: '#41B4CE',
-  quaternaryBackgroundColorDark: '#41B4CE',
-
-  // brown
-  quinaryBackgroundColorLight: '#CDA888',
-  quinaryBackgroundColorDefault: '#B57E4D',
-  quinaryBackgroundColorDark: '#9A6B42',
-
-  // white
-  whiteBackground: '#F7F7F7',
-
-  // black
-  blackBackground: '#1A1A1A',
-
-  primaryFontColor: '#212121',
-  secondaryFontColor: '#6D6D6D',
-  tertiaryFontColor: ''
-};
-
-// const cdCopy = {
-//   buttonPrimaryCaption: '',
-//   buttonPrimaryLink: '',
-//   buttonSecondaryCaption: '',
-//   buttonSecondaryLink: '',
-// };
 
 interface SectionTextAndImageProps {
   paragraph: string;
@@ -60,7 +13,12 @@ interface SectionTextAndImageProps {
     buttonPrimaryLink?: string;
   };
   listItems?: string[];
-}
+  buttonSecondaryProps?: {
+    buttonSecondaryCaption?: string;
+        buttonSecondaryLink?: string;
+      };
+    }
+
 
 
 function SectionTextAndImage({ paragraph, image, heading, background, buttonPrimaryProps, listItems  }: SectionTextAndImageProps) {
