@@ -140,7 +140,7 @@ const SectionTextAndCards: React.FC<SectionTextAndCardsProps> = ({
     <div className="flex flex-col h-full justify-start items-start md:flex-row">
 
       {/* left box */}
-      <div className="flex flex-col px-5 justify-center  h-1/2 w-full md:m-12 md:h-fit md:w-7/12 items-start">
+      <div className="flex flex-col px-5 justify-center h-1/2 w-full md:m-12 md:h-fit md:w-7/12 items-start">
           <br></br>
           <div className="flex flex-col p-8 h-auto w-auto justify-center items-start md:full ">
             <h3 style={{ color: cdColors.secondaryFontColor }}>{heading}</h3>
@@ -156,7 +156,7 @@ const SectionTextAndCards: React.FC<SectionTextAndCardsProps> = ({
         </div>
       )}
 
-</div>
+    </div>
 
       <div className="flex flex-col h-1/2 p-2 w-auto md:flex-row md:w-full">
         <MultiCard 
