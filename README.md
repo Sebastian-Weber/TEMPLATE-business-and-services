@@ -122,44 +122,45 @@ To adapt this template for a new client:
 
 ---
 
-## Project Structure
+```
 TEMPLATE-business-and-services/
 └── frontend/
-├── src/
-│   ├── assets/           # Images and static files
-│   ├── components/       # Reusable UI components
-│   │   ├── buttons/
-│   │   ├── card/
-│   │   ├── dropdowns/
-│   │   ├── expanders/
-│   │   ├── lists/
-│   │   ├── text inputs/
-│   │   ├── toggles/
-│   │   ├── Footer.tsx
-│   │   ├── Header.tsx
-│   │   ├── Navbar.tsx
-│   │   ├── Outlet.tsx
-│   │   ├── Section_Contact.tsx
-│   │   ├── Section_Divider.tsx
-│   │   ├── Section_Gallery.tsx
-│   │   ├── Section_Hero.tsx
-│   │   ├── Section_Impressum.tsx
-│   │   ├── Section_List_and_Image.tsx
-│   │   ├── Section_Text_and_Cards.tsx
-│   │   ├── Section_Text_and_Image.tsx
-│   │   └── Wrapper_Global.tsx
-│   ├── contexts/         # React context providers
-│   ├── pages/            # Page-level components
-│   ├── utils/            # Utilities (incl. cdColors theme)
-│   ├── App.tsx
-│   ├── App.css
-│   ├── index.css
-│   └── main.tsx
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── vite.config.ts
-└── tsconfig.json
+    ├── src/
+    │   ├── assets/           # Images and static files
+    │   ├── components/       # Reusable UI components
+    │   │   ├── buttons/
+    │   │   ├── card/
+    │   │   ├── dropdowns/
+    │   │   ├── expanders/
+    │   │   ├── lists/
+    │   │   ├── text inputs/
+    │   │   ├── toggles/
+    │   │   ├── Footer.tsx
+    │   │   ├── Header.tsx
+    │   │   ├── Navbar.tsx
+    │   │   ├── Outlet.tsx
+    │   │   ├── Section_Contact.tsx
+    │   │   ├── Section_Divider.tsx
+    │   │   ├── Section_Gallery.tsx
+    │   │   ├── Section_Hero.tsx
+    │   │   ├── Section_Impressum.tsx
+    │   │   ├── Section_List_and_Image.tsx
+    │   │   ├── Section_Text_and_Cards.tsx
+    │   │   ├── Section_Text_and_Image.tsx
+    │   │   └── Wrapper_Global.tsx
+    │   ├── contexts/
+    │   ├── pages/
+    │   ├── utils/
+    │   ├── App.tsx
+    │   ├── App.css
+    │   ├── index.css
+    │   └── main.tsx
+    ├── index.html
+    ├── package.json
+    ├── tailwind.config.js
+    ├── vite.config.ts
+    └── tsconfig.json
+```
 
 ---
 
