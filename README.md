@@ -1,4 +1,4 @@
-# TEMPLATE — Business & Services Website
+# TEMPLATE - Business & Services Website
 
 A production-ready frontend template for small service businesses, built with **React** and **TypeScript**. Demonstrated live as [Peters Elektro GmbH](https://peters-elektro.netlify.app/).
 
@@ -8,7 +8,29 @@ A production-ready frontend template for small service businesses, built with **
 
 **[peters-elektro.netlify.app](https://peters-elektro.netlify.app/)**
 
-<!-- Screenshot optional: ![Peters Elektro GmbH Screenshot](./docs/screenshot.png) -->
+---
+
+## Screenshots
+
+### Responsive layout — mobile and desktop
+![Peters Elektro GmbH – Responsive sections](screenshot-responsive.png)
+
+*Section components: Hero XL, Text and Image, Cards and Text — mobile and desktop breakpoints*
+
+### Live deployment
+![Peters Elektro GmbH – Browser mockup](screenshot-browser.png)
+
+*Deployed on Netlify — peters-elektro.netlify.app*
+
+---
+
+## Design Process
+
+This project started in Figma before a single line of code was written:
+
+- **CI moodboard** — typography, color palette, visual references
+- **Grid mockup** — section layout and content structure across breakpoints
+- **Component specs** — responsive navbar with dropdown states (mobile + desktop)
 
 ---
 
@@ -101,46 +123,43 @@ To adapt this template for a new client:
 ---
 
 ## Project Structure
-
-```
 TEMPLATE-business-and-services/
 └── frontend/
-    ├── src/
-    │   ├── assets/           # Images and static files
-    │   ├── components/       # Reusable UI components
-    │   │   ├── buttons/
-    │   │   ├── card/
-    │   │   ├── dropdowns/
-    │   │   ├── expanders/
-    │   │   ├── lists/
-    │   │   ├── text inputs/
-    │   │   ├── toggles/
-    │   │   ├── Footer.tsx
-    │   │   ├── Header.tsx
-    │   │   ├── Navbar.tsx
-    │   │   ├── Outlet.tsx
-    │   │   ├── Section_Contact.tsx
-    │   │   ├── Section_Divider.tsx
-    │   │   ├── Section_Gallery.tsx
-    │   │   ├── Section_Hero.tsx
-    │   │   ├── Section_Impressum.tsx
-    │   │   ├── Section_List_and_Image.tsx
-    │   │   ├── Section_Text_and_Cards.tsx
-    │   │   ├── Section_Text_and_Image.tsx
-    │   │   └── Wrapper_Global.tsx
-    │   ├── contexts/         # React context providers
-    │   ├── pages/            # Page-level components
-    │   ├── utils/            # Utilities (incl. cdColors theme)
-    │   ├── App.tsx
-    │   ├── App.css
-    │   ├── index.css
-    │   └── main.tsx
-    ├── index.html
-    ├── package.json
-    ├── tailwind.config.js
-    ├── vite.config.ts
-    └── tsconfig.json
-```
+├── src/
+│   ├── assets/           # Images and static files
+│   ├── components/       # Reusable UI components
+│   │   ├── buttons/
+│   │   ├── card/
+│   │   ├── dropdowns/
+│   │   ├── expanders/
+│   │   ├── lists/
+│   │   ├── text inputs/
+│   │   ├── toggles/
+│   │   ├── Footer.tsx
+│   │   ├── Header.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── Outlet.tsx
+│   │   ├── Section_Contact.tsx
+│   │   ├── Section_Divider.tsx
+│   │   ├── Section_Gallery.tsx
+│   │   ├── Section_Hero.tsx
+│   │   ├── Section_Impressum.tsx
+│   │   ├── Section_List_and_Image.tsx
+│   │   ├── Section_Text_and_Cards.tsx
+│   │   ├── Section_Text_and_Image.tsx
+│   │   └── Wrapper_Global.tsx
+│   ├── contexts/         # React context providers
+│   ├── pages/            # Page-level components
+│   ├── utils/            # Utilities (incl. cdColors theme)
+│   ├── App.tsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.tsx
+├── index.html
+├── package.json
+├── tailwind.config.js
+├── vite.config.ts
+└── tsconfig.json
 
 ---
 
