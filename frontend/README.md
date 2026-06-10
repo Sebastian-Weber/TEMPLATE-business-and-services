@@ -1,50 +1,159 @@
-# React + TypeScript + Vite
+# TEMPLATE — Business & Services Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A production-ready frontend template for small service businesses, built with **React** and **TypeScript**. Demonstrated live as [Peters Elektro GmbH](https://peters-elektro.netlify.app/).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Demo
 
-## Expanding the ESLint configuration
+**[peters-elektro.netlify.app](https://peters-elektro.netlify.app/)**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<!-- Screenshot optional: ![Peters Elektro GmbH Screenshot](./docs/screenshot.png) -->
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## About
+
+This template was built as a reusable starting point for local and regional service businesses — such as tradespeople, agencies, or consultants — that need a clean, professional web presence without a heavy CMS.
+
+The Peters Elektro GmbH deployment serves as the reference implementation.
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | React |
+| Language | TypeScript |
+| Styling | Tailwind CSS |
+| Bundler | Vite |
+| Deployment | Netlify |
+
+---
+
+## Features
+
+- Hero section (`Section_Hero`)
+- Services sections with text and image (`Section_Text_and_Image`, `Section_List_and_Image`)
+- Card-based content sections (`Section_Text_and_Cards`)
+- Contact section (`Section_Contact`)
+- Gallery (`Section_Gallery`)
+- Emergency repair page (`Notfallreparaturen`)
+- Jobs page
+- Imprint / legal page (`Section_Impressum`)
+- Responsive Navbar with dropdown navigation
+- Footer
+- Reusable component library: Buttons, Cards, Dropdowns, Expanders, Lists, Text Inputs, Toggles
+- Centralized color theming via `cdColors` utility
+- Section dividers for layout control
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js >= 18
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/Sebastian-Weber/TEMPLATE-business-and-services.git
+cd TEMPLATE-business-and-services/frontend
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Development
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm run dev
 ```
+
+### Build
+
+```bash
+npm run build
+```
+
+### Deploy
+
+The project is configured for deployment on [Netlify](https://netlify.com). Connect the repository to a Netlify project and set the build settings:
+
+| Setting | Value |
+|---|---|
+| Base directory | `frontend` |
+| Build command | `npm run build` |
+| Publish directory | `frontend/dist` |
+
+---
+
+## Customization
+
+To adapt this template for a new client:
+
+1. Replace company name, logo, and color tokens in the CSS variables / theme file
+2. Update copy in the relevant page components
+3. Adjust the services list and contact details
+4. Swap favicon and `<title>` in `index.html`
+
+---
+
+## Project Structure
+
+```
+TEMPLATE-business-and-services/
+└── frontend/
+    ├── src/
+    │   ├── assets/           # Images and static files
+    │   ├── components/       # Reusable UI components
+    │   │   ├── buttons/
+    │   │   ├── card/
+    │   │   ├── dropdowns/
+    │   │   ├── expanders/
+    │   │   ├── lists/
+    │   │   ├── text inputs/
+    │   │   ├── toggles/
+    │   │   ├── Footer.tsx
+    │   │   ├── Header.tsx
+    │   │   ├── Navbar.tsx
+    │   │   ├── Outlet.tsx
+    │   │   ├── Section_Contact.tsx
+    │   │   ├── Section_Divider.tsx
+    │   │   ├── Section_Gallery.tsx
+    │   │   ├── Section_Hero.tsx
+    │   │   ├── Section_Impressum.tsx
+    │   │   ├── Section_List_and_Image.tsx
+    │   │   ├── Section_Text_and_Cards.tsx
+    │   │   ├── Section_Text_and_Image.tsx
+    │   │   └── Wrapper_Global.tsx
+    │   ├── contexts/         # React context providers
+    │   ├── pages/            # Page-level components
+    │   ├── utils/            # Utilities (incl. cdColors theme)
+    │   ├── App.tsx
+    │   ├── App.css
+    │   ├── index.css
+    │   └── main.tsx
+    ├── index.html
+    ├── package.json
+    ├── tailwind.config.js
+    ├── vite.config.ts
+    └── tsconfig.json
+```
+
+---
+
+## Author
+
+**Sebastian Weber** — UI Designer & Frontend Developer, Cologne
+
+- Portfolio: [sebastian-weber.github.io/uxui-portfolio](https://sebastian-weber.github.io/uxui-portfolio/)
+- LinkedIn: [linkedin.com/in/sebastian-weber1708](https://www.linkedin.com/in/sebastian-weber1708)
+- GitHub: [@Sebastian-Weber](https://github.com/Sebastian-Weber)
+
+---
+
+## License
+
+MIT
